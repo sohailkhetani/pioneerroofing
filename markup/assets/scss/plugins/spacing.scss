@@ -1,0 +1,44 @@
+.margin{
+	&-top{
+		@include margin(15px null null null);
+	}
+	&-medium-top{
+		@include margin(30px null null null);
+	}
+	&-medium-bottom{
+		@include margin(null null 30px null);
+	}
+	&-large-top{
+		@include margin(40px null null null);
+	}
+	&-large-bottom{
+		@include margin(null null 40px null);
+	}
+	&-xlarge-top{
+		@include margin(60px null null null);
+	}
+	&-xlarge-bottom{
+		@include margin(null null 60px null);
+	}
+}
+
+.padding{
+	&-medium-top{
+		@include padding(30px null null null);
+	}
+	&-medium-bottom{
+		@include padding(null null 30px null);
+	}
+	&-medium-x{
+		@include padding(null 30px null 30px);
+	}
+	&-large-top{
+		@include padding(40px null null null);
+	}
+	&-large-bottom{
+		@include padding(null null 40px null);
+	}
+	&-large-x{
+		@include padding(null 60px null 60px);
+	}
+}

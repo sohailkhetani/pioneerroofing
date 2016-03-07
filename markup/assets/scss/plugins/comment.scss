@@ -1,0 +1,38 @@
+.comment{
+	@include padding(5px 15px);
+	border: 1px solid #b9bcc3;
+	border-radius: 4px;
+	&-link{
+		@include padding(5px);
+	}
+	&-body{
+		@include padding(20px 40px);
+		border-top: 1px solid #b9bcc3;
+		border-bottom: 1px solid #b9bcc3;
+		.quote-right,
+		.quote-left{
+			font-size: 56px;
+			line-height: 1;
+			position: absolute;
+		}
+		.quote-right{
+			top: 0;
+			left: -30px;
+		}
+		.quote-left{
+			bottom: -30px;
+			right: -30px;
+		}
+	}
+	&-footer{
+		@include padding(10px null null null);
+		@include clearfix;
+	}
+	&-avatar{
+		width: 28px;
+		height: 28px;
+		background: #000;
+		border-radius: 50%;
+		float: left;
+	}
+}

@@ -1,0 +1,36 @@
+.text{
+	&-center{
+	text-align: center;
+	}
+	&-left{
+		text-align: left;
+	}
+	&-right{
+		text-align: right;
+	}
+	&-inverse{
+		color: #fff;
+	}
+	&-gray{
+		color: $textgray;
+	}
+	&-capitalize{
+		text-transform: capitalize;
+	}
+}
+
+.text-underline{
+	display: inline-block;
+	position: relative;
+	&:before{
+		content:'';
+		width: 100%;
+		height: 5px;
+		background: #fff;
+		transform: skew(-30deg);
+		position: absolute;
+		left: 0;
+		bottom: -7px;
+
+	}
+}

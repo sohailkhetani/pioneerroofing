@@ -1,0 +1,36 @@
+.container{
+	@include outer-container();
+	@include padding(0 20px);
+}
+
+.light-bg{
+	background: $offwhite;
+}
+.hr-vertical{
+	position: relative;
+	&:before{
+		content: '';
+		width: 1px;
+		height: 88%;
+		background: #000;
+		position: absolute;
+		top: 5px;
+		right: -40px;
+	}
+	&-light{
+		&:before{
+			background: #b9bcc3;
+			height: 76%;
+			top: 2px;
+		}
+	}
+}
+
+
+
+.block-main{
+	background: $darkgray;
+	@include padding(30px 0);
+}
+
+

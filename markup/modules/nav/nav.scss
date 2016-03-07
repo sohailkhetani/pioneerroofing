@@ -1,0 +1,33 @@
+.navbar{
+	// background: $darkgray;
+	// padding: 30px 40px;
+	.navbar-menu {
+		display: inline-block;
+		// @include bg-svg($menu_icon);
+		fill: red;
+	}
+	.navbar-brand{
+		display: inline-block;
+		// @include bg-svg($svg_try);
+		fill: currentColor;
+		color: #fff;
+	}
+	.navbar-contact{
+		display: inline-block;
+		// @include bg-svg($contact_icon);
+	}
+}
+.icon{
+	&-letter{
+		// @include bg-svg($paperplane);
+		display: inline-block;
+	}
+}
+// .navbar .navbar-menu {
+// 	//font-family: $helvetica;
+// 	//font-size: golden-ratio(14px,  1);
+// 	//@include linear-gradient(to top, red, orange);
+// 	display: inline-block;
+// 	@include bg-svg($menu_icon);
+// 	//background:transparent url('%=static=%/minified-svg/menu_icon.svg') left top no-repeat;
+// }

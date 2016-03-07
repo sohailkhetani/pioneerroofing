@@ -1,0 +1,16 @@
+.button-primary{
+	background-color: $green;
+	&:hover,
+	&:focus {
+		background-color: shade($green, 20%);
+		color: #fff;
+	}
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+
+		&:hover {
+			background-color: $green;
+		}
+	}
+}
