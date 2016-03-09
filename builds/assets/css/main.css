@@ -425,7 +425,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: 0.75em 1.5em;
+  padding: 0.5em 1.5em;
   text-decoration: none;
   -webkit-transition: background-color 150ms ease;
   transition: background-color 150ms ease;
@@ -460,14 +460,14 @@ fieldset {
 
 legend {
   font-weight: 600;
-  margin-bottom: 0.375em;
+  margin-bottom: 0.25em;
   padding: 0;
 }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: 0.375em;
+  margin-bottom: 0.25em;
 }
 
 input,
@@ -485,7 +485,7 @@ select[multiple] {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
   padding: 0.5em;
   -webkit-transition: border-color 150ms ease;
   transition: border-color 150ms ease;
@@ -528,16 +528,16 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: 0.375em;
+  margin-right: 0.25em;
 }
 
 [type="file"] {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
   width: 100%;
 }
 
 select {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
   max-width: 100%;
   width: auto;
 }
@@ -584,7 +584,7 @@ picture {
 
 table {
   border-collapse: collapse;
-  margin: 0.75em 0;
+  margin: 0.5em 0;
   table-layout: fixed;
   width: 100%;
 }
@@ -592,13 +592,13 @@ table {
 th {
   border-bottom: 1px solid #a6a6a6;
   font-weight: 600;
-  padding: 0.75em 0;
+  padding: 0.5em 0;
   text-align: left;
 }
 
 td {
   border-bottom: 1px solid #ddd;
-  padding: 0.75em 0;
+  padding: 0.5em 0;
 }
 
 tr,
@@ -623,11 +623,11 @@ h6 {
   font-family: "Arial";
   font-size: 1.333em;
   line-height: 1.2;
-  margin: 0 0 0.75em;
+  margin: 0 0 0.5em;
 }
 
 p {
-  margin: 0 0 0.75em;
+  margin: 0 0 0.5em;
 }
 
 a {
@@ -691,11 +691,11 @@ hr {
 .hr-vertical:before {
   content: '';
   width: 1px;
-  height: 82%;
+  height: 76%;
   background: #000;
   position: absolute;
   top: 5px;
-  right: 0;
+  right: -6px;
 }
 
 .hr-vertical-light:before {
@@ -707,8 +707,8 @@ hr {
 .hr-vertical-light-left:before {
   left: 0;
   background: #b9bcc3;
-  height: 100%;
-  top: 0;
+  height: 70%;
+  top: 5px;
 }
 
 .block-main {
@@ -719,6 +719,10 @@ hr {
 .block-dashed {
   border: 2px dashed #676767;
   padding: 25px;
+}
+
+.block-description {
+  font-size: 24px;
 }
 
 .button-primary {
@@ -922,6 +926,10 @@ hr {
   margin: 0 8px;
 }
 
+.media .margin-bottom {
+  margin-bottom: 12px;
+}
+
 .position-relative {
   position: relative;
 }
@@ -981,6 +989,11 @@ hr {
   padding-left: 30px;
 }
 
+.padding-media {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
 .padding-medium-y {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -997,6 +1010,14 @@ hr {
 .padding-large-x {
   padding-right: 60px;
   padding-left: 60px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 .text-center {
@@ -1025,6 +1046,11 @@ hr {
 
 .text-content {
   line-height: 1.2;
+}
+
+.text-fz {
+  font-size: 18px;
+  line-height: 1.3;
 }
 
 .text-underline {
@@ -1141,8 +1167,6 @@ hr {
 .bullets h2 {
   display: inline-block;
   font-size: 1.4em;
-  margin: 0 0 0.58333em 0;
-  padding-top: 0.5em;
 }
 
 .bullets li {
@@ -1152,6 +1176,7 @@ hr {
 .bullets p {
   color: #333;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 .bullets img {
@@ -1173,15 +1198,16 @@ hr {
 
 .comment-raiting .ico-star-full {
   color: #E6962A;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .comment-link {
-  padding: 5px;
+  padding: 8px;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
+  font-size: 16px;
 }
 
 .comment-link:last-child {
@@ -1192,6 +1218,7 @@ hr {
   padding: 20px 40px;
   border-top: 1px solid #b9bcc3;
   border-bottom: 1px solid #b9bcc3;
+  font-size: 16px;
 }
 
 .comment-body .quote-right,
@@ -1236,9 +1263,8 @@ hr {
 
 .comment-social-link {
   display: block;
-  font-size: 24px;
-  line-height: 2;
-  margin: 5px 20px;
+  font-size: 32px;
+  margin: 0 20px;
 }
 
 .footer-brand {
@@ -1259,6 +1285,7 @@ hr {
 
 .icon-list li {
   display: inline-block;
+  width: 14%;
 }
 
 .icon-list li + li {
@@ -1272,8 +1299,9 @@ hr {
 
 .navbar .navbar-brand {
   float: none;
+  display: block;
   text-align: center;
-  max-width: 50%;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
   color: #fff;

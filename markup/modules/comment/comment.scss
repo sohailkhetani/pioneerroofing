@@ -9,17 +9,19 @@
 	&-raiting{
 		.ico-star-full{
 			color: $orange;
-			font-size: 24px;
+			font-size: 28px;
 		}
 	}
 	&-link{
-		@include padding(5px);
+		@include padding(8px);
 		@include span-columns(5);
+		font-size: 16px;
 	}
 	&-body{
 		@include padding(20px 40px);
 		border-top: 1px solid #b9bcc3;
 		border-bottom: 1px solid #b9bcc3;
+		font-size: 16px;
 		.quote-right,
 		.quote-left{
 			font-size: 56px;
@@ -54,9 +56,9 @@
 		&-link{
 			display: block;
 			// padding: 5px 10px;
-			font-size: 24px;
-			line-height: 2;
-			margin: 5px 20px;
+			font-size: 32px;
+			// line-height: 2;
+			margin: 0 20px;
 			// background: $lightgray;
 		}
 	}

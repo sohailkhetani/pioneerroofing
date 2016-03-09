@@ -23,11 +23,11 @@
 	&:before{
 		content: '';
 		width: 1px;
-		height: 82%;
+		height: 76%;
 		background: #000;
 		position: absolute;
 		top: 5px;
-		right: 0;
+		right: -6px;
 	}
 	&-light{
 		&:before{
@@ -40,8 +40,8 @@
 		&:before{
 			left: 0;
 			background: #b9bcc3;
-			height: 100%;
-			top: 0;
+			height: 70%;
+			top: 5px;
 		}
 	}
 }
