@@ -1,4 +1,14 @@
-.icon-roofing{
-	// @include bg-svg($roofing_white_icon);
+.icon-list{
+	text-align: center;
+	li{
+		display: inline-block;
+		+ li{
+			margin-left: 20px;
+		}
+		a{
+			display: block;
+			fill: #fff;
+		}
+	}
 	
 }

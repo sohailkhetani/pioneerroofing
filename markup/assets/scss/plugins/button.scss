@@ -1,5 +1,10 @@
 .button-primary{
 	background-color: $green;
+	padding: 15px 0;
+	font-size: 32px;
+	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+	@include span-columns(10);
+	@include shift(1);
 	&:hover,
 	&:focus {
 		background-color: shade($green, 20%);
@@ -13,4 +18,11 @@
 			background-color: $green;
 		}
 	}
+}
+.button{
+	@include span-columns(10);
+	@include shift(1);
+	padding: 15px 0;
+	font-size: 32px;
+	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }

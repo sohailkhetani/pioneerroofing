@@ -15,7 +15,7 @@ module.exports = {
             "pathToExternalSymbolsFile": ""
         }
     },
-    "useJsLintAndHint": true,
+    "useJsLintAndHint": false,
     "jsPathsToConcatBeforeModulesJs": [],
     "lintJsCodeBeforeModules": false,
     "jsPathsToConcatAfterModulesJs": [],
@@ -50,7 +50,7 @@ module.exports = {
     "minifyHtml": false,
     "staticPrefix": "assets/",
     "buildPath": "./builds/",
-    "useBuildVersioning": true,
+    "useBuildVersioning": false,
     "useArchiver": true,
     "ulimit": 4096,
     "templater": "handlebars",

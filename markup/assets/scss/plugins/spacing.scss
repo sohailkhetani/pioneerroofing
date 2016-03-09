@@ -2,6 +2,9 @@
 	&-top{
 		@include margin(15px null null null);
 	}
+	&-bottom{
+		@include margin(null null 15px null);
+	}
 	&-medium-top{
 		@include margin(30px null null null);
 	}
@@ -31,6 +34,9 @@
 	}
 	&-medium-x{
 		@include padding(null 30px null 30px);
+	}
+	&-medium-y{
+		@include padding(30px null 30px null);
 	}
 	&-large-top{
 		@include padding(40px null null null);

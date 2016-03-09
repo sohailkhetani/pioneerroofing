@@ -1,59 +1,94 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+	<head>
+		{{> head/head head.defaults}}
+	</head>
 
-    <body>
-        <div class="wrapper">
-            %=symbols=%
-            <div class="block-main">
-                <div class="container">
-                    <nav>
-                        {{> nav/nav}}
-                    </nav>
-                    <div class="block-description text-inverse text-center margin-large-top margin-large-bottom">
-                        Kansas Cityís Fastest Esimates.<br>
-                        Delivered to your inbox.<br>
-                        <div class="position-relative display-inline-block">
-                            <span class="position-absolute position-absolute-coord">
-                                <i class="icon icon-letter"></i>
-                            </span>
-                            <span class="text-underline">Within 48 Hours.</span>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <button class="button-primary">Get Started Here</button>
-                    </div>
-                    <div class="margin-large-top">
-                      <!--   {{> icon-list/icon-list}} -->
-                    </div>
-                </div>
-            </div>
+	<body>
+		<div class="wrapper">
+			<div class="svg-sprite">
+				%=symbols=%
+			</div>
+			<div class="block-main">
+				<div class="container">
+					<!-- {{> navbar/navbar}} -->
+					{{> nav/nav}}
+					<div class="block-description text-inverse text-center margin-large-top margin-large-bottom">
+						Kansas Cityís Fastest Esimates.<br>
+						Delivered to your inbox.<br>
+						<div class="position-relative display-inline-block">
+							<span class="position-absolute position-absolute-coord">
+								<i class="icon">
+									{{Icon iconName='paperplane' className='icon-letter'}}
+								</i>
+							</span>
+							<span class="text-underline">Within 48 Hours.</span>
+						</div>
+					</div>
+					<div class="text-center clearfix">
+						<button class="button-primary">Get Started Here</button>
+					</div>
+					<div class="margin-xlarge-top">
+					    {{> icon-list/icon-list}}
+					</div>
+				</div>
+			</div>
 
-            <main class="light-bg">
-                <div class="container">
-                    <!-- {{> accordion/accordion}} -->
-                    {{> block-service/block-service}}
-                    {{> block-location/block-location}}
-                    {{> block-about/block-about}}
-                </div>
-            </main>
+			<main class="light-bg">
+				<div class="container">
+					<!-- {{> accordion/accordion}} -->
+					{{> block-service/block-service}}
+					{{> block-location/block-location}}
+					{{> block-about/block-about}}
+				</div>
+				<div class="margin-xlarge-top dark-bg text-inverse padding-medium-y">
+					<div class="container">
+						<h3 class="text-center">Before You Call - Tips</h3>
+						<div class="text-content">
+							<div>Reviews About Us</div>
+							<div class="margin-bottom">Hi there. We understand that it can be tempting to call a roofer as soon as you see a leak. Although that may seem like to most safe guarded
+							approach, I show you why it may be benifitial to do some homework
+							before you call. It may save you some money ;)</div>
+							<div class="margin-bottom">If there is a leak which you can consistenly see get larger every time it rains, then call us immidiently. But, In the event that you have a major rain event in the area, when the amount rain per hour exceeds the average in your area, there may not be anything someone could do.</div>
+							<div class="margin-bottom">Before Calling a Roofer --- photos and confirm that roof got worse brfore calling, self checking tips</div>
+							<div class="margin-bottom">More tips here. Going to make a better version of this soon.</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="margin-xlarge-bottom">
+						<div class="padding-medium-x text-gray margin-top text-center">
+							98% of our customers say our estimate was
+							the most competitive and offered the most
+							value. Get an estimate deliverd to your
+							inbox in 48 hours.
+						</div>
+						<div class="margin-large-top text-center clearfix">
+							<button class="button-primary text-capitalize">Get started here</button>
+						</div>
+						<div class="margin-top text-center clearfix">
+							<button class="button text-capitalize">876-876-8986</button>
+						</div>
+					</div>
+				</div>
+			</main>
 
-            <footer class="page__footer">
-                {{> footer/footer}}
-            </footer>
+			<footer class="light-bg">
+				<div class="container">
+					{{> footer/footer}}
+				</div>
+			</footer>
 
-        </div>
+		</div>
 
-         
-        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
-        <script>svg4everybody();</script>
+		 
+		<script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+		<script>svg4everybody();</script>
 
-        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
-        <script src="https://code.jquery.com/jquery-2.2.1%=min=%.js"></script>
-        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
-    </body>
+		<!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+		<script src="https://code.jquery.com/jquery-2.2.1%=min=%.js"></script>
+		<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+	</body>
 
 </html>

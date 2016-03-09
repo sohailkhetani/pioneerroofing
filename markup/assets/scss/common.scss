@@ -2,26 +2,46 @@
 	@include outer-container();
 	@include padding(0 20px);
 }
+.clearfix{
+	@include clearfix;
+}
+.float-right{
+	float: right;
+}
+.float-left{
+	float: left;
+}
 
 .light-bg{
 	background: $offwhite;
+}
+.dark-bg{
+	background: $darkgray;
 }
 .hr-vertical{
 	position: relative;
 	&:before{
 		content: '';
 		width: 1px;
-		height: 88%;
+		height: 82%;
 		background: #000;
 		position: absolute;
 		top: 5px;
-		right: -40px;
+		right: 0;
 	}
 	&-light{
 		&:before{
 			background: #b9bcc3;
 			height: 76%;
 			top: 2px;
+		}
+	}
+	&-light-left{
+		&:before{
+			left: 0;
+			background: #b9bcc3;
+			height: 100%;
+			top: 0;
 		}
 	}
 }

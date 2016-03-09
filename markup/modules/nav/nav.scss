@@ -1,33 +1,69 @@
 .navbar{
-	// background: $darkgray;
-	// padding: 30px 40px;
 	.navbar-menu {
-		display: inline-block;
-		// @include bg-svg($menu_icon);
-		fill: red;
 	}
 	.navbar-brand{
-		display: inline-block;
-		// @include bg-svg($svg_try);
-		fill: currentColor;
+		float: none;
+		text-align: center;
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
 		color: #fff;
+		fill: currentColor;
+		.logo{
+			width: 100%;
+		}
 	}
 	.navbar-contact{
-		display: inline-block;
-		// @include bg-svg($contact_icon);
 	}
 }
 .icon{
 	&-letter{
-		// @include bg-svg($paperplane);
-		display: inline-block;
+		fill: currentColor;
 	}
 }
-// .navbar .navbar-menu {
-// 	//font-family: $helvetica;
-// 	//font-size: golden-ratio(14px,  1);
-// 	//@include linear-gradient(to top, red, orange);
-// 	display: inline-block;
-// 	@include bg-svg($menu_icon);
-// 	//background:transparent url('%=static=%/minified-svg/menu_icon.svg') left top no-repeat;
-// }
+
+.svg-sprite {
+	position: absolute;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+
+
+#window{
+	width: 50px;
+	height: 50px;
+	color: #fff;
+}
+
+#modal{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	background:#000;
+	color:#fff;
+	padding:100px 20px;
+	z-index:100;
+	display:none;
+}
+
+#close{
+	width:0px;
+	height:0px;
+	padding:0;
+	position:absolute;
+	right:20px;
+	top:20px;
+	transition:0.4s all;
+	font: 12px Helvetica, sans-serif;
+}
+.submenu{
+	li{
+		a{
+			color: #fff;
+		}
+	}
+}

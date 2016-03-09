@@ -1,10 +1,42 @@
-<nav class="navbar">
+<nav class="navbar flex flex-middle flex-space-around">
 	<!-- <div class="container"> -->
-		<a href="#" class="navbar-menu"></a>
-		<a href="#" class="navbar-brand">
-			<!-- <img src="%=static=%images/minified-svg/svg_try.svg" alt="logo"> -->
+	<div class="smallgap">
+		<a href="#" class="navbar-menu" id="window">
+			{{Icon iconName='menu_icon' className=''}}
 		</a>
-		<a href="#" class="navbar-contact"></a>
+		<div id="modal">
+			<button id="close">X</button>
+			<ul class="submenu">
+				<li>
+					<a href="#">lorem</a>
+				</li>
+				<li>
+					<a href="#">lorem</a>
+				</li>
+				<li>
+					<a href="#">lorem</a>
+				</li>
+				<li>
+					<a href="#">lorem</a>
+				</li>
+				<li>
+					<a href="#">lorem</a>
+				</li>
+				<li>
+					<a href="#">lorem</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<a href="#" class="navbar-brand">
+				{{Icon iconName='svg_try' className='logo'}}
+			</a>
+	</div>
+	<div>
+		<a href="#" class="navbar-contact">
+				{{Icon iconName='contact_icon' className=''}}
+			</a>
+	</div>
 	<!-- </div> -->
-
 </nav>

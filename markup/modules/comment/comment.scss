@@ -1,9 +1,20 @@
 .comment{
+	&-head{
+		@include clearfix;
+	}
 	@include padding(5px 15px);
 	border: 1px solid #b9bcc3;
 	border-radius: 4px;
+	margin-bottom: 35px;
+	&-raiting{
+		.ico-star-full{
+			color: $orange;
+			font-size: 24px;
+		}
+	}
 	&-link{
 		@include padding(5px);
+		@include span-columns(5);
 	}
 	&-body{
 		@include padding(20px 40px);
@@ -34,5 +45,19 @@
 		background: #000;
 		border-radius: 50%;
 		float: left;
+		margin-right: 15px;
+	}
+	&-social{
+		display: block;
+		
+		
+		&-link{
+			display: block;
+			// padding: 5px 10px;
+			font-size: 24px;
+			line-height: 2;
+			margin: 5px 20px;
+			// background: $lightgray;
+		}
 	}
 }

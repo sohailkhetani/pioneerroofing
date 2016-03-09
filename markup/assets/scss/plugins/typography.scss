@@ -1,6 +1,6 @@
 .text{
 	&-center{
-	text-align: center;
+		text-align: center;
 	}
 	&-left{
 		text-align: left;
@@ -16,6 +16,9 @@
 	}
 	&-capitalize{
 		text-transform: capitalize;
+	}
+	&-content{
+		line-height: 1.2;
 	}
 }
 

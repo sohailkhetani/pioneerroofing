@@ -1,7 +1,13 @@
 .media{
+	@include clearfix;
 	&-img{
-		width: 105px;
-		height: 80px;
-		background-color: #000;
+		@include span-columns(5);
+		padding-right: 20px;
+	}
+	&-description{
+		@include span-columns(6);
+		i{
+			margin: 0 8px;
+		}
 	}
 }

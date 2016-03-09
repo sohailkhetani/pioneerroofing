@@ -1,13 +1,13 @@
 <div class="margin-xlarge-top">
 	<h4 class="text-center text-capitalize">Managerís Contact Information</h4>
-	<div class="media flex flex-middle flex-space-around">
+	<div class="media">
 		<div class="media-img hr-vertical">
-			
+			<img src="%=static=%images/content/contact.jpg" alt="">
 		</div>
 		<div class="media-description text-gray">
-			<div><small>Sally Simpleton</small></div>
-			<div><small>555.555.5555 ext 6</small></div>
-			<div><small>Sally@myroofpro.om</small></div>
+			<div><i class="ico-user"></i><small>Sally Simpleton</small></div>
+			<div><i class="ico-phone"></i><small>555.555.5555 ext 6</small></div>
+			<div><i class="ico-envelop"></i><small>Sally@myroofpro.om</small></div>
 		</div>
 	</div>
 </div>
@@ -34,48 +34,17 @@
 </div>
 <div class="margin-xlarge-top">
 	<h3 class="text-capitalize text-center">Reviews About Us</h3>
-	<div class="comment">
-		<div class="comment-head flex flex-middle">
-			<div class="comment-link hr-vertical hr-vertical-light">
-				<a href="#" class="display-inline-block text-capitalize">Read review</a>
-			</div>
-			<div class="comment-raiting">
-				
-			</div>
-		</div>
-		<div class="comment-body text-center">
-			
-			<span class="position-relative display-block">
-				<span class="quote-right">&#8220;</span>
-				Very professional, very businesslike,
-				nobody is trying to be your new
-				"friend". They come in and get
-				right to business. Not once did any
-				of them slow down. Truly amazing!
-				<span class="quote-left">&#8221;</span>
-			</span>
-			
-		</div>
-		<div class="comment-footer flex flex-middle">
-			<div class="hr-vertical hr-vertical-light">
-				
-					<div class="comment-avatar">
-						
-					</div>
-					<div class="comment-avatar-name">
-						<b>Katty Cakes</b><br>
-						<div>Kanzas, MO</div>
-					</div>
-			</div>
-			<div>
-				<a href="#">FB</a>
-			</div>
-		</div>
+	{{> comment/comment}}
+</div>
+<div class="margin-xlarge-top">
+	<h3 class="text-capitalize text-center">The Pioneer Difference</h3>
+	<div class="margin-medium-top">
+		{{> bullets/bullets}}
 	</div>
 </div>
-<div class="margin-xlarge-top text-center">
-	<h3 class="text-capitalize">The Pioneer Difference</h3>
-</div>
+
+
+
 
 
 
