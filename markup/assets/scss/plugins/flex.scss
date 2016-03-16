@@ -21,4 +21,7 @@
 	&-space-around {
 		justify-content: space-around;
 	}
+	&-column{
+		flex-direction: column;
+	}
 }

@@ -5,3 +5,19 @@
 .block-description{
 	font-size: 24px;
 }
+.block-underline{
+	position: relative;
+	padding-bottom: em(40px);
+	&:before{
+		content: '';
+		width: 70%;
+		height: em(2px);
+		background: #b6b9c0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+}

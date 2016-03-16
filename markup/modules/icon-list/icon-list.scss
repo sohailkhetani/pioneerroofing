@@ -1,4 +1,8 @@
+// @include media(min-width $sm max-width $md) {
+
+// }
 .icon-list{
+	@include media(min-width $xs max-width $sm) {
 	text-align: center;
 	li{
 		display: inline-block;
@@ -11,5 +15,10 @@
 			fill: #fff;
 		}
 	}
+}
+	.icon-list-item{
+		fill: $darkgray;
+	}
+
 	
 }

@@ -3,7 +3,4 @@
 }
 .position-absolute{
 	@include position(absolute);
-	&-coord{
-		@include position(absolute, 5px null null -50px);
-	}
 }

@@ -10,30 +10,7 @@
 			<div class="svg-sprite">
 				%=symbols=%
 			</div>
-			<div class="block-main">
-				<div class="container">
-					<!-- {{> navbar/navbar}} -->
-					{{> nav/nav}}
-					<div class="block-description text-inverse text-center margin-xlarge-top margin-xlarge-bottom">
-						Kansas Cityís Fastest Esimates.<br>
-						Delivered to your inbox.<br>
-						<div class="position-relative display-inline-block">
-							<span class="position-absolute position-absolute-coord">
-								<i class="icon">
-									{{Icon iconName='paperplane' className='icon-letter'}}
-								</i>
-							</span>
-							<span>Within <span class="text-underline">48 Hours.</span></span>
-						</div>
-					</div>
-					<div class="text-center clearfix">
-						<button class="button-primary">Get Started Here</button>
-					</div>
-					<div class="margin-large-top">
-					    {{> icon-list/icon-list}}
-					</div>
-				</div>
-			</div>
+			{{> block-fold/block-fold}}
 
 			<main class="light-bg">
 				<div class="container">
@@ -56,28 +33,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="container">
-					<div class="margin-xlarge-bottom">
-						<div class="padding-medium-x text-gray margin-top text-center">
-							98% of our customers say our estimate was
-							the most competitive and offered the most
-							value. Get an estimate deliverd to your
-							inbox in 48 hours.
-						</div>
-						<div class="margin-large-top text-center clearfix">
-							<button class="button-primary text-capitalize">Get started here</button>
-						</div>
-						<div class="margin-top text-center clearfix">
-							<button class="button text-capitalize">876-876-8986</button>
-						</div>
-					</div>
-				</div>
 			</main>
 
-			<footer class="light-bg">
-				<div class="container">
-					{{> footer/footer}}
-				</div>
+			<footer>
+				{{> footer/footer}}
 			</footer>
 
 		</div>

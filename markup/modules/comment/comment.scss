@@ -1,4 +1,10 @@
 .comment{
+	&-row{
+		@include span-columns(6);
+		@include media(min-width $xs max-width $sm) {
+			@include span-columns(12);
+		}
+	}
 	&-head{
 		@include clearfix;
 	}

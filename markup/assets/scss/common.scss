@@ -1,26 +1,31 @@
-.container{
+.container {
 	@include outer-container();
 	@include padding(0 20px);
 }
-.clearfix{
+
+.clearfix {
 	@include clearfix;
 }
-.float-right{
+
+.float-right {
 	float: right;
 }
-.float-left{
+
+.float-left {
 	float: left;
 }
 
-.light-bg{
+.light-bg {
 	background: $offwhite;
 }
-.dark-bg{
+
+.dark-bg {
 	background: $darkgray;
 }
-.hr-vertical{
+
+.hr-vertical {
 	position: relative;
-	&:before{
+	&:before {
 		content: '';
 		width: 1px;
 		height: 76%;
@@ -29,15 +34,15 @@
 		top: 5px;
 		right: -6px;
 	}
-	&-light{
-		&:before{
+	&-light {
+		&:before {
 			background: #b9bcc3;
 			height: 76%;
 			top: 2px;
 		}
 	}
-	&-light-left{
-		&:before{
+	&-light-left {
+		&:before {
 			left: 0;
 			background: #b9bcc3;
 			height: 70%;
@@ -45,12 +50,4 @@
 		}
 	}
 }
-
-
-
-.block-main{
-	background: $darkgray;
-	@include padding(30px 0);
-}
-
 
