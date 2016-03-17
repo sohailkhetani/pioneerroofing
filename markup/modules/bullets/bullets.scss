@@ -1,17 +1,17 @@
 .bullets {
-	$base-line-height: 1.5em !default;
+	$base-line-height: 1.5rem !default;
 	$action-color: #477DCA !default;
 	$dark-gray: #333 !default;
 	$base-font-color: $dark-gray !default;
-	$icon-bullet-size: 3.5em;
+	$icon-bullet-size: 3.5rem;
 	//@include display(flex);
 	//@include flex-wrap(wrap);
 	margin-bottom: $base-line-height;
-	margin: 1em;
+	margin: 1rem;
 	overflow: auto;
 	padding: 0;
 	.bullets-row {
-		//@include flex-basis(20em);
+		//@include flex-basis(20rem);
 		//@include flex-grow(1);
 		@include span-columns(6);
 		
@@ -51,7 +51,7 @@
 			&:before{
 				content: '';
 				width: 70%;
-				height: em(2px);
+				height: rem(2px);
 				background: #b6b9c0;
 				position: absolute;
 				bottom: 0;
@@ -65,7 +65,7 @@
 			@include padding(null 20px null null);
 			&:before{
 				content: '';
-				width: em(2px);
+				width: rem(2px);
 				height: 70%;
 				background: #b6b9c0;
 				position: absolute;

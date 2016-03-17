@@ -1,3 +1,7 @@
+html,
+body {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 .container {
 	@include outer-container();
 	@include padding(0 20px);
@@ -14,7 +18,14 @@
 .float-left {
 	float: left;
 }
-
+.visible-small{
+	@include media(min-width $xs max-width $sm) {
+		display: block;
+	}
+	@include media(min-width $sm max-width $lg) {
+		display: none;
+	}
+}
 .light-bg {
 	background: $offwhite;
 }

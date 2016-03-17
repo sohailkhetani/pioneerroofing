@@ -1,49 +1,123 @@
-<div class="margin-xlarge-top text-center">
-	<div class="block-underline">
-		<h2>What we offer at this location</h2>
-			<div class="display-inline-block">
-				<div class="margin-large-top">
-					{{> icon-list/icon-list}}
+<div class="flex flex-column">
+	<div class="flex-order-2">
+		<div class="margin-xlarge-top text-center">
+			<div class="block-underline">
+				<h2>What we offer at this location</h2>
+					<div class="visible-small">
+						<div class="margin-large-top">
+							{{> icon-list/icon-list}}
+						</div>
+					</div>
+					<div class="display-inline-block">
+						<div class="margin-medium-top text-gray text-fz">
+							<div class="media-location">
+								<div class="media-location-image">
+									{{Icon iconName='roofing' className='icon-list-item'}}
+								</div>
+								<div class="media-location-description">
+									<b>Roofing</b> -
+									<span class="display-inline-block">
+										<a href="#">Asphalt, </a>
+										<a href="#">Slate, </a>
+										<a href="#">Flat, </a>
+										<a href="#">Tile</a>
+									</span>
+								</div>
+							</div>
+							
+							<div class="media-location">
+								<div class="media-location-image">
+									{{Icon iconName='siding_white_icon' className='icon-list-item'}}
+								</div>
+								<div class="media-location-description">
+									<b>Siding</b> -
+									<span class="display-inline-block">
+										<a href="#">Vinyl, </a>
+										<a href="#">Wood, </a>
+										<a href="#">Fiber Cement</a>
+									</span>
+								</div>
+							</div>
+							
+							<div class="media-location">
+								<div class="media-location-image">
+									{{Icon iconName='gutter_white_icon' className='icon-list-item'}}
+								</div>
+								<div class="media-location-description">
+									<b>Gutters</b> -
+									<span class="display-inline-block">
+										<a href="#">Aluminum 5 & 6 Inch</a>
+									</span>
+								</div>
+							</div>
+							
+							<div class="media-location">
+								<div class="media-location-image">
+									{{Icon iconName='gutter_icon_white' className='icon-list-item'}}
+								</div>
+								<div class="media-location-description">
+									<b>Gutter Guards</b> -
+									<span class="display-inline-block">
+										<a href="#">Screens, </a>
+										<a href="#">Helemets</a>
+									</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex-order-1">
+		<div class="block-underline-xs">
+			<div class="media-wrapper margin-large-top">
+				<div class="media-height media-contact">
+					<div class="media-contact-title h3">
+						Managerís Contact Information
+					</div>
+					<div class="media-contact-img">
+						<img src="%=static=%images/content/contact.jpg" alt="">
+					</div>
+					<div class="media-contact-description text-gray">
+						<div class="media-contact-item margin-bottom">{{Icon iconName='pros' className='icon-user'}}<small>Sally Simpleton</small></div>
+						<div class="media-contact-item margin-bottom">{{Icon iconName='phone_icon' className='icon-phone'}}<small>555.555.5555 ext 6</small></div>
+						<div class="media-contact-item margin-bottom"><i class="ico-envelop"></i><small>Sally@myroofpro.om</small></div>
+					</div>
+				</div>
+				<div class="media-height media-code">
+					<div class="media-code-title h3">
+						Ice and Water Shield Code
+					</div>
+					<div class="media-code-description text-gray">
+						<table class="simple-table">
+							<tbody>
+								<tr>
+									<td>Olathe</td>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<td>Leawood</td>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<td>Leesummit</td>
+									<td>no</td>
+								</tr>
+								<tr>
+									<td>Overland Park</td>
+									<td>no</td>
+								</tr>
+								<tr>
+									<td>Kansas City</td>
+									<td>no</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
-			<div class="display-inline-block">
-				<div class="margin-medium-top text-gray text-fz">
-					<div class="margin-bottom">
-						<b>Roofing</b> -
-						<span class="display-inline-block">
-								<a href="#">Asphalt, </a>
-								<a href="#">Slate, </a>
-								<a href="#">Flat, </a>
-								<a href="#">Tile</a>
-							</span>
-					</div>
-					
-					<div class="margin-bottom">
-						<b>Siding</b> -
-						<span class="display-inline-block">
-								<a href="#">Vinyl, </a>
-								<a href="#">Wood, </a>
-								<a href="#">Fiber Cement</a>
-							</span>
-					</div>
-					
-					<div class="margin-bottom">
-						<b>Gutters</b> -
-						<span class="display-inline-block">
-								<a href="#">Aluminum 5 & 6 Inch</a>
-							</span>
-					</div>
-					
-					<div >
-						<b>Gutter Guards</b> -
-						<span class="display-inline-block">
-								<a href="#">Screens, </a>
-								<a href="#">Helemets</a>
-							</span>
-					</div>
-					
-				</div>
-			</div>
+		</div>
 	</div>
 </div>
 <div class="margin-large-top block-dashed text-center">
@@ -67,12 +141,18 @@
 		<a href="#" class="display-block">State registration</a>
 	</div>
 </div> -->
-<div class="margin-large-top">
-	<!-- <h3 class="text-capitalize text-center">Reviews About Us</h3> -->
-	{{> comment/comment}}
+<div class="block-underline-sm">
+	<div class="margin-large-top">
+		<!-- <h3 class="text-capitalize text-center">Reviews About Us</h3> -->
+		{{> comment/comment}}
+	</div>
 </div>
 <div class="margin-xlarge-top">
-	<h3 class="text-capitalize text-center">The Pioneer Difference</h3>
+	<div class="text-center">
+		<div class="display-inline-block block-underline-lg">
+			<h3 class="text-capitalize">The Pioneer Difference</h3>
+		</div>
+	</div>
 	<div class="margin-medium-top">
 		{{> bullets/bullets}}
 	</div>

@@ -5,16 +5,16 @@ html{
 		}
 }
 body{
-	font-size: 1em;
+	font-size: 1rem;
 }
 h1, .h1{
-	font-size: em(36px);
+	font-size: rem(36px);
 }
 h2, .h2{
-	font-size: em(28px);
+	font-size: rem(28px);
 }
 h3, .h3{
-	font-size: em(24px);
+	font-size: rem(24px);
 }
 .text{
 	&-center{
@@ -39,7 +39,7 @@ h3, .h3{
 		line-height: 1.2;
 	}
 	&-fz{
-		font-size: em(20px);
+		font-size: rem(20px);
 		line-height: 1.3;
 	}
 }

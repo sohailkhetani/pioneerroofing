@@ -19,6 +19,9 @@
 		i{
 			margin: 0 8px;
 		}
+		[class^="icon-"], [class*=" icon-"] {
+			fill: $textgray;
+		}
 	}
 	&-title{
 		@include padding(null null 5px);
@@ -57,5 +60,32 @@
 		@include padding(null null 5px);
 		@include margin(null null 20px);
 		border-bottom: 1px solid #b9bcc3;
+	}
+}
+
+.media-location{
+	@include clearfix;
+	@include margin(null null 30px null);
+	&-image{
+		@include span-columns(1);
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		.icon-list-item{
+			fill: $darkgray;
+		}
+		@include media(min-width $xs max-width $sm) {
+			display: none;
+		}
+	}
+	&-description{
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 40px;
+		text-align: left;
+		@include span-columns(11);
+		@include media(min-width $xs max-width $sm) {
+			@include span-columns(12);
+		}
 	}
 }

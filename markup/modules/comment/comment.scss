@@ -1,3 +1,6 @@
+.comments{
+	@include clearfix;
+}
 .comment{
 	&-row{
 		@include span-columns(6);

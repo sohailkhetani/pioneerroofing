@@ -1,7 +1,7 @@
 .button-primary{
 	background-color: $green;
 	padding: 15px 0;
-	font-size: 32px;
+	font-size: rem(32px);
 	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 	@include span-columns(10);
 	@include shift(1);
@@ -18,12 +18,77 @@
 			background-color: $green;
 		}
 	}
+	@include media(min-width $xs max-width $sm){
+		@include span-columns(12);
+		@include shift(0);
+	}
 }
 .button{
 	@include span-columns(10);
 	@include shift(1);
 	padding: 15px 0;
-	font-size: em(32px);
+	font-size: rem(32px);
 	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 
+}
+.button-outline{
+	display: inline-block;
+	border-radius: 8px;
+	background-color: transparent;
+	padding: 7px 5px;
+	font-size: rem(24px);
+	border: rem(2px) solid #fff; 
+	color: #fff;
+	text-align: center;
+	&:hover,
+	&:focus {
+		background-color: transparent;
+		color: #fff;
+	}
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+	&-lg{
+		@include span-columns(6);
+		@include shift(3);
+		@include media(min-width $xs max-width $sm){
+			@include span-columns(10);
+			@include shift(1);
+		}
+	}
+	&-sm{
+		font-size: rem(18px);
+		@include media(min-width $sm max-width $md){
+			@include span-columns(4);
+		}
+		@include media(min-width $xs max-width $sm){
+			@include span-columns(6);
+		}
+	}
+}
+
+//more button
+.button-more{
+	display: block;
+	@include margin(rem(40px) null null null);
+	font-size: rem(18px);
+	color: #fff;
+	&:hover{
+		color: #fff;
+	}
+}
+.more{
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	&-text{
+		display: inline-block;
+		vertical-align: middle;
+	}
 }

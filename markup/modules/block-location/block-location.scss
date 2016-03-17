@@ -9,7 +9,7 @@
 	position: relative;
 	&:before{
 		content: '';
-		width: em(2px);
+		width: rem(2px);
 		height: 100%;
 		background: #b6b9c0;
 		position: absolute;
@@ -23,12 +23,20 @@
 		&:before{
 				content: '';
 				width: 80%;
-				height: em(1px);
+				height: rem(1px);
 				background: #b6b9c0;
 				position: absolute;
 				bottom: 0;
 				left: 0;
 				margin: auto;
 			}
+	}
+}
+.block-location{
+	@include media(min-width $xs max-width $sm) {
+		@include span-columns(12);
+	}
+	@include media(min-width $sm max-width $md) {
+		@include span-columns(6);
 	}
 }

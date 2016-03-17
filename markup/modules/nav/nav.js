@@ -1,19 +1,39 @@
-$('#window').click(function () {
-    // var sa = $(this).text();
-    // $(this).text('');
-    // $(this).addClass('ball');
-    setTimeout(function () {
-        $('#modal').fadeIn();
-        $('#close').css('width', '30px');
-        $('#close').css('height', '30px');
-        setTimeout(function () {
-            // $('#window').removeClass('ball');
-            // $('#window').text(sa);
-        }, 500);
-    }, 200);
+$('.modal-button').on('click', function () {
+	var $this =  $(this);
+	var $parent = $this.closest('.modal-wrapper');
+	var $child = $parent.find('.modal');
+	setTimeout(function () {
+		$child.fadeIn();
+		$('.close').css({
+			'width': 56,
+			'height': 56
+		});
+		$('body').addClass('modal-open');
+	}, 200);
+	return false;
 });
-$('#close').click(function () {
-    $('#modal').fadeOut();
-    $('#close').css('width', '0px');
-    $('#close').css('height', '0px');
+$('.close').click(function () {
+	var $this =  $(this);
+	var $parent = $this.closest('.modal-wrapper');
+	var $child = $parent.find('.modal');
+	$child.fadeOut();
+	$('.close').css('width', '0px');
+	$('.close').css('height', '0px');
+	$('body').removeClass('modal-open');
+});
+
+
+$('.form-button').on('click', function(){
+	var $this =  $(this);
+	var $parent = $this.closest('.button-show');
+	var $child = $parent.find('.button-block');
+	$child.show();
+	$('.form-button').css('opacity', 0);
+	return false;
+})
+
+$("#sticker").sticky({
+	topSpacing: 0,
+	//getWidthFrom: ('.wrapper')
+
 });
