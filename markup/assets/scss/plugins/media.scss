@@ -74,7 +74,7 @@
 		.icon-list-item{
 			fill: $darkgray;
 			width: 100%;
-			height: auto;
+			height: 100%;
 		}
 		@include media(min-width $xs max-width $sm) {
 			display: none;

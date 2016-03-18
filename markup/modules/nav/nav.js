@@ -5,8 +5,8 @@ $('.modal-button').on('click', function () {
 	setTimeout(function () {
 		$child.fadeIn();
 		$('.close').css({
-			'width': 56,
-			'height': 56
+			'width': 60,
+			'height': 60
 		});
 		$('body').addClass('modal-open');
 	}, 200);

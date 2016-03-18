@@ -672,6 +672,10 @@ body {
   display: table;
 }
 
+svg {
+  max-height: 100%;
+}
+
 .float-right {
   float: right;
 }
@@ -971,8 +975,7 @@ body {
 .more {
   display: inline-block;
   vertical-align: middle;
-  width: 40px;
-  height: 40px;
+  font-size: 2.5rem;
 }
 
 .more-text {
@@ -1093,8 +1096,8 @@ body {
 
 @font-face {
   font-family: 'pioneerroofing';
-  src: url("../fonts/pioneerroofing.eot?8lj7ju");
-  src: url("../fonts/pioneerroofing.eot?8lj7ju#iefix") format("embedded-opentype"), url("../fonts/pioneerroofing.ttf?8lj7ju") format("truetype"), url("../fonts/pioneerroofing.woff?8lj7ju") format("woff"), url("../fonts/pioneerroofing.svg?8lj7ju#pioneerroofing") format("svg");
+  src: url("../fonts/pioneerroofing.eot?t8moms");
+  src: url("../fonts/pioneerroofing.eot?t8moms#iefix") format("embedded-opentype"), url("../fonts/pioneerroofing.ttf?t8moms") format("truetype"), url("../fonts/pioneerroofing.woff?t8moms") format("woff"), url("../fonts/pioneerroofing.svg?t8moms#pioneerroofing") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1111,6 +1114,66 @@ body {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-about_us:before {
+  content: "";
+}
+
+.ico-close_x:before {
+  content: "";
+}
+
+.ico-hour_estimate:before {
+  content: "";
+}
+
+.ico-blog:before {
+  content: "";
+}
+
+.ico-career:before {
+  content: "";
+}
+
+.ico-financing:before {
+  content: "";
+}
+
+.ico-locations:before {
+  content: "";
+}
+
+.ico-more:before {
+  content: "";
+}
+
+.ico-network:before {
+  content: "";
+}
+
+.ico-phone_icon:before {
+  content: "";
+}
+
+.ico-pros:before {
+  content: "";
+}
+
+.ico-refer_a_friend:before {
+  content: "";
+}
+
+.ico-schedule:before {
+  content: "";
+}
+
+.ico-services:before {
+  content: "";
+}
+
+.ico-warranty:before {
+  content: "";
 }
 
 .ico-phone:before {
@@ -1279,7 +1342,7 @@ body {
 .media-location-image .icon-list-item {
   fill: #212121;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 @media screen and (min-width: 0) and (max-width: 481px) {
@@ -1389,6 +1452,10 @@ body {
 .padding-large-x {
   padding-right: 60px;
   padding-left: 60px;
+}
+
+.padding-remove-bottom {
+  padding-bottom: 0;
 }
 
 html {
@@ -1642,46 +1709,15 @@ a {
 
 .block-location_icon {
   width: 100%;
-  height: auto;
-}
-
-.block-main {
-  background: #2e96ff;
-  /* Old Browsers */
-  /* FF3.6+ */
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #2e96ff), color-stop(100%, #0586f0));
-  /* Chrome, Safari4+ */
-  background: -webkit-linear-gradient(top, #2e96ff 0%, #0586f0 100%);
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE 10+ */
-  background: linear-gradient(to bottom, #2e96ff 0%, #0586f0 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e96ff', endColorstr='#0586f0', GradientType=0);
-  /* IE6-9 */
-  padding: 30px 0 60px;
-}
-
-.icon-wrapper {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%;
-  margin-left: 42.64902%;
-  margin-top: 70px;
-}
-
-.icon-wrapper:last-child {
-  margin-right: 0;
-}
-
-.icon-letter {
-  width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .address-text {
-  padding-left: 1.25rem;
+  padding-left: 0.625rem;
+}
+
+.address_icon {
+  font-size: 2.25rem;
 }
 
 .bullets {
@@ -1733,7 +1769,7 @@ a {
 
 .bullets .bullet-icon_img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .bullets .bullet-content {
@@ -1980,6 +2016,7 @@ a {
   }
   .icon-list li {
     display: inline-block;
+    vertical-align: middle;
     width: 14%;
   }
   .icon-list li + li {
@@ -1994,30 +2031,23 @@ a {
 .icon-list .icon-list-item {
   fill: #212121;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .navbar {
   padding: 0 20px;
 }
 
-.navbar .navbar-brand {
+.navbar-brand {
   display: block;
   text-align: center;
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
-  color: #FAFAFA;
-  fill: currentColor;
 }
 
-.navbar .navbar-brand .logo {
-  width: 100%;
-  height: auto;
-}
-
-.icon-letter {
-  fill: currentColor;
+.navbar-brand .logo {
+  width: 275px;
 }
 
 .svg-sprite {
@@ -2032,8 +2062,8 @@ a {
 }
 
 .modal-button {
+  display: block;
   width: 50px;
-  height: 50px;
   color: #FAFAFA;
 }
 
@@ -2045,7 +2075,7 @@ a {
   height: 100%;
   background: #212121;
   color: #FAFAFA;
-  padding: 100px 20px 10px;
+  padding: 60px 20px 10px;
   z-index: 100;
   display: none;
   overflow: auto;
@@ -2054,6 +2084,7 @@ a {
 .close {
   width: 100%;
   height: 100%;
+  font-size: 3rem;
   padding: 0;
   position: absolute;
   right: 30px;
@@ -2103,6 +2134,7 @@ a {
 
 .submenu li a {
   color: #FAFAFA;
+  display: block;
 }
 
 .submenu li:not(:last-child) {
@@ -2110,8 +2142,7 @@ a {
 }
 
 .submenu-icon {
-  width: 60px;
-  height: 60px;
+  font-size: 3.75rem;
   display: inline-block;
   vertical-align: middle;
   margin-right: 2.5rem;
@@ -2119,8 +2150,7 @@ a {
 
 @media screen and (min-width: 0) and (max-width: 481px) {
   .submenu-icon {
-    width: 30px;
-    height: 30px;
+    font-size: 1.875rem;
     margin-right: 0.625rem;
   }
 }
@@ -2389,7 +2419,14 @@ a {
   border-left: 0;
 }
 
+.navbar-menu-icon, .navbar-contact-icon {
+  width: 100%;
+  height: 100%;
+}
+
 .is-sticky .navbar {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   z-index: 1000;
   background: #2e96ff;
   /* Old Browsers */
@@ -2406,21 +2443,20 @@ a {
   /* IE6-9 */
 }
 
-.is-sticky .navbar .navbar-menu-icon {
+.is-sticky .navbar-menu-icon {
   width: 24px;
-  height: auto;
+  height: 100%;
 }
 
-.is-sticky .navbar .navbar-brand {
+.is-sticky .navbar-brand {
   max-width: 40%;
 }
 
-.is-sticky .navbar .navbar-brand .logo {
-  width: 100%;
-  height: auto;
+.is-sticky .navbar-brand .logo {
+  width: 275px;
 }
 
-.is-sticky .navbar .navbar-contact-icon {
+.is-sticky .navbar-contact-icon {
   width: 24px;
-  height: auto;
+  height: 100%;
 }

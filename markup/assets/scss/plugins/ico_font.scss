@@ -1,5 +1,20 @@
 $icomoon-font-path: "../fonts" !default;
 
+$ico-about_us: "\e908";
+$ico-close_x: "\e909";
+$ico-hour_estimate: "\e90a";
+$ico-blog: "\e90b";
+$ico-career: "\e90c";
+$ico-financing: "\e90d";
+$ico-locations: "\e90e";
+$ico-more: "\e90f";
+$ico-network: "\e910";
+$ico-phone_icon: "\e911";
+$ico-pros: "\e912";
+$ico-refer_a_friend: "\e913";
+$ico-schedule: "\e914";
+$ico-services: "\e915";
+$ico-warranty: "\e916";
 $ico-phone: "\e900";
 $ico-envelop: "\e904";
 $ico-user: "\e901";
@@ -9,13 +24,14 @@ $ico-google-plus2: "\e905";
 $ico-google-plus3: "\e906";
 $ico-facebook2: "\e907";
 
+
 @font-face {
     font-family: 'pioneerroofing';
-    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?8lj7ju');
-    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?8lj7ju#iefix') format('embedded-opentype'),
-        url('#{$icomoon-font-path}/pioneerroofing.ttf?8lj7ju') format('truetype'),
-        url('#{$icomoon-font-path}/pioneerroofing.woff?8lj7ju') format('woff'),
-        url('#{$icomoon-font-path}/pioneerroofing.svg?8lj7ju#pioneerroofing') format('svg');
+    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?t8moms');
+    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?t8moms#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/pioneerroofing.ttf?t8moms') format('truetype'),
+        url('#{$icomoon-font-path}/pioneerroofing.woff?t8moms') format('woff'),
+        url('#{$icomoon-font-path}/pioneerroofing.svg?t8moms#pioneerroofing') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -35,6 +51,81 @@ $ico-facebook2: "\e907";
     -moz-osx-font-smoothing: grayscale;
 }
 
+.ico-about_us {
+    &:before {
+        content: $ico-about_us;
+    }
+}
+.ico-close_x {
+    &:before {
+        content: $ico-close_x;
+    }
+}
+.ico-hour_estimate {
+    &:before {
+        content: $ico-hour_estimate;
+    }
+}
+.ico-blog {
+    &:before {
+        content: $ico-blog;
+    }
+}
+.ico-career {
+    &:before {
+        content: $ico-career;
+    }
+}
+.ico-financing {
+    &:before {
+        content: $ico-financing;
+    }
+}
+.ico-locations {
+    &:before {
+        content: $ico-locations;
+    }
+}
+.ico-more {
+    &:before {
+        content: $ico-more;
+    }
+}
+.ico-network {
+    &:before {
+        content: $ico-network;
+    }
+}
+.ico-phone_icon {
+    &:before {
+        content: $ico-phone_icon;
+    }
+}
+.ico-pros {
+    &:before {
+        content: $ico-pros;
+    }
+}
+.ico-refer_a_friend {
+    &:before {
+        content: $ico-refer_a_friend;
+    }
+}
+.ico-schedule {
+    &:before {
+        content: $ico-schedule;
+    }
+}
+.ico-services {
+    &:before {
+        content: $ico-services;
+    }
+}
+.ico-warranty {
+    &:before {
+        content: $ico-warranty;
+    }
+}
 .ico-phone {
     &:before {
         content: $ico-phone;
@@ -75,4 +166,5 @@ $ico-facebook2: "\e907";
         content: $ico-facebook2;
     }
 }
+
 

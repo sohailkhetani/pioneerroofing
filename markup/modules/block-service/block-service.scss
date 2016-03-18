@@ -1,3 +1,6 @@
 .address-text{
-	@include padding(null null null rem(20px));
+	@include padding(null null null rem(10px));
+}
+.address_icon{
+	font-size: rem(36px);
 }

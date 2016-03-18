@@ -1,7 +1,7 @@
 <div class="flex flex-column">
 	<div class="flex-order-2">
-		<div class="margin-xlarge-top text-center">
-			<div class="block-underline">
+		<div class="margin-large-top text-center">
+			<div class="block-underline padding-remove-bottom">
 				<h2>What we offer at this location</h2>
 					<div class="visible-small">
 						<div class="margin-large-top">
@@ -12,7 +12,8 @@
 						<div class="margin-medium-top text-gray text-fz">
 							<div class="media-location">
 								<div class="media-location-image">
-									{{Icon iconName='roofing' className='icon-list-item'}}
+									<img src="%=static=%images/general/roofing.svg" alt="" class="icon-list-item">
+									<!-- {{Icon iconName='roofing' className='icon-list-item'}} -->
 								</div>
 								<div class="media-location-description">
 									<b>Roofing</b> -
@@ -27,7 +28,8 @@
 							
 							<div class="media-location">
 								<div class="media-location-image">
-									{{Icon iconName='siding_white_icon' className='icon-list-item'}}
+									<img src="%=static=%images/general/siding_white_icon.svg" alt="" class="icon-list-item">
+									<!-- {{Icon iconName='siding_white_icon' className='icon-list-item'}} -->
 								</div>
 								<div class="media-location-description">
 									<b>Siding</b> -
@@ -41,7 +43,8 @@
 							
 							<div class="media-location">
 								<div class="media-location-image">
-									{{Icon iconName='gutter_white_icon' className='icon-list-item'}}
+									<img src="%=static=%images/general/gutter_white_icon.svg" alt="" class="icon-list-item">
+									<!-- {{Icon iconName='gutter_white_icon' className='icon-list-item'}} -->
 								</div>
 								<div class="media-location-description">
 									<b>Gutters</b> -
@@ -53,7 +56,8 @@
 							
 							<div class="media-location">
 								<div class="media-location-image">
-									{{Icon iconName='gutter_icon_white' className='icon-list-item'}}
+									<img src="%=static=%images/general/gutter_icon_white.svg" alt="" class="icon-list-item">
+									<!-- {{Icon iconName='gutter_icon_white' className='icon-list-item'}} -->
 								</div>
 								<div class="media-location-description">
 									<b>Gutter Guards</b> -
@@ -70,7 +74,7 @@
 		</div>
 	</div>
 	<div class="flex-order-1">
-		<div class="block-underline-xs">
+		<div class="block-underline-xs padding-remove-bottom">
 			<div class="media-wrapper margin-large-top">
 				<div class="media-height media-contact">
 					<div class="media-contact-title h3">
@@ -80,8 +84,14 @@
 						<img src="%=static=%images/content/contact.jpg" alt="">
 					</div>
 					<div class="media-contact-description text-gray">
-						<div class="media-contact-item margin-bottom">{{Icon iconName='pros' className='icon-user'}}<small>Sally Simpleton</small></div>
-						<div class="media-contact-item margin-bottom">{{Icon iconName='phone_icon' className='icon-phone'}}<small>555.555.5555 ext 6</small></div>
+						<div class="media-contact-item margin-bottom">
+							<i class="ico-pros"></i>
+							<!-- {{Icon iconName='pros' className='icon-user'}} -->
+							<small>Sally Simpleton</small></div>
+						<div class="media-contact-item margin-bottom">
+							<i class="ico-phone_icon"></i>
+							<!-- {{Icon iconName='phone_icon' className='icon-phone'}} -->
+							<small>555.555.5555 ext 6</small></div>
 						<div class="media-contact-item margin-bottom"><i class="ico-envelop"></i><small>Sally@myroofpro.om</small></div>
 					</div>
 				</div>

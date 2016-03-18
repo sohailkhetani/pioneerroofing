@@ -85,8 +85,9 @@
 .more{
 	display: inline-block;
 	vertical-align: middle;
-	width: 40px;
-	height: 40px;
+	font-size: rem(40px);
+	//width: 40px;
+	//height: 40px;
 	&-text{
 		display: inline-block;
 		vertical-align: middle;

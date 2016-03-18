@@ -50,4 +50,7 @@
 	&-large-x{
 		@include padding(null 60px null 60px);
 	}
+	&-remove-bottom{
+		padding-bottom: 0;
+	}
 }
