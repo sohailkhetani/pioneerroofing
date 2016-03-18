@@ -12,11 +12,13 @@
 		}
 		a{
 			display: block;
-			fill: #fff;
+			fill: $lightgray;
 		}
 	}
 }
 	.icon-list-item{
 		fill: $darkgray;
+		width: 100%;
+		height: auto;
 	}
 }

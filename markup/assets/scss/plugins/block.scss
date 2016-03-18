@@ -13,7 +13,7 @@
 		content: '';
 		width: 70%;
 		height: rem(2px);
-		background: #b6b9c0;
+		background: $gray-border;
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -28,7 +28,7 @@
 			content: '';
 			width: 70%;
 			height: rem(2px);
-			background: #b6b9c0;
+			background: $gray-border;
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -44,7 +44,7 @@
 				content: '';
 				width: 90%;
 				height: rem(2px);
-				background: #b6b9c0;
+				background: $gray-border;
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -61,7 +61,7 @@
 				content: '';
 				width: 90%;
 				height: rem(2px);
-				background: #b6b9c0;
+				background: $gray-border;
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -82,7 +82,7 @@
 		content: '';
 		width: rem(2px);
 		height: 90%;
-		background: #b6b9c0;
+		background: $gray-border;
 		position: absolute;
 		top:0;
 		bottom: 0;

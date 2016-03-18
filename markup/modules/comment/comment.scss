@@ -12,7 +12,7 @@
 		@include clearfix;
 	}
 	@include padding(5px 15px);
-	border: 1px solid #b9bcc3;
+	border: 1px solid $gray-border;
 	border-radius: 4px;
 	margin-bottom: 35px;
 	&-raiting{
@@ -24,12 +24,12 @@
 	&-link{
 		@include padding(8px);
 		@include span-columns(5);
-		font-size: 16px;
+		font-size: rem(16px);
 	}
 	&-body{
 		@include padding(20px 40px);
-		border-top: 1px solid #b9bcc3;
-		border-bottom: 1px solid #b9bcc3;
+		border-top: 1px solid $gray-border;
+		border-bottom: 1px solid $gray-border;
 		font-size: 16px;
 		.quote-right,
 		.quote-left{

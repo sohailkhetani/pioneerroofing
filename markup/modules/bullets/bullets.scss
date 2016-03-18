@@ -22,11 +22,20 @@
 		@include padding(null null 20px null);
 	}
 	.bullet-icon {
-		//float: left;
+		&-inner{
+			@include span-columns(4);
+			@include shift(4);
+		}
+		@include clearfix;
 		display: inline-block;
 		min-height: 80px;
+		&_img{
+			width: 100%;
+			height: auto;
+		}
 	}
 	.bullet-content {
+		@include clearfix;
 		margin-left: 0;
 		margin-bottom: 0;
 	}
@@ -52,7 +61,7 @@
 				content: '';
 				width: 70%;
 				height: rem(2px);
-				background: #b6b9c0;
+				background: $gray-border;
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -67,7 +76,7 @@
 				content: '';
 				width: rem(2px);
 				height: 70%;
-				background: #b6b9c0;
+				background: $gray-border;
 				position: absolute;
 				top:0;
 				bottom: 0;

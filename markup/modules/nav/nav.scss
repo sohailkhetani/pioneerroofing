@@ -17,7 +17,7 @@
 		max-width: 70%;
 		margin-left: auto;
 		margin-right: auto;
-		color: #fff;
+		color: $lightgray;
 		fill: currentColor;
 		.logo{
 			width: 100%;
@@ -47,7 +47,7 @@
 .modal-button{
 	width: 50px;
 	height: 50px;
-	color: #fff;
+	color: $lightgray;
 }
 
 .modal{
@@ -57,7 +57,7 @@
 	top:0;
 	height:100%;
 	background:$darkgray;
-	color:#fff;
+	color:$lightgray;
 	padding:100px 20px 10px;
 	z-index:100;
 	display:none;
@@ -75,7 +75,7 @@
 	background: transparent;
 	//font: 12px Helvetica, sans-serif;
 	.close_x{
-		fill: #fff;
+		fill: $lightgray;
 		width: 56px;
 		height: 56px;
 	}
@@ -101,7 +101,7 @@
 	@include span-columns(6);
 	li{
 		a{
-			color: #fff;
+			color: $lightgray;
 		}
 	}
 	li:not(:last-child){
@@ -137,15 +137,15 @@
 		background-color: transparent;
 		@include padding(rem(7px) null);
 		font-size: rem(32px);
-		color: #fff;
-		border: rem(2px) solid #fff; 
+		color: $lightgray;
+		border: rem(2px) solid $lightgray; 
 		text-align: center;
 		@include span-columns(10);
 		@include shift(1);
 		&:hover,
 		&:focus {
 			background-color: transparent;
-			color: #fff;
+			color: $lightgray;
 		}
 		&:disabled {
 			cursor: not-allowed;
@@ -168,7 +168,7 @@
 			content: '';
 			width: 55px;
 			height: 2px;
-			background: #fff;
+			background: $lightgray;
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
@@ -187,8 +187,7 @@
 			@include margin(null null rem(25px) null);
 		}
 		&-link{
-			color: #fff;
-			font-weight: bold;
+			color: $lightgray;
 			&:hover{
 				text-decoration: underline;
 			}

@@ -11,7 +11,7 @@
 		content: '';
 		width: rem(2px);
 		height: 100%;
-		background: #b6b9c0;
+		background: $gray-border;
 		position: absolute;
 		top:0;
 		bottom: 0;
@@ -24,7 +24,7 @@
 				content: '';
 				width: 80%;
 				height: rem(1px);
-				background: #b6b9c0;
+				background: $gray-border;
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -39,4 +39,18 @@
 	@include media(min-width $sm max-width $md) {
 		@include span-columns(6);
 	}
+}
+
+.block-location-image{
+	@include span-columns(8);
+	@include shift(2);
+	@include margin(rem(30px) null);
+	@include media(min-width $xs max-width $sm) {
+		@include span-columns(4);
+		@include shift(4);
+	}
+}
+.block-location_icon{
+	width: 100%;
+	height: auto;
 }

@@ -5,7 +5,7 @@
 	@include clearfix;
 	text-align: center;
 	@include padding(5px 15px);
-	border: 1px solid #b9bcc3;
+	border: 1px solid $gray-border;
 	border-radius: 4px;
 	margin-bottom: 35px;
 	@include span-columns(6);
@@ -26,7 +26,7 @@
 	&-title{
 		@include padding(null null 5px);
 		@include margin(null null 20px);
-		border-bottom: 1px solid #b9bcc3;
+		border-bottom: 1px solid $gray-border;
 	}
 	.margin-bottom{
 		margin-bottom: 12px;
@@ -37,7 +37,7 @@
 			content: '';
 			height: 1px;
 			width: 40%;
-			background: #b9bcc3;
+			background: $gray-border;
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -48,7 +48,7 @@
 }
 
 .media-code{
-	border: 1px solid #b9bcc3;
+	border: 1px solid $gray-border;
 	border-radius: 4px;
 	margin-bottom: 35px;
 	@include padding(5px 15px);
@@ -59,7 +59,7 @@
 	&-title{
 		@include padding(null null 5px);
 		@include margin(null null 20px);
-		border-bottom: 1px solid #b9bcc3;
+		border-bottom: 1px solid $gray-border;
 	}
 }
 
@@ -67,12 +67,14 @@
 	@include clearfix;
 	@include margin(null null 30px null);
 	&-image{
-		@include span-columns(1);
+		@include span-columns(2);
 		display: inline-block;
 		vertical-align: middle;
 		text-align: center;
 		.icon-list-item{
 			fill: $darkgray;
+			width: 100%;
+			height: auto;
 		}
 		@include media(min-width $xs max-width $sm) {
 			display: none;
@@ -83,7 +85,7 @@
 		vertical-align: middle;
 		padding-left: 40px;
 		text-align: left;
-		@include span-columns(11);
+		@include span-columns(10);
 		@include media(min-width $xs max-width $sm) {
 			@include span-columns(12);
 		}

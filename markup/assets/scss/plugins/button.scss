@@ -8,7 +8,7 @@
 	&:hover,
 	&:focus {
 		background-color: shade($green, 20%);
-		color: #fff;
+		color: $lightgray;
 	}
 	&:disabled {
 		cursor: not-allowed;
@@ -37,13 +37,13 @@
 	background-color: transparent;
 	padding: 7px 5px;
 	font-size: rem(24px);
-	border: rem(2px) solid #fff; 
-	color: #fff;
+	border: rem(2px) solid $lightgray; 
+	color: $lightgray;
 	text-align: center;
 	&:hover,
 	&:focus {
 		background-color: transparent;
-		color: #fff;
+		color: $lightgray;
 	}
 	&:disabled {
 		cursor: not-allowed;
@@ -77,9 +77,9 @@
 	display: block;
 	@include margin(rem(40px) null null null);
 	font-size: rem(18px);
-	color: #fff;
+	color: $lightgray;
 	&:hover{
-		color: #fff;
+		color: $lightgray;
 	}
 }
 .more{

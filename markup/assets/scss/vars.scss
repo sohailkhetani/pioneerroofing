@@ -1,22 +1,17 @@
-$base-font-family: 'Arial';
+$base-font-family: 'Open Sans', 'Arial', sans-serif;
 $font-stack-system: $base-font-family;
 
-$brightblue:		#3398FC;
-$baseblue:			#3083C5;
-$lightblue:			#34BFEF;
-$lightestblue:		#CAE8F4;
-$darkblue:			#1E3660;
-$offwhite:			#DFE3E9;
-$lightgray:			#B3B1B3;
-$lightbluegray:		#B6BFD0;
-$darkgray:			#333333;
-$textgray:			#676767;
-$green:				#77C044;
-$orange:			#E6962A;
-$red:				#CD4828;
-
+$baseblue:			#2196F3;
+$offwhite:			#EEEEEE;
+$lightgray:			#FAFAFA;
+$darkgray:			#212121;
+$textgray:			#212121;
+$green:				#4CAF50;
+$orange:			#FF9800;
+$gray-border:       #b6b9c0;
 
 $xs: 0;
-$sm: 480px;
-$md: 960px;
+$sm: 481px;
+$md: 980px;
 $lg: 1140px;
+
