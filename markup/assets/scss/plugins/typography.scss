@@ -1,11 +1,16 @@
 html{
-	font-size: 14px;
-		@include media(min-width $sm max-width $md) {
-			font-size: 20px;
-		}
+	font-size: 16px;
+	@include media(min-width $sm max-width $md) {
+		font-size: 18px;
+	}
+	@include media(min-width $md max-width $lg) {
+		font-size: 22px;
+	}
 }
 body{
 	font-size: 1rem;
+	background: $body-bg;
+	color: $body-color;
 }
 h1, .h1{
 	font-size: rem(36px);
@@ -14,11 +19,25 @@ h2, .h2{
 	font-size: rem(28px);
 }
 h3, .h3{
-	font-size: rem(24px);
+	color: $heading-color;
+	font-size: rem(22px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(36px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(52px);
+	}
 }
 h4, .h4{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
+	font-size: rem(16px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(36px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(52px);
+	}
 }
 p{
 	font-family: 'Open Sans', sans-serif;
@@ -27,8 +46,19 @@ p{
 a{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
+	font-size: rem(16px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(18px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(22px);
+	}
 }
 .text{
+	&-primary{
+		color: $orange;
+	}
+
 	&-center{
 		text-align: center;
 	}

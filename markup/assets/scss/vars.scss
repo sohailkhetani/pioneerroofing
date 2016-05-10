@@ -1,5 +1,8 @@
 $base-font-family: 'Open Sans', 'Arial', sans-serif;
 $font-stack-system: $base-font-family;
+$body-bg:           #fff;
+$body-color:        #424242;
+$heading-color:     rgba(#000, 0.75);
 
 $baseblue:			#2196F3;
 $offwhite:			#EEEEEE;
@@ -7,8 +10,22 @@ $lightgray:			#FAFAFA;
 $darkgray:			#212121;
 $textgray:			#212121;
 $green:				#4CAF50;
-$orange:			#FF9800;
+//$orange:			#FF9800;
 $gray-border:       #b6b9c0;
+
+
+$orange50:          #fff3e0;
+$orange100:         #ffe0b2;
+$orange:            #ff9800;
+
+$font-size-btn-xs:  12px;
+$font-size-btn-sm:  20px;
+$font-size-btn-md:  28px;
+$font-size-btn-lg:  40px;
+
+
+//service section
+$light-gray-border: rgba(#000, 0.12);
 
 $xs: 0;
 $sm: 481px;

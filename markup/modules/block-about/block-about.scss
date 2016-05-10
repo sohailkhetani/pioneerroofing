@@ -1,1 +1,7 @@
-
+.section-about{
+	text-align: center;
+	@include margin(null null rem(50px));
+	&-image{
+		@include margin(rem(30px) null rem(30px));
+	}
+}

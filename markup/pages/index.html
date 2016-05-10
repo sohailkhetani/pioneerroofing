@@ -1,114 +1,24 @@
 <!doctype html>
-<html class="no-js" lang="ru">
+<html class="no-js" lang="en">
 
 	<head>
 		{{> head/head head.defaults}}
 	</head>
-	<style>
-		.block-main {
-			background: rgb(46, 150, 255); /* Old Browsers */
-			background: -moz-linear-gradient(top, rgb(46, 150, 255) 0%, rgb(5, 134, 240) 100%); /* FF3.6+ */
-			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(46, 150, 255)), color-stop(100%, rgb(5, 134, 240))); /* Chrome, Safari4+ */
-			background: -webkit-linear-gradient(top, rgb(46, 150, 255) 0%, rgb(5, 134, 240) 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top, rgb(46, 150, 255) 0%, rgb(5, 134, 240) 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top, rgb(46, 150, 255) 0%, rgb(5, 134, 240) 100%); /* IE 10+ */
-			background: linear-gradient(to bottom, rgb(46, 150, 255) 0%, rgb(5, 134, 240) 100%); /* W3C */
-			padding: 30px 0 60px;
-		}
-		.icon-wrapper::after{
-			clear: both;
-			content: "";
-			display: table;
-		}
-		.icon-inner {
-			float: left;
-			display: block;
-			margin-right: 2.35765%;
-			width: 14.70196%;
-			margin-left: 42.64902%;
-			margin-top: 4.375rem;
-		}
-		.icon-inner:last-child {
-			margin-right: 0;
-		}
-		.icon-letter{
-			width: 100%;
-			height: 100%;
-		}
-		.block-description{
-			color: #FAFAFA;
-			text-align: center;
-			margin-top: 30px;
-			margin-bottom: 60px;
-		}
-		.block-main-button{
-			text-align: center;
-		}
-		.block-main-button::after{
-			clear: both;
-			content: "";
-			display: table;
-		}
-		.button-primary {
-			background-color: #4CAF50;
-			padding: 15px 0;
-			font-size: 2rem;
-			text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-			float: left;
-			display: block;
-			margin-right: 2.35765%;
-			width: 82.94039%;
-			margin-left: 8.5298%;
-		}
-
-		.button-primary:last-child {
-			margin-right: 0;
-		}
-
-		.button-primary:hover, .button-primary:focus {
-			background-color: #3d8c40;
-			color: #FAFAFA;
-		}
-
-		.button-primary:disabled {
-			cursor: not-allowed;
-			opacity: 0.5;
-		}
-
-		.button-primary:disabled:hover {
-			background-color: #4CAF50;
-		}
-
-		@media screen and (min-width: 0) and (max-width: 481px) {
-			.button-primary {
-				float: left;
-				display: block;
-				margin-right: 2.35765%;
-				width: 100%;
-				margin-left: 0%;
-			}
-			.button-primary:last-child {
-				margin-right: 0;
-			}
-		}
-	</style>
 	<body>
 		<div class="wrapper">
 			<div class="svg-sprite">
 				%=symbols=%
 			</div>
-			{{> block-fold/block-fold}}
-
-			<main class="light-bg">
+			<header>
+				{{> block-fold/block-fold}}
+			</header>
+			<main>
 				<div class="container">
-					<!-- {{> accordion/accordion}} -->
-					<div class="block-underline-lg">
-						<div class="clearfix">
-							{{> block-service/block-service}}
-							{{> block-location/block-location}}
-						</div>
-					</div>
+					{{> block-service/block-service}}
+					{{> block-contact/block-contact}}
 					{{> block-about/block-about}}
+					{{> block-offered/block-offered}}
+					
 				</div>
 				<div class="dark-bg text-inverse padding-medium-y">
 					<div class="container">

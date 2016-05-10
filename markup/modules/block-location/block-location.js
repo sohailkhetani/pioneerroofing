@@ -1,2 +1,0 @@
-$('.media-height').matchHeight();
-

@@ -279,15 +279,10 @@ this.options)});b._afterUpdate&&b._afterUpdate(a,b._groups)};b._update=function(
 }));
 
 
-$('.js-accordion-trigger').bind('click', function (e) {
-    jQuery(this).parent().find('.submenu').slideToggle('fast');  // apply the toggle to the ul
-    jQuery(this).parent().toggleClass('is-expanded');
-    e.preventDefault();
-});
 
 
 
-$('.media-height').matchHeight();
+
 
 
 

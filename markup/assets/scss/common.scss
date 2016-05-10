@@ -12,6 +12,27 @@ body {
 svg{
 	max-height: 100%;
 }
+.divider-bottom{
+	position: relative;
+	&:before{
+		content: '';
+		width: 60%;
+		height: 2px;
+		background: $light-gray-border;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: -10px;
+		border-radius: 1px;
+	}
+}
+
+
+
+
+
+
 .float-right {
 	float: right;
 }
@@ -26,9 +47,6 @@ svg{
 	@include media(min-width $sm max-width $lg) {
 		display: none;
 	}
-}
-.light-bg {
-	background: $offwhite;
 }
 
 .dark-bg {

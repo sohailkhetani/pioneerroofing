@@ -1,95 +1,95 @@
-.block-dashed{
-	border: 2px dashed $textgray;
-	@include padding(25px);
-}
-.block-description{
-	font-size: rem(24px);
-}
-.block-underline{
-	@include clearfix;
-	position: relative;
-	padding-bottom: rem(40px);
-	&:before{
-		content: '';
-		width: 70%;
-		height: rem(2px);
-		background: $gray-border;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
-	}
-	&-xs{
-		@include media(min-width $xs max-width $sm) {
-		position: relative;
-		padding-bottom: rem(40px);
-		&:before{
-			content: '';
-			width: 70%;
-			height: rem(2px);
-			background: $gray-border;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			margin: auto;
-			}
-		}
-	}
-	&-sm{
-			position: relative;
-			padding-bottom: rem(40px);
-			&:before{
-				content: '';
-				width: 90%;
-				height: rem(2px);
-				background: $gray-border;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				margin: auto;
-			}
+// .block-dashed{
+// 	border: 2px dashed $textgray;
+// 	@include padding(25px);
+// }
+// .block-description{
+// 	font-size: rem(24px);
+// }
+// .block-underline{
+// 	@include clearfix;
+// 	position: relative;
+// 	padding-bottom: rem(40px);
+// 	&:before{
+// 		content: '';
+// 		width: 70%;
+// 		height: rem(2px);
+// 		background: $gray-border;
+// 		position: absolute;
+// 		bottom: 0;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 	}
+// 	&-xs{
+// 		@include media(min-width $xs max-width $sm) {
+// 		position: relative;
+// 		padding-bottom: rem(40px);
+// 		&:before{
+// 			content: '';
+// 			width: 70%;
+// 			height: rem(2px);
+// 			background: $gray-border;
+// 			position: absolute;
+// 			bottom: 0;
+// 			left: 0;
+// 			right: 0;
+// 			margin: auto;
+// 			}
+// 		}
+// 	}
+// 	&-sm{
+// 			position: relative;
+// 			padding-bottom: rem(40px);
+// 			&:before{
+// 				content: '';
+// 				width: 90%;
+// 				height: rem(2px);
+// 				background: $gray-border;
+// 				position: absolute;
+// 				bottom: 0;
+// 				left: 0;
+// 				right: 0;
+// 				margin: auto;
+// 			}
 
-	}
-	&-lg{
-		@include media(min-width $sm max-width $md) {
-			position: relative;
-			padding-bottom: rem(40px);
-			&:before{
-				content: '';
-				width: 90%;
-				height: rem(2px);
-				background: $gray-border;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				margin: auto;
-			}
-		}
-	}
-}
-.block-border-left{
-	@include media(min-width $xs max-width $sm) {
-		@include span-columns(12);
-	}
-	@include media(min-width $sm max-width $md) {
-		@include span-columns(6);
-		position: relative;
-	&:before{
-		content: '';
-		width: rem(2px);
-		height: 90%;
-		background: $gray-border;
-		position: absolute;
-		top:0;
-		bottom: 0;
-		right: 0;
-		margin: auto;
-	}
+// 	}
+// 	&-lg{
+// 		@include media(min-width $sm max-width $md) {
+// 			position: relative;
+// 			padding-bottom: rem(40px);
+// 			&:before{
+// 				content: '';
+// 				width: 90%;
+// 				height: rem(2px);
+// 				background: $gray-border;
+// 				position: absolute;
+// 				bottom: 0;
+// 				left: 0;
+// 				right: 0;
+// 				margin: auto;
+// 			}
+// 		}
+// 	}
+// }
+// .block-border-left{
+// 	@include media(min-width $xs max-width $sm) {
+// 		@include span-columns(12);
+// 	}
+// 	@include media(min-width $sm max-width $md) {
+// 		@include span-columns(6);
+// 		position: relative;
+// 	&:before{
+// 		content: '';
+// 		width: rem(2px);
+// 		height: 90%;
+// 		background: $gray-border;
+// 		position: absolute;
+// 		top:0;
+// 		bottom: 0;
+// 		right: 0;
+// 		margin: auto;
+// 	}
 
-	}
+// 	}
 	
-}
+// }

@@ -1,28 +1,81 @@
 .button-primary{
-	background-color: $green;
-	padding: 15px 0;
-	font-size: rem(32px);
-	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-	@include span-columns(10);
-	@include shift(1);
-	&:hover,
+	@include button(simple, $orange);
+	text-align: center;
+	border: none;
+	background-image: none;
+	color: $orange50;
+	border-radius: 4px;
+	text-shadow: none;
+	box-shadow: none;
+	font-size: rem($font-size-btn-sm);
+	font-style: italic;
+	@include padding(rem(10px) rem(20px));
+
+	//@include span-columns(8);
+	//@include shift(2);
+	&:hover:not(:disabled),
 	&:focus {
-		background-color: shade($green, 20%);
-		color: $lightgray;
+		box-shadow: none;
+		background-image: none;
+		background-color: invert($orange);
+		color: invert($orange50);
 	}
 	&:disabled {
 		cursor: not-allowed;
 		opacity: 0.5;
 
 		&:hover {
-			background-color: $green;
+			background-color: invert($orange);
 		}
 	}
-	@include media(min-width $xs max-width $sm){
-		@include span-columns(12);
-		@include shift(0);
+	@include media(min-width $sm max-width $lg){
+		@include padding(rem(10px) rem(40px));
+		font-size: rem($font-size-btn-md);
+	}
+	@include media(min-width $lg){
+		@include padding(rem(10px) rem(40px));
+		font-size: rem($font-size-btn-lg);
+	}
+	// @include media(min-width $xs max-width $sm){
+	// 	@include span-columns(12);
+	// 	@include shift(0);
+	// }
+}
+
+.button-mini{
+	@include button(simple, $orange100);
+	text-shadow: none;
+	box-shadow: none;
+	border: none;
+	background-image: none;
+	color: rgba(#000, 0.87);
+	font-size: rem($font-size-btn-xs);
+	border-radius: 2px;
+	&:hover:not(:disabled),
+	&:focus {
+		box-shadow: none;
+		background-image: none;
+		background-color: invert($orange100);
+		color: invert(rgba(#000, 0.87));
+	}
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+
+		&:hover {
+			background-color: invert($orange100);
+		}
 	}
 }
+.mini-button-group{
+	.button-mini{
+		+ .button-mini{
+			margin-left: 20px;
+		}
+	}
+}
+
+
 .button{
 	@include span-columns(10);
 	@include shift(1);
