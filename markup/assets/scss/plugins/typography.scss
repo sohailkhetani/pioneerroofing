@@ -13,10 +13,24 @@ body{
 	color: $body-color;
 }
 h1, .h1{
-	font-size: rem(36px);
+	color: $heading-color;
+	font-size: rem(24px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(48px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(58px);
+	}
 }
 h2, .h2{
-	font-size: rem(28px);
+	color: $heading-color;
+	font-size: rem(24px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(48px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(58px);
+	}
 }
 h3, .h3{
 	color: $heading-color;
@@ -29,6 +43,7 @@ h3, .h3{
 	}
 }
 h4, .h4{
+	color: $heading-color;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: rem(16px);
@@ -101,3 +116,5 @@ a{
 
 	}
 }
+
+

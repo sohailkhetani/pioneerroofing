@@ -297,6 +297,8 @@ this.options)});b._afterUpdate&&b._afterUpdate(a,b._groups)};b._update=function(
 
 
 
+
+
 $('.modal-button').on('click', function () {
 	var $this =  $(this);
 	var $parent = $this.closest('.modal-wrapper');
@@ -336,3 +338,6 @@ $("#sticker").sticky({
 	//getWidthFrom: ('.wrapper')
 
 });
+
+
+

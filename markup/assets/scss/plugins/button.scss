@@ -69,9 +69,7 @@
 }
 .mini-button-group{
 	.button-mini{
-		+ .button-mini{
-			margin-left: 20px;
-		}
+		@include margin(rem(5px) rem(5px));
 	}
 }
 

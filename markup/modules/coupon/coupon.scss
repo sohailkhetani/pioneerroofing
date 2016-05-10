@@ -1,0 +1,56 @@
+.coupon{
+	@include padding(rem(20px));
+	border: 1px dashed $orange;
+	text-align: center;
+	&-title{
+		color: $orange;
+		text-transform: uppercase;
+	}
+	&-number{
+		color: $orange;
+		font-size: rem(48px);
+		line-height: 1;
+		&-title{
+			position: relative;
+			display: inline-block;
+			&:before{
+				content: '';
+				width: 100%;
+				height: 1px;
+				background: rgba(#000, 0.87);
+				position: absolute;
+				top: -12px;
+				left: 0;
+				z-index: 1;
+			}
+		}
+		&-subtitle{
+			color: $blue;
+			font-style: italic;
+			font-weight: bold;
+		}
+	}
+	&-divider{
+		text-transform: uppercase;
+		background: #fff;
+		span{
+			display: inline-block;
+			background: #fff;
+			padding: 0 20px;
+			position: relative;
+			z-index: 2;
+		}
+	}
+	&-content{
+		&-text{
+			@include margin(rem(10px) null null);
+			span{
+				font-weight: bold;
+				font-style: italic;
+			}
+		}
+	}
+	&-button{
+		@include margin(rem(10px) null);
+	}
+}

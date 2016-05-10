@@ -1,5 +1,6 @@
 .comments{
 	@include clearfix;
+
 }
 .comment{
 	&-row{
@@ -12,7 +13,9 @@
 		@include clearfix;
 	}
 	@include padding(5px 15px);
-	border: 1px solid $gray-border;
+	border: 1px solid $orange;
+	background: $orange50;
+	color: $orange;
 	border-radius: 4px;
 	margin-bottom: 35px;
 	&-raiting{
@@ -24,12 +27,26 @@
 	&-link{
 		@include padding(8px);
 		@include span-columns(5);
+		position: relative;
+		&:before{
+			content:'';
+			width: 1px;
+			height: 90%;
+			background: $orange;
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
 		font-size: rem(16px);
+		a{
+			color: $orange;
+		}
 	}
 	&-body{
 		@include padding(20px 40px);
-		border-top: 1px solid $gray-border;
-		border-bottom: 1px solid $gray-border;
+		border-top: 1px solid $orange;
+		border-bottom: 1px solid $orange;
 		font-size: 16px;
 		.quote-right,
 		.quote-left{
@@ -50,14 +67,6 @@
 		@include padding(10px null null null);
 		@include clearfix;
 	}
-	&-avatar{
-		width: 28px;
-		height: 28px;
-		background: #000;
-		border-radius: 50%;
-		float: left;
-		margin-right: 15px;
-	}
 	&-social{
 		display: block;
 		
@@ -65,10 +74,22 @@
 		&-link{
 			display: block;
 			// padding: 5px 10px;
-			font-size: 32px;
+			font-size: rem(32px);
+			color: $orange;
 			// line-height: 2;
 			margin: 0 20px;
 			// background: $lightgray;
+			position: relative;
+		&:before{
+			content:'';
+			width: 1px;
+			height: 90%;
+			background: $orange;
+			position: absolute;
+			left: -25px;
+			top: 0;
+			bottom: 0;
+		}
 		}
 	}
 }

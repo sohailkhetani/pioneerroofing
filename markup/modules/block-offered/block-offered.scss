@@ -6,9 +6,9 @@
 }
 .media-list{
 	text-align: center;
-	@include margin(null null rem(60px));
+	@include margin(null null rem(30px));
 	&-title{
 		text-transform: uppercase;
-		@include margin(null null rem(60px));
+		@include margin(null null rem(30px));
 	}
 }

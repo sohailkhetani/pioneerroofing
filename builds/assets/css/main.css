@@ -850,8 +850,8 @@ svg {
   background-color: #001f4d;
 }
 
-.mini-button-group .button-mini + .button-mini {
-  margin-left: 20px;
+.mini-button-group .button-mini {
+  margin: 0.3125rem;
 }
 
 .button {
@@ -1467,11 +1467,37 @@ body {
 }
 
 h1, .h1 {
-  font-size: 2.25rem;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1140px) {
+  h1, .h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  h1, .h1 {
+    font-size: 3.625rem;
+  }
 }
 
 h2, .h2 {
-  font-size: 1.75rem;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1140px) {
+  h2, .h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  h2, .h2 {
+    font-size: 3.625rem;
+  }
 }
 
 h3, .h3 {
@@ -1492,6 +1518,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
+  color: rgba(0, 0, 0, 0.75);
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -1694,12 +1721,12 @@ a {
 
 .media-list {
   text-align: center;
-  margin-bottom: 3.75rem;
+  margin-bottom: 1.875rem;
 }
 
 .media-list-title {
   text-transform: uppercase;
-  margin-bottom: 3.75rem;
+  margin-bottom: 1.875rem;
 }
 
 .section-service {
@@ -1763,6 +1790,11 @@ a {
   text-align: center;
   margin-top: 20px;
   padding-bottom: 20px;
+}
+
+.bullets .bullet-link {
+  font-style: italic;
+  font-weight: bold;
 }
 
 .bullets .bullet-icon {
@@ -1884,7 +1916,9 @@ a {
 
 .comment {
   padding: 5px 15px;
-  border: 1px solid #b6b9c0;
+  border: 1px solid #ff9800;
+  background: #fff3e0;
+  color: #ff9800;
   border-radius: 4px;
   margin-bottom: 35px;
 }
@@ -1929,6 +1963,7 @@ a {
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
+  position: relative;
   font-size: 1rem;
 }
 
@@ -1936,10 +1971,25 @@ a {
   margin-right: 0;
 }
 
+.comment-link:before {
+  content: '';
+  width: 1px;
+  height: 90%;
+  background: #ff9800;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.comment-link a {
+  color: #ff9800;
+}
+
 .comment-body {
   padding: 20px 40px;
-  border-top: 1px solid #b6b9c0;
-  border-bottom: 1px solid #b6b9c0;
+  border-top: 1px solid #ff9800;
+  border-bottom: 1px solid #ff9800;
   font-size: 16px;
 }
 
@@ -1970,23 +2020,93 @@ a {
   display: table;
 }
 
-.comment-avatar {
-  width: 28px;
-  height: 28px;
-  background: #000;
-  border-radius: 50%;
-  float: left;
-  margin-right: 15px;
-}
-
 .comment-social {
   display: block;
 }
 
 .comment-social-link {
   display: block;
-  font-size: 32px;
+  font-size: 2rem;
+  color: #ff9800;
   margin: 0 20px;
+  position: relative;
+}
+
+.comment-social-link:before {
+  content: '';
+  width: 1px;
+  height: 90%;
+  background: #ff9800;
+  position: absolute;
+  left: -25px;
+  top: 0;
+  bottom: 0;
+}
+
+.coupon {
+  padding: 1.25rem;
+  border: 1px dashed #ff9800;
+  text-align: center;
+}
+
+.coupon-title {
+  color: #ff9800;
+  text-transform: uppercase;
+}
+
+.coupon-number {
+  color: #ff9800;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.coupon-number-title {
+  position: relative;
+  display: inline-block;
+}
+
+.coupon-number-title:before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  position: absolute;
+  top: -12px;
+  left: 0;
+  z-index: 1;
+}
+
+.coupon-number-subtitle {
+  color: #1565c0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.coupon-divider {
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.coupon-divider span {
+  display: inline-block;
+  background: #fff;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.coupon-content-text {
+  margin-top: 0.625rem;
+}
+
+.coupon-content-text span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.coupon-button {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 
 .footer {
@@ -2100,4 +2220,15 @@ a {
 .is-sticky .navbar-contact-icon {
   width: 24px;
   height: 100%;
+}
+
+.thumbnail {
+  text-align: center;
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+
+.thumbnail-header {
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
