@@ -1,0 +1,27 @@
+.flex{
+	@include display(flex);
+	&-top{
+		align-items: flex-start;
+	}
+	&-middle{
+		align-items: center;
+	}
+	&-bottom{
+		align-items: flex-end;
+	}
+	&-center {
+		justify-content: center;
+	}
+	&-right {
+		justify-content: flex-end;
+	}
+	&-space-between {
+		justify-content: space-between;
+	}
+	&-space-around {
+		justify-content: space-around;
+	}
+	&-column{
+		flex-direction: column;
+	}
+}

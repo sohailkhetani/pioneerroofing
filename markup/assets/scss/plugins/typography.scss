@@ -1,0 +1,86 @@
+html{
+	font-size: 16px;
+	@include media(min-width $sm max-width $lg) {
+		font-size: 18px;
+	}
+	@include media(min-width $lg) {
+		font-size: 22px;
+	}
+}
+body{
+	font-size: 1rem;
+	background: $body-bg;
+	color: $body-color;
+}
+h1, .h1{
+	color: $heading-color;
+	font-size: rem(24px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(48px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(58px);
+	}
+}
+h2, .h2{
+	color: $heading-color;
+	font-size: rem(24px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(48px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(58px);
+	}
+}
+h3, .h3{
+	color: $heading-color;
+	//font-size: modular-scale(1, $base-font-size, $golden);
+	font-size: rem(22px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(36px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(52px);
+	}
+}
+h4, .h4{
+	color: $heading-color;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: rem(16px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(36px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(52px);
+	}
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: rgba(#000, 0.87);
+	font-size: rem(16px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(18px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(22px);
+	}
+}
+a{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: rem(16px);
+	@include media(min-width $sm max-width $lg) {
+		font-size: rem(18px);
+	}
+	@include media(min-width $lg) {
+		font-size: rem(22px);
+	}
+}
+.text{
+	&-primary{
+		color: $orange;
+	}
+}
+

@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="svg-sprite">
+				%=symbols=%
+			</div>
+			<header>
+				{{> block-fold/block-fold}}
+			</header>
+			<main class="main">
+				<div class="container">
+					<div class="clearfix">
+						{{> block-service/block-service}}
+						{{> block-contact/block-contact}}
+					</div>
+					{{> block-about/block-about}}
+					{{> block-offered/block-offered}}
+				</div>
+				<section class="coupon-wrapper">
+					<div class="container">
+						{{> coupon/coupon}}
+					</div>
+				</section>
+				<div class="container">
+					{{> thumbnail-rock/thumbnail-rock}}
+					{{> comment/comment}}
+					{{> thumbnail-standarts/thumbnail-standarts}}
+				</div>
+				<section class="social-button-group visible-small">
+					<div class="social-button-group-row">
+						<div class="container">
+							{{> social-button/social-button}}
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				{{> footer/footer}}
+			</footer>
+
+		</div>
+
+		 
+		<script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+		<script>svg4everybody();</script>
+
+		<!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+		<script src="https://code.jquery.com/jquery-2.2.1%=min=%.js"></script>
+		<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+	</body>
+
+</html>

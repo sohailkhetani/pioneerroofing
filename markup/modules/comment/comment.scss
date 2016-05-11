@@ -1,0 +1,102 @@
+.comments{
+	@include clearfix;
+	@include margin(rem(60px) null);
+	@include media(min-width $xs max-width $sm) {
+		@include margin(0 null);
+	}
+}
+.comment{
+	&-row{
+		@include span-columns(6);
+		@include media(min-width $xs max-width $sm) {
+			@include span-columns(12);
+		}
+	}
+	&-head{
+		@include clearfix;
+	}
+	@include padding(5px 15px);
+	border: 1px solid $orange;
+	background: $orange50;
+	color: $orange;
+	border-radius: 4px;
+	margin-bottom: 35px;
+	&-raiting{
+		.ico-star-full{
+			color: $orange;
+			font-size: 28px;
+		}
+	}
+	&-link{
+		@include padding(8px);
+		@include span-columns(5);
+		position: relative;
+		text-transform: capitalize;
+		&:before{
+			content:'';
+			width: 1px;
+			height: 90%;
+			background: $orange;
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+		font-size: rem(16px);
+		a{
+			color: $orange;
+			display: inline-block;
+		}
+	}
+	&-body{
+		@include padding(rem(20px));
+		border-top: 1px solid $orange;
+		border-bottom: 1px solid $orange;
+		font-size: 16px;
+		text-align: center;
+		position: relative;
+		.quote-right,
+		.quote-left{
+			font-size: 56px;
+			line-height: 1;
+			position: absolute;
+		}
+		.quote-right{
+			top: 10px;
+			left: 0;
+		}
+		.quote-left{
+			bottom: -10px;
+			right: 0;
+		}
+	}
+	&-footer{
+		@include padding(10px null null null);
+		@include clearfix;
+	}
+	&-social{
+		float: right;
+		&-link{
+			display: block;
+			font-size: rem(32px);
+			color: $orange;
+			margin: 0 20px;
+			position: relative;
+		&:before{
+			content:'';
+			width: 1px;
+			height: 90%;
+			background: $orange;
+			position: absolute;
+			left: -25px;
+			top: 0;
+			bottom: 0;
+		}
+		}
+	}
+	&-avatar{
+		&-name{
+			float: left;
+		}
+	}
+}

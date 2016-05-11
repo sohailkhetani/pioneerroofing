@@ -1,0 +1,213 @@
+$icomoon-font-path: "../fonts" !default;
+
+$ico-bbb-pioneer-roofing-of-texas: "\e917";
+$ico-facebookicon: "\e91c";
+$ico-google-plus-icon-pioneer-roofing-of-texas: "\e91d";
+$ico-yelp-pioneer-texas: "\e91e";
+$ico-ic_mail: "\e91f";
+$ico-ic_person: "\e920";
+$ico-ic_phone: "\e921";
+$ico-about_us: "\e908";
+$ico-close_x: "\e909";
+$ico-hour_estimate: "\e90a";
+$ico-blog: "\e90b";
+$ico-career: "\e90c";
+$ico-financing: "\e90d";
+$ico-locations: "\e90e";
+$ico-more: "\e90f";
+$ico-network: "\e910";
+$ico-phone_icon: "\e911";
+$ico-pros: "\e912";
+$ico-refer_a_friend: "\e913";
+$ico-schedule: "\e914";
+$ico-services: "\e915";
+$ico-warranty: "\e916";
+$ico-phone: "\e900";
+$ico-envelop: "\e904";
+$ico-user: "\e901";
+$ico-star-empty: "\e902";
+$ico-star-full: "\e903";
+$ico-google-plus2: "\e905";
+$ico-google-plus3: "\e906";
+$ico-facebook2: "\e907";
+
+
+@font-face {
+    font-family: 'pioneerroofing';
+    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?e3l7s1');
+    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?e3l7s1#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/pioneerroofing.ttf?e3l7s1') format('truetype'),
+        url('#{$icomoon-font-path}/pioneerroofing.woff?e3l7s1') format('woff'),
+        url('#{$icomoon-font-path}/pioneerroofing.svg?e3l7s1#pioneerroofing') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'pioneerroofing' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-bbb-pioneer-roofing-of-texas {
+    &:before {
+        content: $ico-bbb-pioneer-roofing-of-texas;
+    }
+}
+.ico-facebookicon {
+    &:before {
+        content: $ico-facebookicon;
+    }
+}
+.ico-google-plus-icon-pioneer-roofing-of-texas {
+    &:before {
+        content: $ico-google-plus-icon-pioneer-roofing-of-texas;
+    }
+}
+.ico-yelp-pioneer-texas {
+    &:before {
+        content: $ico-yelp-pioneer-texas;
+    }
+}
+.ico-ic_mail {
+    &:before {
+        content: $ico-ic_mail;
+    }
+}
+.ico-ic_person {
+    &:before {
+        content: $ico-ic_person;
+    }
+}
+.ico-ic_phone {
+    &:before {
+        content: $ico-ic_phone;
+    }
+}
+.ico-about_us {
+    &:before {
+        content: $ico-about_us;
+    }
+}
+.ico-close_x {
+    &:before {
+        content: $ico-close_x;
+    }
+}
+.ico-hour_estimate {
+    &:before {
+        content: $ico-hour_estimate;
+    }
+}
+.ico-blog {
+    &:before {
+        content: $ico-blog;
+    }
+}
+.ico-career {
+    &:before {
+        content: $ico-career;
+    }
+}
+.ico-financing {
+    &:before {
+        content: $ico-financing;
+    }
+}
+.ico-locations {
+    &:before {
+        content: $ico-locations;
+    }
+}
+.ico-more {
+    &:before {
+        content: $ico-more;
+    }
+}
+.ico-network {
+    &:before {
+        content: $ico-network;
+    }
+}
+.ico-phone_icon {
+    &:before {
+        content: $ico-phone_icon;
+    }
+}
+.ico-pros {
+    &:before {
+        content: $ico-pros;
+    }
+}
+.ico-refer_a_friend {
+    &:before {
+        content: $ico-refer_a_friend;
+    }
+}
+.ico-schedule {
+    &:before {
+        content: $ico-schedule;
+    }
+}
+.ico-services {
+    &:before {
+        content: $ico-services;
+    }
+}
+.ico-warranty {
+    &:before {
+        content: $ico-warranty;
+    }
+}
+.ico-phone {
+    &:before {
+        content: $ico-phone;
+    }
+}
+.ico-envelop {
+    &:before {
+        content: $ico-envelop;
+    }
+}
+.ico-user {
+    &:before {
+        content: $ico-user;
+    }
+}
+.ico-star-empty {
+    &:before {
+        content: $ico-star-empty;
+    }
+}
+.ico-star-full {
+    &:before {
+        content: $ico-star-full;
+    }
+}
+.ico-google-plus2 {
+    &:before {
+        content: $ico-google-plus2;
+    }
+}
+.ico-google-plus3 {
+    &:before {
+        content: $ico-google-plus3;
+    }
+}
+.ico-facebook2 {
+    &:before {
+        content: $ico-facebook2;
+    }
+}
+
+
+

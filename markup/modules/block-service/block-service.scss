@@ -1,0 +1,34 @@
+.section-service{
+	border: 1px solid $light-gray-border;
+	@include margin(rem(60px) null);
+	@include padding(rem(30px) null);
+	text-align: center;
+	border-radius: 1px;
+	border-bottom: 8px solid $light-gray-border;
+	&-title{
+		text-transform: uppercase;
+		margin-bottom: 0;
+		display: inline-block;
+		position: relative;
+		&:before{
+			content:'';
+			width: 100%;
+			height: 3px;
+			border-radius: 1px;
+			background: $light-gray-border;
+			position: absolute;
+			left: 0;
+			bottom: -4px;
+		}
+	}
+	&-subtitle{
+		text-transform: uppercase;
+		text-align: center;
+		color: $orange;
+	}
+	&-content{
+		> div{
+			@include margin(null null rem(20px) null);
+		}
+	}
+}

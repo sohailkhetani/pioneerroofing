@@ -1,0 +1,54 @@
+.coupon{
+	&-wrapper{
+		background: $orange;
+		@include padding(rem(20px));
+		@include media(min-width $xs max-width $sm) {
+			@include padding(rem(20px) 0);
+		}
+	}
+	&-inner{
+		@include padding(rem(20px));
+		border: 5px dashed $orange50;
+		text-align: center;
+	}
+	&-title{
+		text-align: center;
+		text-transform: uppercase;
+		@include margin(null null rem(20px));
+		.coupon-text-color{
+			margin-bottom: 0;
+		}
+		&-date{
+			font-size: rem(24px);
+			@include media(min-width $xs max-width $sm) {
+				font-size: rem(16px);
+			}
+		}
+	}
+
+	&-content{
+		&-text{
+			color: $orange50;
+			@include margin(rem(10px) null null);
+			span{
+				font-weight: bold;
+				font-style: italic;
+			}
+		}
+	}
+	&-text-color{
+		color: $red;
+	}
+	&-button{
+		@include margin(rem(30px) rem(20px));
+		@include clearfix;
+		a{
+			@include span-columns(6);
+			@include margin(rem(10px) null);
+			@include padding(null rem(7px));
+			@include media(min-width $xs max-width $sm){
+				@include span-columns(12);
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.footer{
+	text-align: center;
+	&-brand{
+		display: block;
+		float: none;
+		text-align: center;
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		.footer-logo{
+			width: 100%;
+		}
+	}
+	&-top{
+		background: $orange;
+		color: #fff;
+		@include padding(rem(20px) null);
+		&-title{
+			color: #fff;
+			font-style: italic;
+			font-weight: bold;
+		}
+		&-content{
+			@include padding(null rem(20px));
+		}
+		&-button{
+			@include margin(rem(30px) null rem(10px));
+		}
+	}
+	&-middle{
+		background: $light-orange;
+		@include padding(rem(20px) null);
+		&-button{
+			@include margin(rem(20px) null rem(5px));
+		}
+		&-contact{
+			font-weight: bold;
+			color: rgba(#000, 0.75);
+			@include margin(rem(5px) null);
+			a{
+				color: rgba(#000, 0.75);
+			}
+		}
+	}
+	&-bottom{
+		@include padding(rem(10px) null);
+		background: $footer-bg;
+	}
+}

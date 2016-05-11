@@ -1,0 +1,14 @@
+.section-offered{
+	&-title{
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+.media-list{
+	text-align: center;
+	@include margin(null null rem(30px));
+	&-title{
+		text-transform: uppercase;
+		@include margin(null null rem(30px));
+	}
+}

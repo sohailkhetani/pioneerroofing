@@ -1,0 +1,48 @@
+
+
+.navbar{
+	padding: 0 20px;
+	&-brand{
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		.logo{
+			width: 275px;
+		}
+	}
+}
+
+.svg-sprite {
+	position: absolute;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+//sticky
+.is-sticky{
+	.navbar{
+		@include padding(rem(10) null);
+		z-index: 1000;
+		background: $orange50;
+		&-menu {
+			&-icon{
+				width: 24px;
+				height: 100%;
+			}
+		}
+		&-brand{
+			max-width: 40%;
+			.logo{
+				width: 275px;
+			}
+		}
+		&-contact{
+			&-icon{
+				width: 24px;
+				height: 100%;
+			}
+		}
+	}
+}
