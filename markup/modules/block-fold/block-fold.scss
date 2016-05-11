@@ -2,9 +2,22 @@
 	background: $orange50;
 	@include padding(rem(30px) 0 rem(50px));
 	padding: 30px 0 50px;
+	&-description{
+		@include clearfix;
+	}
 	&-list{
 		color: rgba(#000, 0.75);
 		counter-reset: list 0;
+		@include span-columns(10);
+		@include shift(1);
+		@include media(min-width $sm max-width $lg) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(min-width $lg) {
+			@include span-columns(6);
+			@include shift(3);
+		}
 		li{
 			font-size: rem(16px);
 			@include margin(null null rem(15px) null);
@@ -19,6 +32,15 @@
 				color: $orange;
 				line-height: 48px;
 				@include margin(null rem(30px) null null);
+				@include media(min-width $xs max-width $sm) {
+					@include margin(null rem(10px) null null);
+				}
+			}
+			@include media(min-width $sm max-width $lg) {
+				font-size: rem(18px);;
+			}
+			@include media(min-width $lg) {
+				font-size: rem(22px);;
 			}
 		}
 	}

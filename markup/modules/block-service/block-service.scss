@@ -1,7 +1,7 @@
 .section-service{
 	border: 1px solid $light-gray-border;
 	@include margin(rem(60px) null);
-	@include padding(rem(50px) null rem(30px));
+	@include padding(rem(30px) null);
 	text-align: center;
 	border-radius: 1px;
 	border-bottom: 8px solid $light-gray-border;

@@ -4,19 +4,17 @@
 	$dark-gray: #333 !default;
 	$base-font-color: $dark-gray !default;
 	$icon-bullet-size: 3.5rem;
-	//@include display(flex);
-	//@include flex-wrap(wrap);
 	margin-bottom: $base-line-height;
 	margin: 1rem;
 	overflow: auto;
 	padding: 0;
-	.bullets-row {
-		//@include flex-basis(20rem);
-		//@include flex-grow(1);
-		@include span-columns(6);
-		
-	}
+	@include clearfix;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
 	.bullet{
+		flex-basis: 20em;
+		flex-grow: 1;
 		text-align: center;
 		@include margin(20px null null null);
 		@include padding(null null 20px null);
@@ -53,57 +51,25 @@
 	p {
 		color: $base-font-color;
 		line-height: $base-line-height;
-		font-size: 16px;
+		font-size: rem(16px);
+		@include media(min-width $sm max-width $lg) {
+			font-size: rem(18px);
+		}
+		@include media(min-width $lg) {
+			font-size: rem(22px);
+		}
 	}
 	img {
 		max-width: 100%;
 	}
-	@include media(min-width $sm max-width $md) {
-		.bullet:first-child{
-			position: relative;
-			&:before{
-				content: '';
-				width: 70%;
-				height: rem(2px);
-				background: $gray-border;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				margin: auto;
-			}
-		}
-		.bullets-row:first-child{
-			position: relative;
-			@include padding(null 20px null null);
-			&:before{
-				content: '';
-				width: rem(2px);
-				height: 70%;
-				background: $gray-border;
-				position: absolute;
-				top:0;
-				bottom: 0;
-				right: 0;
-				margin: auto;
-			}
-		}
-	}
 	@include media(min-width $xs max-width $sm) {
 		.bullet{
-			//text-align: center;
 			@include span-columns(12);
 		}
 		.bullets-row {
 			@include span-columns(12);
 		}
-		// .bullet-icon{
-		// 	float: none;
-		// 	display: inline-block;
-		// }
-		// .bullet-content {
-		// 	margin-left: 0;
-		// 	margin-bottom: 0;
-		// }
 	}
 }
+
+

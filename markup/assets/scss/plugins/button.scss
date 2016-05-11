@@ -14,7 +14,8 @@
 	//@include span-columns(8);
 	//@include shift(2);
 	&:hover:not(:disabled),
-	&:focus {
+	&:focus:not(:disabled),
+	&:active:not(:disabled){
 		box-shadow: none;
 		background-image: none;
 		background-color: invert($orange);
@@ -28,18 +29,38 @@
 			background-color: invert($orange);
 		}
 	}
-	@include media(min-width $sm max-width $lg){
+	@include media(min-width $sm){
 		@include padding(rem(10px) rem(40px));
 		font-size: rem($font-size-btn-md);
 	}
-	@include media(min-width $lg){
-		@include padding(rem(10px) rem(40px));
-		font-size: rem($font-size-btn-lg);
-	}
+	// @include media(min-width $lg){
+	// 	@include padding(rem(10px) rem(40px));
+	// 	font-size: rem($font-size-btn-lg);
+	// }
 	// @include media(min-width $xs max-width $sm){
 	// 	@include span-columns(12);
 	// 	@include shift(0);
 	// }
+	&-inverse{
+		color: $orange;
+		background: $orange50;
+		&:hover:not(:disabled),
+		&:focus:not(:disabled),
+		&:active:not(:disabled){
+			box-shadow: none;
+			background-image: none;
+			background-color: invert($orange50);
+			color: invert($orange);
+		}
+		&:disabled {
+			cursor: not-allowed;
+			opacity: 0.5;
+
+			&:hover {
+				background-color: invert($orange50);
+			}
+		}
+	}
 }
 
 .button-mini{
@@ -52,7 +73,8 @@
 	font-size: rem($font-size-btn-xs);
 	border-radius: 2px;
 	&:hover:not(:disabled),
-	&:focus {
+	&:focus:not(:disabled),
+	&:active:not(:disabled) {
 		box-shadow: none;
 		background-image: none;
 		background-color: invert($orange100);
@@ -70,6 +92,45 @@
 .mini-button-group{
 	.button-mini{
 		@include margin(rem(5px) rem(5px));
+	}
+}
+.button-social{
+	@include button(simple, $orange100);
+	text-shadow: none;
+	box-shadow: none;
+	border: none;
+	background-image: none;
+	color: $orange;
+	border-radius: 4px;
+	font-size: rem(12px);
+	font-weight: bold;
+	@include margin(rem(20px) null);
+	position: relative;
+	@include padding(rem(2px) null rem(2px) rem(30px));
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	&:hover:not(:disabled),
+	&:focus:not(:disabled),
+	&:active:not(:disabled){
+		box-shadow: none;
+		background-image: none;
+		background-color: invert($orange100);
+		color: invert($orange);
+	}
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+
+		&:hover {
+			background-color: invert($orange100);
+		}
+	}
+	i{
+		font-size: rem(32px);
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 15px;
 	}
 }
 

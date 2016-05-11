@@ -9,6 +9,7 @@ body {
 .clearfix {
 	@include clearfix;
 }
+
 svg{
 	max-height: 100%;
 }
@@ -25,6 +26,11 @@ svg{
 		margin: auto;
 		bottom: -10px;
 		border-radius: 1px;
+	}
+	&-full{
+		&:before{
+			width: 100%;
+		}
 	}
 }
 
@@ -44,13 +50,18 @@ svg{
 	@include media(min-width $xs max-width $sm) {
 		display: block;
 	}
-	@include media(min-width $sm max-width $lg) {
+	@include media(min-width $sm) {
 		display: none;
 	}
 }
-
-.dark-bg {
-	background: $darkgray;
+.visible-large{
+	@include media(min-width $xs max-width $sm) {
+		display: none;
+	}
+	@include media(min-width $sm) {
+		display: block;
+	}
 }
+
 
 

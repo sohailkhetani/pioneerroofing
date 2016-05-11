@@ -24,24 +24,4 @@
 	&-column{
 		flex-direction: column;
 	}
-	&-order-1{
-		@include media(min-width $xs max-width $sm){
-			@include order(1);
-		}
-	}
-	&-order-2{
-		@include media(min-width $xs max-width $sm){
-			@include order(2);
-		}
-	}
-}
-.column{
-	&-shift{
-		@include media(min-width $xs max-width $sm){
-			@include shift(0);
-		}
-		@include media(min-width $sm max-width $md){
-			@include shift(2);
-		}
-	}
 }

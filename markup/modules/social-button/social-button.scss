@@ -1,0 +1,8 @@
+.social-button-group{
+	background: $light-orange;
+	@include clearfix;
+	&-row{
+		@include span-columns(8);
+		@include shift(2);
+	}
+}

@@ -1,12 +1,24 @@
 .section-contact{
 	border: 1px solid $orange;
 	@include margin(rem(60px) null);
-	@include padding(rem(50px) null rem(30px));
+	@include padding(rem(30px) null);
+	@include clearfix;
 	border-radius: 1px;
 	border-bottom: 8px solid $orange;
 	text-align: center;
+	@include media(min-width $xs max-width $sm) {
+		@include margin(0 null rem(60px) null);
+	}
+	&-img{
+		@include clearfix;
+		&-inner{
+			@include span-columns(4);
+			@include shift(4);
+		}
+	}
 	&-title{
-		
+		font-size: rem(22px);
+		font-weight: bold;
 		display: inline-block;
 		position: relative;
 		&:before{
@@ -21,16 +33,24 @@
 		}
 	}
 	&-content{
+		@include clearfix;
 		> div{
 			@include margin(null null rem(20px) null);
 		}
 		i{
 			max-width: 30px;
-			@include margin(null rem(20px) null null);
+			@include margin(null rem(15px) null null);
 		}
 	}
 	&-item{
 			text-align: left;
+			@include span-columns(10);
+			@include shift(1);
+			@include padding(null rem(20px));
+			@include media(min-width $md) {
+				@include span-columns(8);
+				@include shift(2);
+			}
 		}
 	&-link{
 		font-style: italic;

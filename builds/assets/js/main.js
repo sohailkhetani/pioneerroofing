@@ -299,45 +299,64 @@ this.options)});b._afterUpdate&&b._afterUpdate(a,b._groups)};b._update=function(
 
 
 
-$('.modal-button').on('click', function () {
-	var $this =  $(this);
-	var $parent = $this.closest('.modal-wrapper');
-	var $child = $parent.find('.modal');
-	setTimeout(function () {
-		$child.fadeIn();
-		$('.close').css({
-			'width': 60,
-			'height': 60
-		});
-		$('body').addClass('modal-open');
-	}, 200);
-	return false;
+// $('.modal-button').on('click', function () {
+// 	var $this =  $(this);
+// 	var $parent = $this.closest('.modal-wrapper');
+// 	var $child = $parent.find('.modal');
+// 	setTimeout(function () {
+// 		$child.fadeIn();
+// 		$('.close').css({
+// 			'width': 60,
+// 			'height': 60
+// 		});
+// 		$('body').addClass('modal-open');
+// 	}, 200);
+// 	return false;
+// });
+// $('.close').click(function () {
+// 	var $this =  $(this);
+// 	var $parent = $this.closest('.modal-wrapper');
+// 	var $child = $parent.find('.modal');
+// 	$child.fadeOut();
+// 	$('.close').css('width', '0px');
+// 	$('.close').css('height', '0px');
+// 	$('body').removeClass('modal-open');
+// });
+
+
+// $('.form-button').on('click', function(){
+// 	var $this =  $(this);
+// 	var $parent = $this.closest('.button-show');
+// 	var $child = $parent.find('.button-block');
+// 	$child.show();
+// 	$('.form-button').css('opacity', 0);
+// 	return false;
+// })
+
+
+
+
+
+
+
+
+'use strict';
+
+$(document).ready(function() {
+	sticky_init();
+	same_height();
 });
-$('.close').click(function () {
-	var $this =  $(this);
-	var $parent = $this.closest('.modal-wrapper');
-	var $child = $parent.find('.modal');
-	$child.fadeOut();
-	$('.close').css('width', '0px');
-	$('.close').css('height', '0px');
-	$('body').removeClass('modal-open');
-});
 
+function sticky_init(){
+	$("#sticker").sticky({
+		topSpacing: 0
+	});
+}
 
-$('.form-button').on('click', function(){
-	var $this =  $(this);
-	var $parent = $this.closest('.button-show');
-	var $child = $parent.find('.button-block');
-	$child.show();
-	$('.form-button').css('opacity', 0);
-	return false;
-})
-
-$("#sticker").sticky({
-	topSpacing: 0,
-	//getWidthFrom: ('.wrapper')
-
-});
-
-
-
+function same_height(){
+	if (!$().matchHeight) {
+		console.error('plugin matchHeight notfound');
+		return;
+	}
+	$('.same-height').matchHeight();
+}

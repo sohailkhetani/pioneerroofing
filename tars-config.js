@@ -18,7 +18,7 @@ module.exports = {
     "useJsLintAndHint": false,
     "jsPathsToConcatBeforeModulesJs": [],
     "lintJsCodeBeforeModules": false,
-    "jsPathsToConcatAfterModulesJs": [],
+    "jsPathsToConcatAfterModulesJs": ['./markup/assets/js/main.js'],
     "lintJsCodeAfterModules": false,
     "useBabel": false,
     "sourcemaps": {

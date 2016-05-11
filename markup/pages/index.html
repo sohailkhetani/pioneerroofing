@@ -12,31 +12,32 @@
 			<header>
 				{{> block-fold/block-fold}}
 			</header>
-			<main>
+			<main class="main">
 				<div class="container">
-					{{> block-service/block-service}}
-					{{> block-contact/block-contact}}
+					<div class="clearfix">
+						{{> block-service/block-service}}
+						{{> block-contact/block-contact}}
+					</div>
 					{{> block-about/block-about}}
 					{{> block-offered/block-offered}}
-					{{> coupon/coupon}}
+				</div>
+				<section class="coupon-wrapper">
+					<div class="container">
+						{{> coupon/coupon}}
+					</div>
+				</section>
+				<div class="container">
 					{{> thumbnail-rock/thumbnail-rock}}
 					{{> comment/comment}}
 					{{> thumbnail-standarts/thumbnail-standarts}}
 				</div>
-				<div class="dark-bg text-inverse padding-medium-y">
-					<div class="container">
-						<h3 class="text-center">Before You Call - Tips</h3>
-						<div class="text-content">
-							<div>Reviews About Us</div>
-							<div class="margin-bottom">Hi there. We understand that it can be tempting to call a roofer as soon as you see a leak. Although that may seem like to most safe guarded
-							approach, I show you why it may be benifitial to do some homework
-							before you call. It may save you some money ;)</div>
-							<div class="margin-bottom">If there is a leak which you can consistenly see get larger every time it rains, then call us immidiently. But, In the event that you have a major rain event in the area, when the amount rain per hour exceeds the average in your area, there may not be anything someone could do.</div>
-							<div class="margin-bottom">Before Calling a Roofer --- photos and confirm that roof got worse brfore calling, self checking tips</div>
-							<div class="margin-bottom">More tips here. Going to make a better version of this soon.</div>
+				<section class="social-button-group visible-small">
+					<div class="social-button-group-row">
+						<div class="container">
+							{{> social-button/social-button}}
 						</div>
 					</div>
-				</div>
+				</section>
 			</main>
 
 			<footer>
