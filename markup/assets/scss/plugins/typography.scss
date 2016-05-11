@@ -14,69 +14,31 @@ body{
 }
 h1, .h1{
 	color: $heading-color;
-	font-size: rem(24px);
-	@include media(min-width $sm max-width $lg) {
-		font-size: rem(48px);
-	}
-	@include media(min-width $lg) {
-		font-size: rem(58px);
-	}
+	@include font-size($h1-font-sizes);
 }
 h2, .h2{
 	color: $heading-color;
-	font-size: rem(24px);
-	@include media(min-width $sm max-width $lg) {
-		font-size: rem(48px);
-	}
-	@include media(min-width $lg) {
-		font-size: rem(58px);
-	}
+	@include font-size($h2-font-sizes);
 }
 h3, .h3{
 	color: $heading-color;
 	//font-size: modular-scale(1, $base-font-size, $golden);
-	font-size: rem(22px);
-	@include media(min-width $sm max-width $lg) {
-		font-size: rem(36px);
-	}
-	@include media(min-width $lg) {
-		font-size: rem(52px);
-	}
+	@include font-size($h3-font-sizes);
 }
 h4, .h4{
 	color: $heading-color;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: rem(16px);
-	@include media(min-width $sm max-width $lg) {
-		font-size: rem(36px);
-	}
-	@include media(min-width $lg) {
-		font-size: rem(52px);
-	}
+	@include font-size($h4-font-sizes);
 }
 p{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: rgba(#000, 0.87);
-	font-size: rem(16px);
-	@include media(min-width $sm max-width $lg) {
-		font-size: rem(18px);
-	}
-	@include media(min-width $lg) {
-		font-size: rem(22px);
-	}
+	@include font-size($p-font-sizes);
 }
 a{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: rem(16px);
-	@include media(min-width $sm max-width $lg) {
-		font-size: rem(18px);
-	}
-	@include media(min-width $lg) {
-		font-size: rem(22px);
-	}
+	@include font-size($p-font-sizes);
 }
 .text{
 	&-primary{
