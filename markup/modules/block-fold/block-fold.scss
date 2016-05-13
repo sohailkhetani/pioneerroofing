@@ -8,11 +8,13 @@
 	&-list{
 		color: rgba(#000, 0.75);
 		counter-reset: list 0;
+		padding-left: 4%;
 		@include span-columns(10);
 		@include shift(1);
 		@include media(min-width $sm max-width $lg) {
-			@include span-columns(8);
-			@include shift(2);
+			@include span-columns(6);
+			@include shift(3);
+			padding-left: 0;
 		}
 		@include media(min-width $lg) {
 			@include span-columns(6);
@@ -20,7 +22,7 @@
 		}
 		li{
 			font-size: rem(16px);
-			@include margin(null null rem(15px) null);
+			@include margin(null null rem(5px) null);
 			&:before{
 				counter-increment: list;
 				content: counter(list);
@@ -46,13 +48,19 @@
 	}
 	&-button{
 		text-align: center;
-		@include margin(rem(60px) null null);
+		@include margin(rem(30px) null null);
 	}
 }
 .icon-airplane-inner{
 	display: block;
-	width: 20%;
-	@include margin(rem(70px) auto rem(40px) auto);
+	//width: 20%;
+	@include span-columns(2);
+	@include shift(5);
+	@include margin(rem(20px) null rem(10px) null);
+	
+	// @include media(min-width $xs max-width $sm) {
+	// 	@include margin(rem(60px) null rem(40px) null);
+	// }
 }
 .icon-airplane {
 	width: 100%;

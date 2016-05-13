@@ -9,6 +9,9 @@
 		margin-right: auto;
 		.logo{
 			width: 275px;
+			@include media(min-width $sm) {
+				width: 420px;
+			}
 		}
 	}
 }
