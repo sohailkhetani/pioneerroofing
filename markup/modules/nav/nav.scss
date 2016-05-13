@@ -9,15 +9,11 @@
 		margin-right: auto;
 		.logo{
 			width: 275px;
+			@include media(min-width $sm) {
+				width: 420px;
+			}
 		}
 	}
-}
-
-.svg-sprite {
-	position: absolute;
-	height: 0;
-	width: 0;
-	visibility: hidden;
 }
 
 //sticky

@@ -4,16 +4,6 @@ $body-bg:           #fff;
 $body-color:        #424242;
 $heading-color:     rgba(#000, 0.75);
 
-$baseblue:			#2196F3;
-$offwhite:			#EEEEEE;
-$lightgray:			#FAFAFA;
-$darkgray:			#212121;
-$textgray:			#212121;
-$green:				#4CAF50;
-//$orange:			#FF9800;
-$gray-border:       #b6b9c0;
-
-
 $orange50:          #fff3e0;
 $orange100:         #ffe0b2;
 $orange:            #ff9800;
@@ -21,6 +11,7 @@ $blue:              #64b5f6;
 $light-orange:      #fcf3e0;
 $footer-bg:         #f6dfb3;
 $red:               #c9520e;
+$textgray:			#424242;
 
 $font-size-btn-xs:  12px;
 $font-size-btn-sm:  20px;
@@ -36,3 +27,32 @@ $sm: 600px;
 $md: 980px;
 $lg: 1140px;
 
+$h1-font-sizes: (
+  null  : 24px,
+  $sm : 48px,
+  $lg: 58px
+);
+
+$h2-font-sizes: (
+  null  : 24px,
+  $sm : 48px,
+  $lg: 58px
+);
+
+$h3-font-sizes: (
+  null  : 22px,
+  $sm : 36px,
+  $lg: 52px
+);
+
+$h4-font-sizes: (
+  null  : 16px,
+  $sm : 36px,
+  $lg: 52px
+);
+
+$p-font-sizes: (
+  null  : 16px,
+  $sm : 18px,
+  $lg: 22px
+);
