@@ -1593,7 +1593,7 @@ a {
   margin-right: 0;
 }
 
-@media screen and (min-width: 0) and (max-width: 600px) {
+@media screen and (min-width: 0) and (max-width: 860px) {
   .coupon-button a {
     float: left;
     display: block;

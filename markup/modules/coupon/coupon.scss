@@ -46,7 +46,7 @@
 			@include span-columns(6);
 			@include margin(rem(10px) null);
 			@include padding(null rem(7px));
-			@include media(min-width $xs max-width $sm){
+			@include media(min-width $xs max-width 860px){
 				@include span-columns(12);
 			}
 		}
