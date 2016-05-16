@@ -20,6 +20,7 @@
 		background-image: none;
 		background-color: invert($orange);
 		color: invert($orange50);
+		border: none;
 	}
 	&:disabled {
 		cursor: not-allowed;

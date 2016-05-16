@@ -36,6 +36,8 @@
 				@include margin(null rem(30px) null null);
 				@include media(min-width $xs max-width $sm) {
 					@include margin(null rem(10px) null null);
+					@include size(40px);
+					line-height: 38px;
 				}
 			}
 			@include media(min-width $sm max-width $lg) {
