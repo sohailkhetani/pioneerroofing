@@ -5,11 +5,22 @@
 	text-align: center;
 	border-radius: 1px;
 	border-bottom: 8px solid $light-gray-border;
+	&-img{
+		@include clearfix;
+		&-inner{
+			@include span-columns(4);
+			@include shift(4);
+		}
+	}
 	&-title{
+		font-size: rem(22px);
+		font-weight: bold;
 		text-transform: uppercase;
 		margin-bottom: 0;
 		display: inline-block;
 		position: relative;
+		@include padding(null rem(20px));
+		@include margin(null null rem(20px) null);
 		&:before{
 			content:'';
 			width: 100%;
@@ -18,13 +29,8 @@
 			background: $light-gray-border;
 			position: absolute;
 			left: 0;
-			bottom: -4px;
+			bottom: -10px;
 		}
-	}
-	&-subtitle{
-		text-transform: uppercase;
-		text-align: center;
-		color: $orange;
 	}
 	&-content{
 		> div{
