@@ -40,6 +40,9 @@
 			@-moz-document url-prefix() {
 				width: 150px;
 			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				width: 250px;
+			}
 		}
 	}
 	.bullet-content {
