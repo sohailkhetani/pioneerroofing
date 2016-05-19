@@ -18,8 +18,8 @@
 	&:active:not(:disabled){
 		box-shadow: none;
 		background-image: none;
-		background-color: invert($orange);
-		color: invert($orange50);
+		background-color: $orange900;
+		color: $orange50;
 		border: none;
 	}
 	&:disabled {
@@ -27,7 +27,7 @@
 		opacity: 0.5;
 
 		&:hover {
-			background-color: invert($orange);
+			background-color: $orange900;
 		}
 	}
 	@include media(min-width $sm){
@@ -50,15 +50,15 @@
 		&:active:not(:disabled){
 			box-shadow: none;
 			background-image: none;
-			background-color: invert($orange50);
-			color: invert($orange);
+			background-color: $orange900;
+			color: $orange50;
 		}
 		&:disabled {
 			cursor: not-allowed;
 			opacity: 0.5;
 
 			&:hover {
-				background-color: invert($orange50);
+				background-color: $orange900;
 			}
 		}
 	}
@@ -79,15 +79,15 @@
 		box-shadow: none;
 		background-image: none;
 		border: none;
-		background-color: invert($orange100);
-		color: invert(rgba(#000, 0.87));
+		background-color: $orange900;
+		color: $orange50;
 	}
 	&:disabled {
 		cursor: not-allowed;
 		opacity: 0.5;
 
 		&:hover {
-			background-color: invert($orange100);
+			background-color: $orange900;
 		}
 	}
 }
@@ -98,6 +98,7 @@
 }
 .button-social{
 	@include button(simple, $orange100);
+	//max-width: 200px;
 	text-shadow: none;
 	box-shadow: none;
 	border: none;
@@ -106,7 +107,7 @@
 	border-radius: 4px;
 	font-size: rem(12px);
 	font-weight: bold;
-	@include margin(rem(20px) null);
+	@include margin(rem(20px) null null);
 	position: relative;
 	@include padding(rem(2px) null rem(2px) rem(30px));
 	display: flex;
@@ -117,15 +118,16 @@
 	&:active:not(:disabled){
 		box-shadow: none;
 		background-image: none;
-		background-color: invert($orange100);
-		color: invert($orange);
+		background-color: $orange900;
+		color: $orange50;
+		border: none;
 	}
 	&:disabled {
 		cursor: not-allowed;
 		opacity: 0.5;
 
 		&:hover {
-			background-color: invert($orange100);
+			background-color: $orange900;
 		}
 	}
 	i{

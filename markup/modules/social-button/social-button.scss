@@ -1,8 +1,19 @@
 .social-button-group{
+	@include row;
 	background: $light-orange;
-	@include clearfix;
-	&-row{
-		@include span-columns(8);
-		@include shift(2);
+	@include padding(null null rem(20px));
+	//@include clearfix;
+	.social-button-group-column{
+		@include span-columns(10);
+		@include shift(1);
+		@include media(min-width $sm max-width $md) {
+			@include span-columns(6);
+			@include shift(0);
+			@include omega(2n);
+		}
+		@include media(min-width $md) {
+			@include span-columns(3);
+			@include shift(0);
+		}
 	}
 }

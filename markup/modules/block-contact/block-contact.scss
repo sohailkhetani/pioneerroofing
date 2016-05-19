@@ -21,6 +21,7 @@
 		font-weight: bold;
 		display: inline-block;
 		position: relative;
+		@include margin(null null rem(10px) null);
 		&:before{
 			content:'';
 			width: 100%;
