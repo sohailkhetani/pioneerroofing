@@ -9,7 +9,8 @@
     "gulp": "^3.9.0"
   },
   "devDependencies": {
-    "gulp-combine-mq": "^0.4.0"
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-uncss": "^1.0.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
