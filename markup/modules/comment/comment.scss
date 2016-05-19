@@ -6,11 +6,19 @@
 	}
 }
 .comment{
+	@include margin(null 5px);
+	// @include media(min-width $xs max-width $sm) {
+	// 	@include margin(null 0);
+	// }
 	&-row{
-		@include span-columns(6);
-		@include media(min-width $xs max-width $sm) {
-			@include span-columns(12);
-		}
+		// @include span-columns(6);
+		// @include media(min-width $xs max-width $sm) {
+		// 	@include span-columns(12);
+		// }
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
 	}
 	&-head{
 		@include clearfix;
@@ -21,15 +29,30 @@
 	color: $orange;
 	border-radius: 4px;
 	margin-bottom: 35px;
+	max-width: 410px;
+	@include media(min-width $sm max-width $md) {
+		max-width: 350px;
+	}
+	@include media(min-width $xs max-width $sm) {
+		max-width: 290px;
+		@include margin(null 0);
+	}
+	@include media(min-width $xs max-width 340px) {
+		@include padding(5px);
+	}
 	&-raiting{
+		@include padding(null null null 5px);
 		.ico-star-full{
 			color: $orange;
 			font-size: 28px;
+			@include media(min-width $xs max-width $sm) {
+				font-size: 24px;
+			}
 		}
 	}
 	&-link{
 		@include padding(8px);
-		@include span-columns(5);
+		//@include span-columns(5);
 		position: relative;
 		text-transform: capitalize;
 		&:before{
@@ -43,6 +66,9 @@
 			bottom: 0;
 		}
 		font-size: rem(16px);
+		@include media(min-width $xs max-width $sm) {
+			@include padding(5px);
+		}
 		a{
 			color: $orange;
 			display: inline-block;

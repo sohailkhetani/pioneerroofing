@@ -6,7 +6,7 @@
 	border-radius: 1px;
 	border-bottom: 8px solid $orange;
 	text-align: center;
-	@include media(min-width $xs max-width $sm) {
+	@include media(min-width $xs max-width $sm - 1) {
 		@include margin(0 null rem(60px) null);
 	}
 	&-img{
@@ -56,5 +56,27 @@
 	&-link{
 		font-style: italic;
 		font-weight: bold;
+	}
+}
+
+.same-height-wrapper{
+	@include display(flex);
+	@include justify-content(space-around);
+	@include media(min-width $xs max-width $md) {
+		display: block;
+	}
+}
+
+.same-height{
+	@include span-columns(12);
+	@include media(min-width $sm max-width $md) {
+		@include span-columns(6);
+		//@include shift(1);
+		// @include omega;
+	}
+	@include media(min-width $md) {
+		@include span-columns(5);
+		//@include shift(1);
+		// @include omega;
 	}
 }

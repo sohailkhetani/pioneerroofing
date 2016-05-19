@@ -4,10 +4,11 @@
 	&-image{
 		@include margin(rem(30px) null rem(30px));
 	}
-}
-.same-height{
-	@include span-columns(12);
-	@include media(min-width $sm) {
-		@include span-columns(6);
+	&-content{
+		@include padding(null rem(70px));
+		@include media(min-width $xs max-width $sm) {
+			@include padding(null 0);
+		}
 	}
 }
+
