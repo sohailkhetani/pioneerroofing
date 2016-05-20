@@ -4,6 +4,38 @@
 		{
 			"icon": {
 				"paths": [
+					"M868.504 290.765c-26.295 11.631-54.36 19.469-83.943 23.008 30.088-18.204 53.349-46.775 64.221-80.909-28.318 16.687-59.67 28.824-92.792 35.398-26.801-28.318-64.727-46.27-106.698-46.27-80.909 0-146.394 65.485-146.394 146.394 0 11.378 1.264 22.756 3.793 33.375-121.616-6.068-229.325-64.474-301.638-152.968-12.642 21.491-19.721 46.775-19.721 73.576 0 50.821 25.79 95.573 64.98 121.869-24.020-0.759-46.522-7.332-66.244-18.204 0 0.506 0 1.264 0 1.77 0 70.795 50.315 129.96 117.318 143.36-12.389 3.287-25.284 5.057-38.432 5.057-9.355 0-18.71-1.011-27.56-2.528 18.71 58.153 72.565 100.377 136.786 101.641-50.062 39.19-113.272 62.704-181.792 62.704-11.883 0-23.514-0.759-34.892-2.023 64.727 41.466 141.59 65.738 224.269 65.738 269.021 0 416.174-223.004 416.174-416.174 0-6.321-0.253-12.642-0.506-18.963 28.824-20.733 53.602-46.522 73.071-75.852z"
+				],
+				"attrs": [
+					{
+						"fill": "rgb(255, 152, 0)"
+					}
+				],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"TwitterLogo"
+				]
+			},
+			"attrs": [
+				{
+					"fill": "rgb(255, 152, 0)"
+				}
+			],
+			"properties": {
+				"order": 25,
+				"id": 0,
+				"prevSize": 32,
+				"code": 59690,
+				"name": "twitter"
+			},
+			"setIdx": 1,
+			"setId": 7,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
 					"M438.955 495.275c0-23.211-22.869-23.211-35.157-23.211v-27.307h143.36c64.171 0 73.728 34.133 74.411 44.032 0.683 10.581-4.437 28.672-17.749 38.229 13.653 7.509 25.259 20.821 25.259 40.619 0 30.037-22.187 52.224-62.805 52.224h-162.475v-27.989c25.259 0 35.157-9.216 35.157-25.941l49.835 19.456h55.979c12.288 0 22.187-8.533 22.187-19.456 0-10.581-9.899-19.456-22.187-19.456h-55.979v-34.475h53.931c10.24 0 18.773-7.168 18.773-16.384 0-8.875-8.533-16.384-18.773-16.384l-53.931 0.341v106.155c-16.725-6.485-33.451-12.971-49.835-19.456v-70.997z",
 					"M563.541 669.013l-25.941 154.965h-49.152l-25.941-154.965h-289.451v-25.6h679.936v25.6zM607.573 397.653c-5.803-4.096-5.803-15.36 1.707-20.139s25.259-27.989 22.869-53.589c-2.389-25.259-22.187-56.661-65.195-77.483-12.288-7.509-40.619-24.576-45.056-38.571-5.461 16.043 5.461 31.403 24.576 45.397s52.907 41.301 56.661 60.075-0.683 45.397-16.725 63.488c4.437-18.773 10.581-60.075-20.821-86.699s-66.56-52.907-67.243-90.112c-10.581 16.043-8.533 35.499 6.827 55.296 15.36 20.139 64.171 62.123 64.171 83.627s-3.072 43.349-21.504 58.709h-100.352c-21.504-14.677-38.912-36.181-36.864-59.392 2.389-23.211 17.067-36.864 29.013-45.397 8.533-6.144 44.373-34.816 35.157-57.344-9.216 19.456-24.576 35.499-46.080 49.493-20.139 13.312-36.864 32.768-36.864 53.931-0.683 17.408 6.144 36.864 18.432 46.763 6.827 5.461 8.875 9.216 7.168 11.947-6.144 0-10.923 4.437-10.923 9.557v7.509c0 5.461 4.779 9.557 10.923 9.557h190.123c6.144 0 10.923-4.437 10.923-9.557v-7.509c0.341-5.12-4.779-9.557-10.923-9.557 0 0 6.144 0 0 0z",
 					"M477.867 256.341c-3.072 11.264-20.821 30.037-32.085 41.984-11.605 11.947-25.259 29.355-23.893 48.811s16.043 29.355 32.768 37.547c4.437 1.365 10.581-0.683 3.072-7.851-7.509-7.509-19.115-17.408-18.432-36.181s6.827-30.037 18.432-40.619c11.605-10.923 19.456-27.648 20.139-43.691 0 0-0.683 16.043 0 0z",
@@ -12,10 +44,6 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
-				"tags": [
-					"bbb-pioneer-roofing-of-texas"
-				],
 				"colorPermutations": {
 					"2511400125515201255167381255183771": [
 						0,
@@ -24,12 +52,16 @@
 						1,
 						0
 					]
-				}
+				},
+				"tags": [
+					"bbb-pioneer-roofing-of-texas"
+				],
+				"grid": 0
 			},
 			"attrs": [],
 			"properties": {
 				"order": 16,
-				"id": 3,
+				"id": 0,
 				"prevSize": 32,
 				"code": 59671,
 				"codes": [
@@ -41,8 +73,8 @@
 				],
 				"name": "bbb-pioneer-roofing-of-texas"
 			},
-			"setIdx": 0,
-			"setId": 12,
+			"setIdx": 2,
+			"setId": 6,
 			"iconIdx": 0
 		},
 		{
@@ -56,15 +88,15 @@
 					}
 				],
 				"isMulticolor": false,
-				"grid": 0,
-				"tags": [
-					"facebookicon"
-				],
 				"colorPermutations": {
 					"2511400125515201255167381255183771": [
 						2
 					]
-				}
+				},
+				"tags": [
+					"facebookicon"
+				],
+				"grid": 0
 			},
 			"attrs": [
 				{
@@ -73,13 +105,13 @@
 			],
 			"properties": {
 				"order": 15,
-				"id": 2,
+				"id": 1,
 				"prevSize": 32,
 				"code": 59676,
 				"name": "facebookicon"
 			},
-			"setIdx": 0,
-			"setId": 12,
+			"setIdx": 2,
+			"setId": 6,
 			"iconIdx": 1
 		},
 		{
@@ -93,15 +125,15 @@
 					}
 				],
 				"isMulticolor": false,
-				"grid": 0,
-				"tags": [
-					"google-plus-icon-pioneer-roofing-of-texas"
-				],
 				"colorPermutations": {
 					"2511400125515201255167381255183771": [
 						2
 					]
-				}
+				},
+				"tags": [
+					"google-plus-icon-pioneer-roofing-of-texas"
+				],
+				"grid": 0
 			},
 			"attrs": [
 				{
@@ -110,13 +142,13 @@
 			],
 			"properties": {
 				"order": 14,
-				"id": 1,
+				"id": 2,
 				"prevSize": 32,
 				"code": 59677,
 				"name": "google-plus-icon-pioneer-roofing-of-texas"
 			},
-			"setIdx": 0,
-			"setId": 12,
+			"setIdx": 2,
+			"setId": 6,
 			"iconIdx": 2
 		},
 		{
@@ -130,15 +162,15 @@
 					}
 				],
 				"isMulticolor": false,
-				"grid": 0,
-				"tags": [
-					"yelp-pioneer-texas"
-				],
 				"colorPermutations": {
 					"2511400125515201255167381255183771": [
 						2
 					]
-				}
+				},
+				"tags": [
+					"yelp-pioneer-texas"
+				],
+				"grid": 0
 			},
 			"attrs": [
 				{
@@ -147,13 +179,13 @@
 			],
 			"properties": {
 				"order": 13,
-				"id": 0,
+				"id": 3,
 				"prevSize": 32,
 				"code": 59678,
 				"name": "yelp-pioneer-texas"
 			},
-			"setIdx": 0,
-			"setId": 12,
+			"setIdx": 2,
+			"setId": 6,
 			"iconIdx": 3
 		},
 		{
@@ -163,22 +195,22 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
 				"tags": [
 					"ic_mail_black_24px"
-				]
+				],
+				"grid": 0
 			},
 			"attrs": [],
 			"properties": {
 				"order": 17,
-				"id": 2,
+				"id": 4,
 				"prevSize": 32,
 				"code": 59679,
 				"name": "ic_mail"
 			},
-			"setIdx": 1,
-			"setId": 11,
-			"iconIdx": 0
+			"setIdx": 2,
+			"setId": 6,
+			"iconIdx": 4
 		},
 		{
 			"icon": {
@@ -187,22 +219,22 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
 				"tags": [
 					"ic_person_black_24px"
-				]
+				],
+				"grid": 0
 			},
 			"attrs": [],
 			"properties": {
 				"order": 18,
-				"id": 1,
+				"id": 5,
 				"prevSize": 32,
 				"code": 59680,
 				"name": "ic_person"
 			},
-			"setIdx": 1,
-			"setId": 11,
-			"iconIdx": 1
+			"setIdx": 2,
+			"setId": 6,
+			"iconIdx": 5
 		},
 		{
 			"icon": {
@@ -211,22 +243,22 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
 				"tags": [
 					"ic_phone_black_24px"
-				]
+				],
+				"grid": 0
 			},
 			"attrs": [],
 			"properties": {
 				"order": 19,
-				"id": 0,
+				"id": 6,
 				"prevSize": 32,
 				"code": 59681,
 				"name": "ic_phone"
 			},
-			"setIdx": 1,
-			"setId": 11,
-			"iconIdx": 2
+			"setIdx": 2,
+			"setId": 6,
+			"iconIdx": 6
 		},
 		{
 			"icon": {
@@ -243,14 +275,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 7,
-				"id": 0,
+				"id": 7,
 				"prevSize": 32,
 				"code": 59656,
 				"name": "about_us"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 0
+			"setId": 6,
+			"iconIdx": 7
 		},
 		{
 			"icon": {
@@ -267,14 +299,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 8,
-				"id": 1,
+				"id": 8,
 				"prevSize": 32,
 				"code": 59657,
 				"name": "close_x"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 1
+			"setId": 6,
+			"iconIdx": 8
 		},
 		{
 			"icon": {
@@ -292,14 +324,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 9,
-				"id": 2,
+				"id": 9,
 				"prevSize": 32,
 				"code": 59658,
 				"name": "hour_estimate"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 2
+			"setId": 6,
+			"iconIdx": 9
 		},
 		{
 			"icon": {
@@ -316,14 +348,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 10,
-				"id": 3,
+				"id": 10,
 				"prevSize": 32,
 				"code": 59659,
 				"name": "blog"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 3
+			"setId": 6,
+			"iconIdx": 10
 		},
 		{
 			"icon": {
@@ -340,14 +372,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 11,
-				"id": 4,
+				"id": 11,
 				"prevSize": 32,
 				"code": 59660,
 				"name": "career"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 4
+			"setId": 6,
+			"iconIdx": 11
 		},
 		{
 			"icon": {
@@ -364,14 +396,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 12,
-				"id": 5,
+				"id": 12,
 				"prevSize": 32,
 				"code": 59661,
 				"name": "financing"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 5
+			"setId": 6,
+			"iconIdx": 12
 		},
 		{
 			"icon": {
@@ -388,14 +420,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 13,
-				"id": 6,
+				"id": 13,
 				"prevSize": 32,
 				"code": 59662,
 				"name": "locations"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 6
+			"setId": 6,
+			"iconIdx": 13
 		},
 		{
 			"icon": {
@@ -412,14 +444,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 14,
-				"id": 7,
+				"id": 14,
 				"prevSize": 32,
 				"code": 59663,
 				"name": "more"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 7
+			"setId": 6,
+			"iconIdx": 14
 		},
 		{
 			"icon": {
@@ -436,14 +468,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 15,
-				"id": 8,
+				"id": 15,
 				"prevSize": 32,
 				"code": 59664,
 				"name": "network"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 8
+			"setId": 6,
+			"iconIdx": 15
 		},
 		{
 			"icon": {
@@ -460,14 +492,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 16,
-				"id": 9,
+				"id": 16,
 				"prevSize": 32,
 				"code": 59665,
 				"name": "phone_icon"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 9
+			"setId": 6,
+			"iconIdx": 16
 		},
 		{
 			"icon": {
@@ -484,14 +516,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 17,
-				"id": 10,
+				"id": 17,
 				"prevSize": 32,
 				"code": 59666,
 				"name": "pros"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 10
+			"setId": 6,
+			"iconIdx": 17
 		},
 		{
 			"icon": {
@@ -508,14 +540,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 18,
-				"id": 11,
+				"id": 18,
 				"prevSize": 32,
 				"code": 59667,
 				"name": "refer_a_friend"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 11
+			"setId": 6,
+			"iconIdx": 18
 		},
 		{
 			"icon": {
@@ -532,14 +564,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 19,
-				"id": 12,
+				"id": 19,
 				"prevSize": 32,
 				"code": 59668,
 				"name": "schedule"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 12
+			"setId": 6,
+			"iconIdx": 19
 		},
 		{
 			"icon": {
@@ -556,14 +588,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 20,
-				"id": 13,
+				"id": 20,
 				"prevSize": 32,
 				"code": 59669,
 				"name": "services"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 13
+			"setId": 6,
+			"iconIdx": 20
 		},
 		{
 			"icon": {
@@ -580,14 +612,14 @@
 			"attrs": [],
 			"properties": {
 				"order": 21,
-				"id": 14,
+				"id": 21,
 				"prevSize": 32,
 				"code": 59670,
 				"name": "warranty"
 			},
 			"setIdx": 2,
-			"setId": 10,
-			"iconIdx": 14
+			"setId": 6,
+			"iconIdx": 21
 		},
 		{
 			"icon": {
@@ -615,7 +647,7 @@
 				"code": 59648
 			},
 			"setIdx": 3,
-			"setId": 9,
+			"setId": 5,
 			"iconIdx": 0
 		},
 		{
@@ -644,7 +676,7 @@
 				"code": 59652
 			},
 			"setIdx": 3,
-			"setId": 9,
+			"setId": 5,
 			"iconIdx": 1
 		},
 		{
@@ -673,7 +705,7 @@
 				"code": 59649
 			},
 			"setIdx": 3,
-			"setId": 9,
+			"setId": 5,
 			"iconIdx": 2
 		},
 		{
@@ -702,7 +734,7 @@
 				"code": 59650
 			},
 			"setIdx": 3,
-			"setId": 9,
+			"setId": 5,
 			"iconIdx": 3
 		},
 		{
@@ -731,7 +763,7 @@
 				"code": 59651
 			},
 			"setIdx": 3,
-			"setId": 9,
+			"setId": 5,
 			"iconIdx": 4
 		},
 		{
@@ -758,7 +790,7 @@
 				"code": 59653
 			},
 			"setIdx": 3,
-			"setId": 9,
+			"setId": 5,
 			"iconIdx": 5
 		},
 		{
@@ -785,7 +817,7 @@
 				"code": 59654
 			},
 			"setIdx": 3,
-			"setId": 9,
+			"setId": 5,
 			"iconIdx": 6
 		},
 		{
@@ -812,7 +844,7 @@
 				"code": 59655
 			},
 			"setIdx": 3,
-			"setId": 9,
+			"setId": 5,
 			"iconIdx": 7
 		}
 	],

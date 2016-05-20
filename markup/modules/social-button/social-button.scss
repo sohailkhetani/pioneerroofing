@@ -1,19 +1,22 @@
 .social-button-group{
-	@include row;
-	background: $light-orange;
+	background: $orange100;
 	@include padding(null null rem(20px));
-	//@include clearfix;
 	.social-button-group-column{
-		@include span-columns(10);
-		@include shift(1);
-		@include media(min-width $sm max-width $md) {
-			@include span-columns(6);
-			@include shift(0);
-			@include omega(2n);
+		@include display(flex);
+		@include justify-content(space-around);
+		@include flex-wrap(wrap);
+		@include padding(null rem(200px));
+		> div{
+			flex-basis: 12em;
 		}
-		@include media(min-width $md) {
-			@include span-columns(3);
-			@include shift(0);
+		@include media(min-width $sm max-width 720px) {
+			@include padding(null rem(150px));
+		}
+		@include media(min-width $xs max-width $sm) {
+			@include padding(null rem(100px));
+		}
+		@include media(min-width $xs max-width 450px) {
+			@include padding(null rem(40px));
 		}
 	}
 }
