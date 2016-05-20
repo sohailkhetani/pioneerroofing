@@ -7,9 +7,10 @@
 	border-bottom: 8px solid $light-gray-border;
 	&-img{
 		@include clearfix;
+		@include padding(rem(10px) null);
 		&-inner{
-			@include span-columns(4);
-			@include shift(4);
+			@include span-columns(3);
+			@include shift(4.5);
 		}
 	}
 	&-title{
