@@ -721,7 +721,7 @@ body {
   display: inline-block;
   text-align: center;
   position: relative;
-  height: 50px;
+  height: 40px;
   width: 50px;
   -webkit-perspective: 500px;
   perspective: 500px;
@@ -733,14 +733,14 @@ body {
 
 @media screen and (min-width: 600px) and (max-width: 980px) {
   .counter .time {
-    height: 70px;
+    height: 50px;
     width: 70px;
   }
 }
 
 @media screen and (min-width: 980px) {
   .counter .time {
-    height: 100px;
+    height: 60px;
     width: 100px;
   }
 }
@@ -800,7 +800,7 @@ body {
   color: #fff3e0;
   display: block;
   font-size: 22px;
-  line-height: 52px;
+  line-height: 42px;
   overflow: hidden;
   position: absolute;
   text-align: center;
@@ -815,14 +815,14 @@ body {
 @media screen and (min-width: 600px) and (max-width: 980px) {
   .counter .count {
     font-size: 36px;
-    line-height: 70px;
+    line-height: 50px;
   }
 }
 
 @media screen and (min-width: 980px) {
   .counter .count {
     font-size: 52px;
-    line-height: 100px;
+    line-height: 60px;
   }
 }
 
@@ -1278,21 +1278,6 @@ a {
   }
 }
 
-.section-offered-title {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.media-list {
-  text-align: center;
-  margin-bottom: 1.875rem;
-}
-
-.media-list-title {
-  text-transform: uppercase;
-  margin-bottom: 1.875rem;
-}
-
 .block-main {
   background: #ffe0b2;
   padding: 1.875rem 0;
@@ -1347,6 +1332,21 @@ a {
 .block-main-button {
   text-align: center;
   margin-top: 1.25rem;
+}
+
+.section-offered-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.media-list {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.media-list-title {
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
 }
 
 .section-service {

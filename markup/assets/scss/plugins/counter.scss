@@ -10,7 +10,7 @@ $counter-fontsize:          22px !default;
 
 
 $counter-el-width:          50px !default;
-$counter-el-height:         50px !default;
+$counter-el-height:         40px !default;
 $counter-el-margin:         10px !default;
 $counter-el-background:     $orange !default;
 $counter-el-border-width:   1px !default;
@@ -66,11 +66,11 @@ $counter-seconds:           true !default;
 		backface-visibility: hidden;
 		transform: translateZ(0) translate3d(0, 0, 0);
 		@include media(min-width $sm max-width $md){
-			height: 70px;
+			height: 50px;
 			width: 70px;
 		}
 		@include media(min-width $md){
-			height: 100px;
+			height: 60px;
 			width: 100px;
 		}
 		&.weeks{
@@ -130,7 +130,7 @@ $counter-seconds:           true !default;
 		color: $counter-color;
 		display: block;
 		font-size: $counter-fontsize;
-		line-height: 52px;
+		line-height: 42px;
 		overflow: hidden;
 		position: absolute;
 		text-align: center;
@@ -140,11 +140,11 @@ $counter-seconds:           true !default;
 		transform-style: flat;
 		@include media(min-width $sm max-width $md){
 			font-size: 36px;
-			line-height: 70px;
+			line-height: 50px;
 		}
 		@include media(min-width $md){
 			font-size: 52px;
-			line-height: 100px;
+			line-height: 60px;
 		}
 		&.top{
 			border-radius: $counter-border-radius $counter-border-radius 0 0;
