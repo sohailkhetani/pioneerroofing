@@ -1,0 +1,222 @@
+$counter-background:        transparent !default;
+$counter-border-width:      0 !default;
+$counter-border-style:      solid !default;
+$counter-border-color:      transparent !default;
+$counter-border-radius:     3px !default;
+$counter-padding-x:         0 !default;
+$counter-padding-y:         0 !default;
+$counter-color:             $orange50 !default;
+$counter-fontsize:          22px !default;
+
+
+$counter-el-width:          50px !default;
+$counter-el-height:         50px !default;
+$counter-el-margin:         10px !default;
+$counter-el-background:     $orange !default;
+$counter-el-border-width:   1px !default;
+$counter-el-border-style:   solid !default;
+$counter-el-border-radius:  3px !default;
+$counter-el-border-color:   $orange !default;
+$counter-el-lineheight:     1 !default;
+
+$counter-dot:              true !default;
+$counter-dot-color:        $orange50 !default;
+$counter-dot-view:         ':' !default;
+$counter-dot-lineheight:    1 !default;
+
+$counter-label:             false !default;
+$counter-label-position:    true !default;
+$counter-label-fontsize:    15px !default;
+$counter-label-color:       #000 !default;
+$counter-animation:         true !default;
+
+$counter-week:              false !default;
+$counter-day:               false !default;
+$counter-seconds:           true !default;
+
+#counter-template {
+	display: none;
+}
+
+.counter {
+	&-wrapper{
+		text-align: center;
+		@include margin(rem(40px) null rem(20px));
+	}
+	display: inline-block;
+	padding: $counter-padding-y $counter-padding-x;
+	background: $counter-background;
+	border: $counter-border-width $counter-border-style $counter-border-color;
+	border-radius: $counter-border-radius;
+	background: $orange;
+	font-style: italic;
+	.time {
+		vertical-align: middle;
+		border-radius: $counter-el-border-radius;
+		display: inline-block;
+		text-align: center;
+		position: relative;
+		height: $counter-el-height;
+		width: $counter-el-width;
+		perspective: 500px;
+		backface-visibility: hidden;
+		transform: translateZ(0) translate3d(0, 0, 0);
+		@include media(min-width $sm max-width $md){
+			height: 70px;
+			width: 70px;
+		}
+		@include media(min-width $md){
+			height: 100px;
+			width: 100px;
+		}
+		&.weeks{
+			@if $counter-week !=true {
+				 display: none;
+			}
+		}
+		&.days{
+				@if $counter-day !=true {
+					 display: none;
+				}
+			}
+		&.seconds{
+			@if $counter-seconds !=true{
+				display: none;
+			}
+		}
+		+ .dot{
+			margin: 0 $counter-el-margin/2;
+		}
+	}
+	.dot {
+		@if $counter-dot{
+			display: inline-block;
+			vertical-align: middle;
+			font-style: italic;
+			&:before {
+				content: $counter-dot-view;
+				display: inline-block;
+				vertical-align: middle;
+				font-size: $counter-fontsize;
+				color: $counter-dot-color;
+				@include media(min-width $sm max-width $md){
+					font-size: 36px;
+				}
+				@include media(min-width $md){
+					font-size: 52px;
+				}
+			}
+			&.seconds {
+				display: none !important;
+			}
+			&.weeks{
+				@if $counter-week !=true {
+					 display: none;
+				}
+			}
+			&.days{
+				@if $counter-day !=true {
+					 display: none;
+				}
+			}
+		}
+	}
+	.count {
+		background: $counter-el-background;
+		color: $counter-color;
+		display: block;
+		font-size: $counter-fontsize;
+		line-height: $counter-el-height;
+		overflow: hidden;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+		transform: translateZ(0);
+		transform-style: flat;
+		@include media(min-width $sm max-width $md){
+			font-size: 36px;
+			line-height: 70px;
+		}
+		@include media(min-width $md){
+			font-size: 52px;
+			line-height: 100px;
+		}
+		&.top{
+			border-radius: $counter-border-radius $counter-border-radius 0 0;
+			height: 50%;
+			transform-origin: 50% 100%;
+		}
+		&.bottom{
+			//background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+			border-top: 1px solid $counter-el-border-color;
+			border-radius: 0 0 $counter-border-radius $counter-border-radius;
+			line-height: 0;
+			height: 50%;
+			top: 50%;
+			transform-origin: 50% 0;
+		}
+	}
+	.label {
+		@if $counter-label {
+			font-size: $counter-label-fontsize;
+			color: $counter-label-color;
+			margin-top: 5px;
+			display: block;
+			position: absolute;
+			width: 100%;
+			@if $counter-label-position {
+				top: 100%;
+			}
+			@else{
+				top: -50%;
+			}
+		}
+		@else{
+			display: none;
+		}
+	}
+	@if $counter-animation{
+			.count.curr.top {
+				transform: rotateX(0deg);
+				z-index: 3;
+			}
+
+			.count.next.bottom {
+				transform: rotateX(90deg);
+				z-index: 2;
+			}
+			.flip{
+				.count.curr.top {
+					transition: all 250ms ease-in-out;
+					transform: rotateX(-90deg);
+				}
+				.count.next.bottom {
+					transition: all 250ms ease-in-out 250ms;
+					transform: rotateX(0deg);
+				}
+			}
+	}
+	@else{
+		.count{
+			border: $counter-el-border-width $counter-el-border-style $counter-el-border-color;
+			line-height: $counter-el-height - ($counter-el-border-width * 2);
+			&.bottom{
+				background-image: none;
+			}
+		}
+		.count.top{
+			 border-bottom: none;
+		}
+		.count.bottom{
+			border-top: none;
+		}
+		.count.curr.top {
+			display: none;
+		}
+		.count.curr.bottom {
+			display: none;
+		}
+
+	}
+}

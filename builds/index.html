@@ -68,6 +68,20 @@
         </script>
 
 
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-W9993N" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            		})(window,document,'script','dataLayer','GTM-W9993N');
+        </script>
+        <!-- End Google Tag Manager -->
+
+
         <!--<script>
 		  (function(d) {
 		    var config = {
@@ -85,22 +99,55 @@
 
             <header>
                 <div class="block-main">
-                    <nav class="navbar">
+                    <div class="container">
+                        <nav class="navbar">
 
-                        <div class="flex flex-middle flex-space-around">
-                            <div>
-                                <a href="#" class="navbar-brand">
-                                    <img src="assets/images/general/logo_texas.svg" alt="" class="logo">
-                                </a>
+                            <div class="flex flex-center">
+                                <div>
+                                    <a href="#" class="navbar-brand">
+                                        <img src="assets/images/general/logo_texas.svg" alt="" class="logo">
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="cd-overlay-nav">
+                                        <span></span>
+                                    </div>
+                                    <!-- cd-overlay-nav -->
+
+                                    <div class="cd-overlay-content">
+                                        <span></span>
+                                    </div>
+                                    <!-- cd-overlay-content -->
+
+                                    <a href="#0" class="cd-nav-trigger"><span class="cd-icon"></span></a>
+                                    <nav>
+                                        <ul class="cd-primary-nav">
+                                            <li><a href="#0">menu item 1</a>
+                                            </li>
+                                            <li><a href="#0">menu item 2</a>
+                                            </li>
+                                            <li><a href="#0">menu item 3</a>
+                                            </li>
+                                            <li><a href="#0">menu item 4</a>
+                                            </li>
+                                            <li><a href="#0">menu item 5</a>
+                                            </li>
+                                            <li><a href="#0">menu item 6</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
-                        </div>
 
-                    </nav>
 
+                        </nav>
+                    </div>
                     <!-- id="sticker" -->
                     <div class="container">
                         <div class="counter-wrapper">
-                            <div class="counter"></div>
+                            <div class="counter">
+                                <div class="countdown-container" id="counter"></div>
+                            </div>
                         </div>
                         <div class="block-main-description">
                             <ul class="block-main-list">
@@ -115,6 +162,7 @@
                         </div>
                     </div>
                 </div>
+
             </header>
             <main class="main">
                 <div class="container">
@@ -601,6 +649,7 @@
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
         <script src="assets/js/main.min.js"></script>
+        <div id="counter-template"></div>
     </body>
 
 </html>
