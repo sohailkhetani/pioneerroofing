@@ -15,10 +15,12 @@ body{
 h1, .h1{
 	color: $heading-color;
 	@include font-size($h1-font-sizes);
+	font-weight: black;
 }
 h2, .h2{
 	color: $heading-color;
 	@include font-size($h2-font-sizes);
+	font-weight: book;
 }
 h3, .h3{
 	color: $heading-color;
@@ -28,6 +30,12 @@ h3, .h3{
 h4, .h4{
 	color: $heading-color;
 	@include font-size($h4-font-sizes);
+	font-weight: book;
+}
+h5, .h5{
+	color: $heading-color;
+	@include font-size($h4-font-sizes);
+	font-weight: bold;
 }
 p{
 	font-family: 'Open Sans', sans-serif;

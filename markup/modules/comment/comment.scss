@@ -1,5 +1,5 @@
 .comments{
-	@include clearfix;
+	//@include clearfix;
 	@include margin(rem(60px) null);
 	@include media(min-width $xs max-width $sm) {
 		@include margin(0 null);
@@ -21,7 +21,7 @@
 
 	}
 	&-head{
-		@include clearfix;
+		//@include clearfix;
 	}
 	@include padding(5px 15px);
 	border: 1px solid $orange;

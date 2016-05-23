@@ -16,7 +16,7 @@ module.exports = () => {
             ],
             'main:create-build',
             'css:uncss',
-            'css:combineMq',
+            //'css:combineMq',
             [
                 'css:compress-css'
             ],

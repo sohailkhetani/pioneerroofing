@@ -2,7 +2,7 @@ $counter-background:        transparent !default;
 $counter-border-width:      0 !default;
 $counter-border-style:      solid !default;
 $counter-border-color:      transparent !default;
-$counter-border-radius:     3px !default;
+$counter-border-radius:     4px !default;
 $counter-padding-x:         0 !default;
 $counter-padding-y:         0 !default;
 $counter-color:             $orange50 !default;
@@ -15,7 +15,7 @@ $counter-el-margin:         10px !default;
 $counter-el-background:     $orange !default;
 $counter-el-border-width:   1px !default;
 $counter-el-border-style:   solid !default;
-$counter-el-border-radius:  3px !default;
+$counter-el-border-radius:  4px !default;
 $counter-el-border-color:   $orange !default;
 $counter-el-lineheight:     1 !default;
 
@@ -42,6 +42,10 @@ $counter-seconds:           true !default;
 	&-wrapper{
 		text-align: center;
 		@include margin(rem(40px) null rem(20px));
+		will-change: transform;
+		position: relative; 
+		overflow: hidden;
+		font-size: 0;
 	}
 	display: inline-block;
 	padding: $counter-padding-y $counter-padding-x;
@@ -126,7 +130,7 @@ $counter-seconds:           true !default;
 		color: $counter-color;
 		display: block;
 		font-size: $counter-fontsize;
-		line-height: $counter-el-height;
+		line-height: 52px;
 		overflow: hidden;
 		position: absolute;
 		text-align: center;
