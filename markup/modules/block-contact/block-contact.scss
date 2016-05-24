@@ -53,10 +53,15 @@
 				@include span-columns(8);
 				@include shift(2);
 			}
+			a{
+				font-weight: normal;
+				font-size: 1rem;
+			}
 		}
 	&-link{
 		font-style: italic;
 		font-weight: bold;
+		display: block;
 	}
 }
 

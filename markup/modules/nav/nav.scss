@@ -15,6 +15,20 @@
 			}
 		}
 	}
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	&-menu{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50px;
+		@include media(min-width $xs max-width $sm){
+			width: 30px;
+		}
+	}
 }
 
 //sticky
@@ -134,11 +148,6 @@ $color-4: #ffffff; // white
 		@include transition-duration(0s);
 		@include transition-delay(0s);
 	}
-	// &.close-nav{
-	// 	position: fixed;
-	// 	top: 5%;
-
-	// }
 
 	&.close-nav:before {
 		/* user clicks on the .cd-nav-trigger element - 1st rounded background disappears */

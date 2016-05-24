@@ -31,18 +31,31 @@
 		@include padding(rem(20px) null);
 		&-button{
 			@include margin(rem(20px) null rem(5px));
-			@include display(flex);
-			@include justify-content(space-around);
-			@include media(min-width $xs max-width 860px){
-				display: block;
-			}
+			//@include display(flex);
+			@include clearfix;
+			//@include shift(1);
+			//@include justify-content(space-around);
+			// @include media(min-width $xs max-width 860px){
+			// 	display: block;
+			// }
 			a{
+				@include span-columns(6);
 				@include margin(null null rem(15px));
 				&:first-child{
 					@include media(min-width $xs max-width 860px){
 						order: 1;
 					}
 					order: 2;
+				}
+				@include media(min-width $sm max-width $md){
+					@include span-columns(8);
+					@include shift(2);
+					@include padding(0.625rem 1.5rem);
+				}
+				@include media(min-width $xs max-width $sm){
+					@include span-columns(10);
+					@include shift(1);
+					@include padding(0.625rem 1rem);
 				}
 			}
 		}
@@ -52,6 +65,9 @@
 			@include margin(rem(5px) null);
 			a{
 				color: rgba(#000, 0.75);
+			}
+			&-link{
+				@extend .h4;
 			}
 		}
 	}

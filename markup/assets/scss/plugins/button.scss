@@ -85,6 +85,10 @@
 				height: 40%;
 			}
 		}
+		@include media(min-width $sm){
+			@include padding(rem(10px) rem(80px) rem(10px) rem(20px));
+			font-size: rem($font-size-btn-md);
+		}
 		&:hover:not(:disabled),
 		&:focus:not(:disabled),
 		&:active:not(:disabled){
@@ -114,6 +118,7 @@
 		border: none;
 		background-color: $orange900;
 		color: $orange50;
+		outline: none;
 	}
 	&:disabled {
 		cursor: not-allowed;

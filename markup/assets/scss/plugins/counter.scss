@@ -20,7 +20,7 @@ $counter-el-border-color:   $orange !default;
 $counter-el-lineheight:     1 !default;
 
 $counter-dot:              true !default;
-$counter-dot-color:        $orange50 !default;
+$counter-dot-color:        $orange !default;
 $counter-dot-view:         ':' !default;
 $counter-dot-lineheight:    1 !default;
 
@@ -52,8 +52,8 @@ $counter-seconds:           true !default;
 	background: $counter-background;
 	border: $counter-border-width $counter-border-style $counter-border-color;
 	border-radius: $counter-border-radius;
-	background: $orange;
-	font-style: italic;
+	//background: $orange;
+	//font-style: italic;
 	.time {
 		vertical-align: middle;
 		border-radius: $counter-el-border-radius;
@@ -96,7 +96,7 @@ $counter-seconds:           true !default;
 		@if $counter-dot{
 			display: inline-block;
 			vertical-align: middle;
-			font-style: italic;
+			//font-style: italic;
 			&:before {
 				content: $counter-dot-view;
 				display: inline-block;
@@ -152,7 +152,7 @@ $counter-seconds:           true !default;
 			transform-origin: 50% 100%;
 		}
 		&.bottom{
-			//background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+			background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
 			border-top: 1px solid $counter-el-border-color;
 			border-radius: 0 0 $counter-border-radius $counter-border-radius;
 			line-height: 0;
