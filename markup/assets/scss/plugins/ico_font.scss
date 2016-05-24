@@ -1,5 +1,7 @@
 $icomoon-font-path: "../fonts" !default;
 
+$ico-google-plus-sm: "\e919";
+$ico-thumbtack: "\e918";
 $ico-twitter: "\e92a";
 $ico-bbb-pioneer-roofing-of-texas: "\e917";
 $ico-facebookicon: "\e91c";
@@ -35,11 +37,11 @@ $ico-facebook2: "\e907";
 
 @font-face {
     font-family: 'pioneerroofing';
-    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?75np8s');
-    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?75np8s#iefix') format('embedded-opentype'),
-        url('#{$icomoon-font-path}/pioneerroofing.ttf?75np8s') format('truetype'),
-        url('#{$icomoon-font-path}/pioneerroofing.woff?75np8s') format('woff'),
-        url('#{$icomoon-font-path}/pioneerroofing.svg?75np8s#pioneerroofing') format('svg');
+    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?h46pt7');
+    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?h46pt7#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/pioneerroofing.ttf?h46pt7') format('truetype'),
+        url('#{$icomoon-font-path}/pioneerroofing.woff?h46pt7') format('woff'),
+        url('#{$icomoon-font-path}/pioneerroofing.svg?h46pt7#pioneerroofing') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -59,6 +61,16 @@ $ico-facebook2: "\e907";
     -moz-osx-font-smoothing: grayscale;
 }
 
+.ico-google-plus-sm {
+    &:before {
+        content: $ico-google-plus-sm;
+    }
+}
+.ico-thumbtack {
+    &:before {
+        content: $ico-thumbtack;
+    }
+}
 .ico-twitter {
     &:before {
         content: $ico-twitter;

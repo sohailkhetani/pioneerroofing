@@ -14,6 +14,7 @@
         <meta content="telephone=no" name="format-detection">
         <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
         <meta name="HandheldFriendly" content="true">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href="assets/css/main.min.css" rel="stylesheet" type="text/css">
         <!--favicon-->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -65,37 +66,82 @@
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
-	<script>
-		  (function(d) {
-		    var config = {
-		      kitId: 'tjy0yvb',
-		      scriptTimeout: 3000,
-		      async: true
-		    },
-		    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-		  })(document);
-	</script>
+
+
+        <script>
+            (function(d) {
+            		    var config = {
+            		      kitId: 'tjy0yvb',
+            		      scriptTimeout: 3000,
+            		      async: true
+            		    },
+            		    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            		  })(document);
+        </script>
     </head>
 
     <body>
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-W9993N" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            		})(window,document,'script','dataLayer','GTM-W9993N');
+        </script>
+        <!-- End Google Tag Manager -->
         <div class="wrapper">
 
             <header>
                 <div class="block-main">
-                    <nav class="navbar">
+                    <div class="container">
+                        <nav class="navbar">
 
-                        <div class="flex flex-middle flex-space-around">
-                            <div>
-                                <a href="#" class="navbar-brand">
-                                    <img src="assets/images/general/logo_texas.svg" alt="" class="logo">
-                                </a>
+                            <div class="flex flex-center">
+                                <div>
+                                    <a href="#" class="navbar-brand">
+                                        <img src="assets/images/general/logo_texas.svg" alt="" class="logo">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="navbar-menu">
+                                        <img src="assets/images/general/menu_icon.svg" alt="">
+                                    </a>
+                                    <!-- <div class="cd-overlay-nav">
+									<span></span>
+								</div>
+								
+								<div class="cd-overlay-content">
+									<span></span>
+								</div>
+								
+								<a href="#" class="cd-nav-trigger"><span class="cd-icon"></span></a>
+								<nav>
+									<ul class="cd-primary-nav">
+										<li><a href="#">menu item 1</a></li>
+										<li><a href="#">menu item 2</a></li>
+										<li><a href="#">menu item 3</a></li>
+										<li><a href="#">menu item 4</a></li>
+										<li><a href="#">menu item 5</a></li>
+										<li><a href="#">menu item 6</a></li>
+									</ul>
+								</nav> -->
+                                </div>
                             </div>
-                        </div>
 
-                    </nav>
 
+                        </nav>
+                    </div>
                     <!-- id="sticker" -->
                     <div class="container">
+                        <div class="counter-wrapper">
+                            <div class="counter">
+                                <div class="countdown-container" id="counter"></div>
+                            </div>
+                        </div>
                         <div class="block-main-description">
                             <ul class="block-main-list">
                                 <li><span class="number">1</span>Tell us what you like.</li>
@@ -105,56 +151,15 @@
                             </ul>
                         </div>
                         <div class="block-main-button">
-                            <a href="https://docs.google.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform" class="button-primary button-primary-icon">GET A FAST ESTIMATE</a>
+                            <a href="https://docs.google.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform" class="button-primary button-primary-icon">GET A FAST ESTIMATE
+							</a>
                         </div>
                     </div>
                 </div>
+
             </header>
             <main class="main">
                 <div class="container">
-                    <div class="same-height-wrapper">
-                        <section class="section-service same-height">
-                            <div class="section-service-title">Service <span class="text-primary">Hours</span>
-                            </div>
-                            <div class="section-service-img">
-                                <div class="section-service-img-inner">
-                                    <img src="assets/images/general/clock.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="section-service-content">
-                                <div class="divider-bottom">
-                                    Monday - Friday - <b>7am - 8pm</b>
-                                </div>
-                                <div class="divider-bottom">
-                                    Saturday - <b>9am - 3pm</b>
-                                </div>
-                                <div>
-                                    Sunday - <b>Closed</b>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="section-contact same-height">
-                            <div class="section-contact-title">Manager’s <span class="text-primary">Contact</span>
-                            </div>
-                            <div class="section-contact-img">
-                                <div class="section-contact-img-inner">
-                                    <img src="assets/images/general/manager.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="section-contact-content">
-                                <div class="section-contact-content-title">9 Years of Experience</div>
-                                <div class="section-contact-item divider-bottom divider-bottom-full">
-                                    <i class="ico-ic_person"></i>Sam Karim
-                                </div>
-                                <div class="section-contact-item divider-bottom divider-bottom-full">
-                                    <i class="ico-ic_phone"></i>469-909-1423 Ext 6
-                                </div>
-                                <div class="section-contact-item">
-                                    <i class="ico-ic_mail"></i><a href="#" class="section-contact-link">Click to email</a>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
                     <section class="section-about">
                         <h3 class="section-about-title">ABOUT <span class="text-primary">US</span></h3>
                         <div class="section-about-image">
@@ -187,9 +192,9 @@
 								Roofing
 							</h4>
                             <div class="mini-button-group">
-                                <class="button-mini">Asphalt</a>
-                                <class="button-mini">Metal</a>
-                                <class="button-mini">Flat</a>
+                                <button type="button" class="button-mini">Asphalt</button>
+                                <button type="button" class="button-mini">Metal</button>
+                                <button type="button" class="button-mini">Flat</button>
                             </div>
                         </div>
                         <div class="media-list">
@@ -200,9 +205,9 @@
 								SIDING
 							</h4>
                             <div class="mini-button-group">
-                                <class="button-mini">Fiber Cement</a>
-                                <class="button-mini">Wood</a>
-                                <class="button-mini">Vinyl</a>
+                                <button type="button" class="button-mini">Fiber Cement</button>
+                                <button type="button" class="button-mini">Wood</button>
+                                <button type="button" class="button-mini">Vinyl</button>
                             </div>
                         </div>
                         <div class="media-list">
@@ -213,8 +218,8 @@
 								GUTTERS
 							</h4>
                             <div class="mini-button-group">
-                                <class="button-mini">Aluminum</a>
-                                <class="button-mini">Copper</a>
+                                <button type="button" class="button-mini">Aluminum</button>
+                                <button type="button" class="button-mini">Copper</button>
                             </div>
                         </div>
                         <div class="media-list">
@@ -225,9 +230,9 @@
 								LEAF GUARDS
 							</h4>
                             <div class="mini-button-group">
-                                <class="button-mini">Metal Screens</a>
-                                <class="button-mini">Plastic Screens</a>
-                                <class="button-mini">Helmets</a>
+                                <button type="button" class="button-mini">Metal Screens</button>
+                                <button type="button" class="button-mini">Plastic Screens</button>
+                                <button type="button" class="button-mini">Helmets</button>
                             </div>
                         </div>
                         <div class="media-list">
@@ -238,8 +243,8 @@
 								WINDOWS
 							</h4>
                             <div class="mini-button-group">
-                                <class="button-mini">Vinyl</a>
-                                <class="button-mini">Wood</a>
+                                <button type="button" class="button-mini">Vinyl</button>
+                                <button type="button" class="button-mini">Wood</button>
                             </div>
                         </div>
                     </section>
@@ -248,7 +253,7 @@
                     <div class="container">
                         <div class="coupon">
                             <div class="coupon-title visible-large">
-                                <h3 class="coupon-text-color">ACHRITECTURAL SHINGLE SALE</h3>
+                                <h3 class="coupon-text-color">ARCHIRECTURAL SHINGLE SALE!!</h3>
                                 <div class="coupon-title-date">EXPIRES : 07/30/16</div>
                             </div>
                             <div class="coupon-inner">
@@ -266,7 +271,7 @@
                                 </div>
                             </div>
                             <div class="coupon-button">
-                                <a href="#" class="button-primary button-primary-inverse">OPEN COUPON PDF</a>
+                                <a href="pdf/coupon_alone.pdf" class="button-primary button-primary-inverse">OPEN COUPON PDF</a>
                                 <a href="#" class="button-primary button-primary-inverse">SHARE THIS COUPON</a>
                             </div>
                         </div>
@@ -322,6 +327,129 @@
                                 </div>
                             </div>
                         </div>
+                    </section>
+                    <div class="comments">
+                        <div class="comment-row">
+                            <div class="comment">
+                                <div class="comment-head flex flex-middle">
+                                    <div class="comment-link">
+                                        <a href="#">Read review</a>
+                                    </div>
+                                    <div class="comment-raiting">
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    <span class="quote-right">&#8220;</span> Very professional, very businesslike, nobody is trying to be your new "friend". They come in and get right to business. Not once did any of them slow down. Truly amazing!
+                                    <span class="quote-left">&#8221;</span>
+                                </div>
+                                <div class="comment-footer">
+                                    <div class="comment-avatar-name">
+                                        <b>Katty Cakes</b>
+                                        <br>
+                                        <div>Texas</div>
+                                    </div>
+                                    <div class="comment-social">
+                                        <a href="https://www.thumbtack.com/profile/services/QMo9Q9wQ9sMtkQ/edit" class="comment-social-link">
+                                            <i class="ico-thumbtack"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-head flex flex-middle">
+                                    <div class="comment-link">
+                                        <a href="#">Read review</a>
+                                    </div>
+                                    <div class="comment-raiting">
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    <span class="quote-right">&#8220;</span> Very professional, very businesslike, nobody is trying to be your new "friend". They come in and get right to business. Not once did any of them slow down. Truly amazing!
+                                    <span class="quote-left">&#8221;</span>
+                                </div>
+                                <div class="comment-footer">
+                                    <div class="comment-avatar-name">
+                                        <b>Katty Cakes</b>
+                                        <br>
+                                        <div>Texas</div>
+                                    </div>
+                                    <div class="comment-social">
+                                        <a href="https://plus.google.com/u/1/b/103126837041410140059/103126837041410140059/about?pageId=103126837041410140059&hl=en" class="comment-social-link"><i class="ico-google-plus-icon-pioneer-roofing-of-texas"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div class="comment-row"> -->
+                            <div class="comment">
+                                <div class="comment-head flex flex-middle">
+                                    <div class="comment-link">
+                                        <a href="#">Read review</a>
+                                    </div>
+                                    <div class="comment-raiting">
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    <span class="quote-right">&#8220;</span> Very professional, very businesslike, nobody is trying to be your new "friend". They come in and get right to business. Not once did any of them slow down. Truly amazing!
+                                    <span class="quote-left">&#8221;</span>
+                                </div>
+                                <div class="comment-footer">
+                                    <div class="comment-avatar-name">
+                                        <b>Katty Cakes</b>
+                                        <br>
+                                        <div>Texas</div>
+                                    </div>
+                                    <div class="comment-social">
+                                        <a href="https://plus.google.com/u/1/b/103126837041410140059/103126837041410140059/about?pageId=103126837041410140059&hl=en" class="comment-social-link"><i class="ico-google-plus-icon-pioneer-roofing-of-texas"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-head flex flex-middle">
+                                    <div class="comment-link">
+                                        <a href="#">Read review</a>
+                                    </div>
+                                    <div class="comment-raiting">
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                        <i class="ico-star-full"></i>
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    <span class="quote-right">&#8220;</span> Very professional, very businesslike, nobody is trying to be your new "friend". They come in and get right to business. Not once did any of them slow down. Truly amazing!
+                                    <span class="quote-left">&#8221;</span>
+                                </div>
+                                <div class="comment-footer">
+                                    <div class="comment-avatar-name">
+                                        <b>Katty Cakes</b>
+                                        <br>
+                                        <div>Texas</div>
+                                    </div>
+                                    <div class="comment-social">
+                                        <a href="https://www.thumbtack.com/profile/services/QMo9Q9wQ9sMtkQ/edit" class="comment-social-link">
+                                            <i class="ico-thumbtack"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <section class="thumbnail">
                         <h2 class="thumbnail-header"><span class="text-primary">HIGHEST</span> STANDARDS</h2>
                         <div class="bullets">
@@ -366,7 +494,7 @@
                                 </div>
                                 <div class="bullet-content">
                                     <h2>REFERRAL PROGRAM</h2>
-                                    <p>Keep track of every customer that you send our way. Get a personalized link, send it to your friends, keep track of clicks, conversions, and commisions. It’s awesome. 
+                                    <p>Keep track of every customer that you send our way. Get a personalized link, send it to your friends, keep track of clicks, conversions, and commisions. It’s awesome. <a href="#" class="text-primary bullet-link">Try it here</a>
                                     </p>
                                 </div>
                             </div>
@@ -383,6 +511,50 @@
                             </div>
                         </div>
                     </section>
+                    <div class="same-height-wrapper">
+                        <section class="section-service same-height">
+                            <div class="section-service-title">Service <span class="text-primary section-service-title-subtitle">Hours</span>
+                            </div>
+                            <div class="section-service-img">
+                                <div class="section-service-img-inner">
+                                    <img src="assets/images/general/clock.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="section-service-content">
+                                <div class="section-service-content-title">Open 24 hours for emergencies</div>
+                                <div class="divider-bottom">
+                                    Monday - Friday - <b>7am - 8pm</b>
+                                </div>
+                                <div class="divider-bottom">
+                                    Saturday - <b>9am - 3pm</b>
+                                </div>
+                                <div>
+                                    Sunday - <b>Closed</b>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-contact same-height">
+                            <div class="section-contact-title">Manager’s <span class="text-primary">Contact</span>
+                            </div>
+                            <div class="section-contact-img">
+                                <div class="section-contact-img-inner">
+                                    <img src="assets/images/general/manager.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="section-contact-content">
+                                <div class="section-contact-content-title">9 Years of Experience</div>
+                                <div class="section-contact-item divider-bottom divider-bottom-full">
+                                    <i class="ico-ic_person"></i>Sam Karim
+                                </div>
+                                <div class="section-contact-item divider-bottom divider-bottom-full">
+                                    <a href="tel:469-909-1426"><i class="ico-ic_phone"></i>469-909-1426 Ext 6</a>
+                                </div>
+                                <div class="section-contact-item">
+                                    <a href="mailto:sohailkhetani@gmail.com" class="section-contact-link"><i class="ico-ic_mail"></i>Click to email</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
                 <section class="social-button-group">
                     <div class="container">
@@ -401,7 +573,7 @@
                             </div>
                             <div>
                                 <a href="https://plus.google.com/u/1/b/103126837041410140059/103126837041410140059/about?pageId=103126837041410140059&hl=en" class="button-social">
-                                    <i class="ico-google-plus-icon-pioneer-roofing-of-texas"></i> 
+                                    <i class="ico-google-plus-sm"></i> 
                                     <span>Google</span>
                                 </a>
                             </div>
@@ -440,7 +612,7 @@
                     <div class="footer-middle">
                         <div class="container">
                             <div class="footer-middle-content">
-                                <h4 class="footer-middle-contact">Call us : 844-947-7663</h4>
+                                <h4 class="footer-middle-contact">Call us : <a href="tel:844-947-7663" class="footer-middle-contact-link">844-947-7663</a></h4>
                                 <p>Dallas : Ext - 11</p>
                                 <p>Austin : Ext - 12</p>
                                 <p>Houston : Ext - 13</p>
@@ -459,7 +631,7 @@
                         <div class="container">
                             <div>
                                 <a href="#" class="footer-brand">
-                                    <img src="assets/images/general/committedtoinnovation.svg" alt="" class="footer-logo">
+                                    <img src="assets/images/general/build-to-last.png" alt="" class="footer-logo">
                                 </a>
                             </div>
                         </div>
@@ -476,6 +648,7 @@
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
         <script src="assets/js/main.min.js"></script>
+        <div id="counter-template"></div>
     </body>
 
 </html>

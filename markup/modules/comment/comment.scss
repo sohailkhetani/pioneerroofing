@@ -1,5 +1,5 @@
 .comments{
-	@include clearfix;
+	//@include clearfix;
 	@include margin(rem(60px) null);
 	@include media(min-width $xs max-width $sm) {
 		@include margin(0 null);
@@ -21,7 +21,7 @@
 
 	}
 	&-head{
-		@include clearfix;
+		//@include clearfix;
 	}
 	@include padding(5px 15px);
 	border: 1px solid $orange;
@@ -34,7 +34,7 @@
 		max-width: 350px;
 	}
 	@include media(min-width $xs max-width $sm) {
-		max-width: 290px;
+		// max-width: 290px;
 		@include margin(null 0);
 	}
 	@include media(min-width $xs max-width 340px) {
@@ -98,13 +98,16 @@
 	}
 	&-footer{
 		@include padding(10px null null null);
-		@include clearfix;
+		//@include clearfix;
+		@include display(flex);
+		@include justify-content(space-between);
+		@include align-items(center);
 	}
 	&-social{
-		float: right;
+		//float: right;
 		&-link{
 			display: block;
-			font-size: rem(32px);
+			//font-size: rem(32px);
 			color: $orange;
 			margin: 0 20px;
 			position: relative;
@@ -122,7 +125,7 @@
 	}
 	&-avatar{
 		&-name{
-			float: left;
+			//float: left;
 		}
 	}
 }
