@@ -1449,10 +1449,6 @@ a {
   margin-right: auto;
 }
 
-.footer-brand .footer-logo {
-  width: 100%;
-}
-
 .footer-top {
   background: #ff9800;
   color: #fff;
@@ -1524,7 +1520,6 @@ a {
 
 .footer-bottom {
   padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
   background: #f6dfb3;
 }
 

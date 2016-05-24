@@ -7,9 +7,9 @@
 		max-width: 50%;
 		margin-left: auto;
 		margin-right: auto;
-		.footer-logo{
-			width: 100%;
-		}
+		// .footer-logo{
+		// 	width: 100%;
+		// }
 	}
 	&-top{
 		background: $orange;
@@ -72,7 +72,7 @@
 		}
 	}
 	&-bottom{
-		@include padding(rem(10px) null);
+		@include padding(rem(10px) null null);
 		background: $footer-bg;
 	}
 }
