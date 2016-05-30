@@ -19,7 +19,7 @@ $counter-el-border-radius:  4px !default;
 $counter-el-border-color:   $orange !default;
 $counter-el-lineheight:     1 !default;
 
-$counter-dot:              true !default;
+$counter-dot:              false !default;
 $counter-dot-color:        $orange !default;
 $counter-dot-view:         ':' !default;
 $counter-dot-lineheight:    1 !default;
@@ -41,7 +41,7 @@ $counter-seconds:           true !default;
 .counter {
 	&-wrapper{
 		text-align: center;
-		@include margin(rem(40px) null rem(20px));
+		@include margin(rem(20px) null rem(20px));
 		will-change: transform;
 		position: relative; 
 		overflow: hidden;

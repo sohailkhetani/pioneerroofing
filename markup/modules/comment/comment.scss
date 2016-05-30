@@ -10,6 +10,9 @@
 	// @include media(min-width $xs max-width $sm) {
 	// 	@include margin(null 0);
 	// }
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	&-row{
 		// @include span-columns(6);
 		// @include media(min-width $xs max-width $sm) {
@@ -22,6 +25,7 @@
 	}
 	&-head{
 		//@include clearfix;
+		border-bottom: 1px solid $orange;
 	}
 	@include padding(5px 15px);
 	border: 1px solid $orange;
@@ -76,8 +80,8 @@
 	}
 	&-body{
 		@include padding(rem(20px));
-		border-top: 1px solid $orange;
-		border-bottom: 1px solid $orange;
+		//border-top: 1px solid $orange;
+		//border-bottom: 1px solid $orange;
 		font-size: 16px;
 		text-align: center;
 		position: relative;
@@ -97,6 +101,7 @@
 		}
 	}
 	&-footer{
+		border-top: 1px solid $orange;
 		@include padding(10px null null null);
 		//@include clearfix;
 		@include display(flex);

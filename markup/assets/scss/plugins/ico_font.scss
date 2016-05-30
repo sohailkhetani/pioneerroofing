@@ -1,5 +1,6 @@
 $icomoon-font-path: "../fonts" !default;
 
+$ico-thumbtackpin: "\e91a";
 $ico-google-plus-sm: "\e919";
 $ico-thumbtack: "\e918";
 $ico-twitter: "\e92a";
@@ -34,14 +35,22 @@ $ico-google-plus2: "\e905";
 $ico-google-plus3: "\e906";
 $ico-facebook2: "\e907";
 
+@font-face {
+    font-family: 'a_love_of_thunderregular';
+    src: url('#{$icomoon-font-path}/thundersubset/a_love_of_thunder_-_tt-webfont.woff2') format('woff2'),
+         url('#{$icomoon-font-path}/thundersubset/a_love_of_thunder_-_tt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'pioneerroofing';
-    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?h46pt7');
-    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?h46pt7#iefix') format('embedded-opentype'),
-        url('#{$icomoon-font-path}/pioneerroofing.ttf?h46pt7') format('truetype'),
-        url('#{$icomoon-font-path}/pioneerroofing.woff?h46pt7') format('woff'),
-        url('#{$icomoon-font-path}/pioneerroofing.svg?h46pt7#pioneerroofing') format('svg');
+    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?xpcdjn');
+    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?xpcdjn#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/pioneerroofing.ttf?xpcdjn') format('truetype'),
+        url('#{$icomoon-font-path}/pioneerroofing.woff?xpcdjn') format('woff'),
+        url('#{$icomoon-font-path}/pioneerroofing.svg?xpcdjn#pioneerroofing') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -61,6 +70,11 @@ $ico-facebook2: "\e907";
     -moz-osx-font-smoothing: grayscale;
 }
 
+.ico-thumbtackpin {
+    &:before {
+        content: $ico-thumbtackpin;
+    }
+}
 .ico-google-plus-sm {
     &:before {
         content: $ico-google-plus-sm;
@@ -226,6 +240,7 @@ $ico-facebook2: "\e907";
         content: $ico-facebook2;
     }
 }
+
 
 
 

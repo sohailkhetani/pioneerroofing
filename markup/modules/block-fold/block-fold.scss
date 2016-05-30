@@ -1,6 +1,12 @@
 .block-main {
 	background: $orange100;
 	@include padding(rem(30px) 0 rem(30px));
+	&-title{
+		text-align: center;
+	}
+	&-subtitle{
+		color: $orange;
+	}
 	&-description{
 		@include display(flex);
 		@include justify-content(center);

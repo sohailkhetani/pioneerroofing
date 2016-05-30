@@ -15,27 +15,28 @@ body{
 h1, .h1{
 	color: $heading-color;
 	@include font-size($h1-font-sizes);
-	font-weight: black;
+	font-family: 'a_love_of_thunderregular';
 }
 h2, .h2{
 	color: $heading-color;
 	@include font-size($h2-font-sizes);
-	font-weight: book;
+	font-family: 'a_love_of_thunderregular';
 }
 h3, .h3{
 	color: $heading-color;
 	//font-size: modular-scale(1, $base-font-size, $golden);
 	@include font-size($h3-font-sizes);
+	font-family: 'a_love_of_thunderregular';
 }
 h4, .h4{
 	color: $heading-color;
 	@include font-size($h4-font-sizes);
-	font-weight: book;
+	font-family: 'a_love_of_thunderregular';
 }
 h5, .h5{
 	color: $heading-color;
 	@include font-size($h4-font-sizes);
-	font-weight: bold;
+	font-family: 'a_love_of_thunderregular';
 }
 p{
 	font-family: 'Open Sans', sans-serif;
