@@ -13,7 +13,7 @@
 			@include padding(null rem(150px));
 			@include flex-wrap(wrap);
 		}
-		@include media(min-width $xs max-width 830px) {
+		@include media(min-width $xs max-width 1230px) {
 			@include padding(null rem(100px));
 			@include flex-wrap(wrap);
 		}

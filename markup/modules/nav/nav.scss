@@ -8,6 +8,7 @@
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+		@include padding(0 rem(35px));
 		.logo{
 			width: 275px;
 			@include media(min-width $sm) {
@@ -20,13 +21,26 @@
 		height: 100%;
 	}
 	&-menu{
+		padding: 0;
+		background:transparent;
+		box-shadow: none;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		&:hover, &:focus{
+			background:transparent;
+			box-shadow: none;
+			border: none;
+			outline: none;
+		}
 		display: block;
 		position: absolute;
 		right: 0;
-		top: 0;
-		width: 50px;
-		@include media(min-width $xs max-width $sm){
-			width: 30px;
+		bottom: 0;
+		padding-bottom: 25px;
+		@include media(min-width $xs max-width $sm) {
+			padding-bottom: 15px;
+			right: -10px;
 		}
 	}
 }
@@ -58,217 +72,135 @@
 	}
 }
 
-//overlay-menu
 
-$content-zindex: 1;
-$layer-nav-zindex: 2;
-$nav-zindex: 3;
-$layer-content-zindex: 4;
-$trigger-zindex: 5;
-$color-1: $textgray; // blue dark
-$color-2: lighten($color-1, 20%); 
-$color-3: $orange; // yellow
-$color-4: #ffffff; // white
-
-.cd-nav-trigger {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 44px;
-	width: 44px;
-	z-index: $trigger-zindex;
-	/* image replacement */
-	overflow: hidden;
-	text-indent: 100%;
-	white-space: nowrap;
-
-	.cd-icon {
-		/* icon created in CSS */
-		position: absolute;
-		@include center; // mixin inside partials > _mixins.scss
-		display: inline-block;
-		width: 18px;
-		height: 3px;
-		background-color: $color-4;
-		z-index: 10;
-
-		&:before, &:after {
-			/* upper and lower lines of the menu icon */
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 100%;
-			height: 100%; 
-			background-color: $color-4;
-
-			/* Force Hardware Acceleration in WebKit */
-			@include transform(translateZ(0));
-			backface-visibility: hidden;
-
-			/* apply transition to transform property */
-			transition: transform .3s;
-		}
-
-		&:before {
-			@include transform(translateY(-6px) rotate(0deg));
-		}
-
-		&:after {
-			@include transform(translateY(6px) rotate(0deg));
-		}
-	}
-
-	&:before, &:after {
-		/* 2 rounded colored backgrounds for the menu icon */
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: '';
-		border-radius: 50%;
-		height: 100%;
-		width: 100%;
-		/* Force Hardware Acceleration in WebKit */
-		@include transform(translateZ(0));
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		@include transition-property(transform);
-	}
-
-	&:before {
-		background-color: $color-1;
-		@include transform(scale(1));
-		@include transition-duration(.3s);
-		@include transition-delay(.4s);
-	}
-
-	&:after {
-		background-color: $color-3;
-		@include transform(scale(0));
-		@include transition-duration(0s);
-		@include transition-delay(0s);
-	}
-
-	&.close-nav:before {
-		/* user clicks on the .cd-nav-trigger element - 1st rounded background disappears */
-		@include transform(scale(0));
-		content: '';
-	}
-
-	&.close-nav:after {
-		/* user clicks on the .cd-nav-trigger element - 2nd rounded background appears */
-		@include transform(scale(1));
-		@include transition-duration(.3s);
-		@include transition-delay(.4s);
-		content: '';
-	}
-
-	&.close-nav .cd-icon {
-		/* user clicks on the .cd-nav-trigger element - transform the icon */
-		background-color: rgba($color-4, 0);
-
-		&:before, &:after {
-			content: '';
-			background-color: rgba($color-4, 1);
-		}
-		
-		&:before {
-			@include transform(translateY(0) rotate(45deg));
-		}
-
-		&:after {
-			@include transform(translateY(0) rotate(-45deg));
-		}
-	}
-}
-
-.cd-primary-nav {
-	/* by default it's hidden */
+/* Overlay style */
+.overlay {
 	position: fixed;
-	left: 0;
-	top: 0;
-	height: 100%;
 	width: 100%;
-	padding: 80px 5%;
-	z-index: $nav-zindex;
-	background-color: $color-1;
-	overflow: auto;
-	/* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
-	-webkit-overflow-scrolling: touch;
-	visibility: hidden;
-	opacity: 0;
-	@include transition(visibility 0s, opacity .3s);
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: $orange;
+	z-index: 100;
+}
 
-	li {
-		margin: 1.6em 0;
-		text-align: center;
-		text-transform: capitalize;
+/* Overlay closing cross */
+.overlay .overlay-close {
+	//width: 80px;
+	//height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	//overflow: hidden;
+	//border: none;
+	//background: url(../img/cross.png) no-repeat center center;
+	//text-indent: 200%;
+	//color: transparent;
+	padding: 0;
+		background:transparent;
+		box-shadow: none;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		&:hover, &:focus{
+			background:transparent;
+			box-shadow: none;
+			border: none;
+			outline: none;
+		}
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay-title{
+	@include font-size($p-font-sizes);
+	text-transform: uppercase;
+	color: $orange900;
+	font-weight: bold;
+}
+.overlay-contact{
+	a, span{
+		display: block;
 	}
-
-	a {
-		//@include font-size($p-font-sizes);
-		//@include font-smoothing;
-		@include transition(color .2s);
-		color: $color-4;
-		.no-touch &:hover, &:hover {
-			color: $orange;
+	span{
+		font-size: 14px;
+		@include media(min-width $xs max-width $sm){
+			font-size: 10px;
 		}
 	}
-
-	&.fade-in {
-		/* navigation visible at the end of the circle animation */
-		visibility: visible;
-		opacity: 1;
-	}
+}
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 5%;
+	//height: 60%;
+	//transform: translateY(-50%);
 }
 
-.cd-overlay-nav, .cd-overlay-content {
-	/* containers of the 2 main rounded backgrounds - these containers are used to position the rounded bgs behind the menu icon */
-	position: fixed;
-	top: 18px;
-	right: 5%;
-	height: 4px;
-	width: 4px;
-	@include transform(translateX(-20px) translateY(20px));
-
-	span {
-		display: inline-block;
-		position: absolute;
-		border-radius: 50%;
-		/* Force Hardware Acceleration in WebKit */
-		@include transform(translateZ(0));
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		will-change: transform;
-		@include transform-origin(50% 50%);
-		@include transform(scale(0));
-	}
-
-	&.is-hidden {
-		/* background fades out at the end of the animation */
-		opacity: 0;
-		visibility: hidden;
-		-webkit-transition: opacity .3s 0s, visibility 0s .3s;
-		-moz-transition: opacity .3s 0s, visibility 0s .3s;
-		transition: opacity .3s 0s, visibility 0s .3s;
-	}
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	@include clearfix;
 }
 
-.cd-overlay-nav {
-	/* main rounded colored bg 1 */
-	z-index: $layer-nav-zindex;
-
-	span {
-		background-color: $color-1;
-	}
+.overlay ul li {
+	display: block;
+	margin-bottom: 20px;
+	//height: 20%;
+	//height: calc(100% / 5);
+	//min-height: 54px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
-.cd-overlay-content {
-	/* main rounded colored bg 2 */
-	z-index: $layer-content-zindex;
+.overlay li span{
+	display: block;
+	@include span-columns(6);
+	@include shift(3);
+}
 
-	span {
-		background-color: $color-3;
+.overlay ul li a {
+	//font-size: 54px;
+	@include font-size($p-font-sizes);
+	text-transform: uppercase;
+	display: block;
+	color: #fff;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #e3fcb1;
+}
+
+/* Effects */
+.overlay-slidedown {
+	visibility: hidden;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
 	}
 }
 

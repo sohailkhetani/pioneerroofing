@@ -14,7 +14,7 @@
         <meta content="telephone=no" name="format-detection">
         <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
         <meta name="HandheldFriendly" content="true">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
         <link href="assets/css/main.min.css" rel="stylesheet" type="text/css">
         <!--favicon-->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -68,16 +68,6 @@
         </script>
 
 
-        <script>
-            (function(d) {
-            		    var config = {
-            		      kitId: 'tjy0yvb',
-            		      scriptTimeout: 3000,
-            		      async: true
-            		    },
-            		    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-            		  })(document);
-        </script>
     </head>
 
     <body>
@@ -107,36 +97,65 @@
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="#" class="navbar-menu">
-                                        <img src="assets/images/general/menu_icon.svg" alt="">
-                                    </a>
-                                    <!-- <div class="cd-overlay-nav">
-									<span></span>
-								</div>
-								
-								<div class="cd-overlay-content">
-									<span></span>
-								</div>
-								
-								<a href="#" class="cd-nav-trigger"><span class="cd-icon"></span></a>
-								<nav>
-									<ul class="cd-primary-nav">
-										<li><a href="#">menu item 1</a></li>
-										<li><a href="#">menu item 2</a></li>
-										<li><a href="#">menu item 3</a></li>
-										<li><a href="#">menu item 4</a></li>
-										<li><a href="#">menu item 5</a></li>
-										<li><a href="#">menu item 6</a></li>
-									</ul>
-								</nav> -->
+                                    <button type="button" class="js-toggle navbar-menu" id="trigger-overlay">
+                                        <svg height="30" version="1.1" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                            <g>
+                                                <rect height="4" width="30" y="8" x="0" stroke-width="0" fill="#424242" />
+                                                <rect height="4" width="30" y="16" x="0" stroke-width="0" fill="#424242" />
+                                                <rect height="4" width="30" y="24" x="0" stroke-width="0" fill="#424242" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <div class="overlay overlay-slidedown">
+                                        <button type="button" class="overlay-close">close
+                                            <svg height="30" version="1.1" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                                <g>
+                                                    <line x1="320" y1="15" x2="230" y2="105" stroke="#424242" stroke-width="4" />
+                                                    <line x1="320" y1="105" x2="230" y2="15" stroke="#424242" stroke-width="4" />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <nav>
+                                            <div class="overlay-title">CONTACT US</div>
+                                            <ul>
+                                                <li>
+                                                    <span>
+													<img src="assets/images/general/menu-livechat.svg" alt="">
+												</span>
+                                                    <a href="http://chat.mypioneerroofing.com">LIVE CHAT</a>
+                                                </li>
+                                                <li>
+                                                    <span>
+													<img src="assets/images/general/menu-email.svg" alt="">
+												</span>
+                                                    <a href="#">EMAIL US</a>
+                                                </li>
+                                                <li>
+                                                    <span>
+													<img src="assets/images/general/menu-call.svg" alt="">
+												</span>
+                                                    <a href="#">CALL US</a>
+                                                </li>
+                                            </ul>
+                                            <div class="overlay-contact">
+                                                <a href="tel:877-897-8676">877-897-8676</a>
+                                                <span>CLICK TO CALL</span>
+                                            </div>
+                                        </nav>
+                                    </div>
                                 </div>
                             </div>
+
 
 
                         </nav>
                     </div>
                     <!-- id="sticker" -->
                     <div class="container">
+                        <div class="block-main-title h3">
+                            48 HOUR ESTIMATE
+                            <div class="block-main-subtitle">469-909-1423</div>
+                        </div>
                         <div class="counter-wrapper">
                             <div class="counter">
                                 <div class="countdown-container" id="counter"></div>
@@ -144,14 +163,14 @@
                         </div>
                         <div class="block-main-description">
                             <ul class="block-main-list">
-                                <li><span class="number">1</span>Tell us what you like.</li>
-                                <li><span class="number">2</span>We measure the property.</li>
-                                <li><span class="number">3</span>Get estimate in your <b>inbox!</b>
+                                <li><span class="number">1</span>Fill out quick form</li>
+                                <li><span class="number">2</span>We measure the roof</li>
+                                <li><span class="number">3</span>Estimate in your <b>inbox!</b>
                                 </li>
                             </ul>
                         </div>
                         <div class="block-main-button">
-                            <a href="https://docs.google.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform" class="button-primary button-primary-icon">GET A FAST ESTIMATE
+                            <a href="https://docs.google.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform" class="button-primary">GET A FAST ESTIMATE
 							</a>
                         </div>
                     </div>
@@ -272,7 +291,7 @@
                             </div>
                             <div class="coupon-button">
                                 <a href="pdf/coupon_alone.pdf" class="button-primary button-primary-inverse">OPEN COUPON PDF</a>
-                                <a href="#" class="button-primary button-primary-inverse">SHARE THIS COUPON</a>
+                                <a href="#" class="button-primary button-primary-inverse">USE THIS COUPON</a>
                             </div>
                         </div>
                     </div>
@@ -330,10 +349,40 @@
                     </section>
                     <div class="comments">
                         <div class="comment-row">
+                            <!-- <div class="comment">
+								<div class="comment-head flex flex-middle">
+									<div class="comment-link">
+										<a href="https://www.thumbtack.com/-Plano-TX/service/2214596">Read review</a>
+									</div>
+									<div class="comment-raiting">
+										<i class="ico-star-full"></i>
+										<i class="ico-star-full"></i>
+										<i class="ico-star-full"></i>
+										<i class="ico-star-full"></i>
+										<i class="ico-star-full"></i>
+									</div>
+								</div>
+								<div class="comment-body">
+									<span class="quote-right">&#8220;</span> They did an excellent job and did it in one day. The price was simply unmatched by anyone. I would highly recommended them.
+									<span class="quote-left">&#8221;</span>
+								</div>
+								<div class="comment-footer">
+										<div class="comment-avatar-name">
+											<b>John W</b>
+											<br>
+											<div>Murphy, TX </div>
+										</div>
+									<div class="comment-social">
+										<a href="https://www.thumbtack.com/profile/services/QMo9Q9wQ9sMtkQ/edit" class="comment-social-link">
+											<i class="ico-thumbtack"></i>
+										</a>
+									</div>
+								</div>
+							</div> -->
                             <div class="comment">
                                 <div class="comment-head flex flex-middle">
                                     <div class="comment-link">
-                                        <a href="#">Read review</a>
+                                        <a href="https://www.thumbtack.com/-Plano-TX/service/2214596">Read review</a>
                                     </div>
                                     <div class="comment-raiting">
                                         <i class="ico-star-full"></i>
@@ -344,14 +393,14 @@
                                     </div>
                                 </div>
                                 <div class="comment-body">
-                                    <span class="quote-right">&#8220;</span> Very professional, very businesslike, nobody is trying to be your new "friend". They come in and get right to business. Not once did any of them slow down. Truly amazing!
+                                    <span class="quote-right">&#8220;</span> They did an excellent job and did it in one day. The price was simply unmatched by anyone. I would highly recommended them.
                                     <span class="quote-left">&#8221;</span>
                                 </div>
                                 <div class="comment-footer">
                                     <div class="comment-avatar-name">
-                                        <b>Katty Cakes</b>
+                                        <b>John W</b>
                                         <br>
-                                        <div>Texas</div>
+                                        <div>Murphy, TX</div>
                                     </div>
                                     <div class="comment-social">
                                         <a href="https://www.thumbtack.com/profile/services/QMo9Q9wQ9sMtkQ/edit" class="comment-social-link">
@@ -360,40 +409,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="comment">
-                                <div class="comment-head flex flex-middle">
-                                    <div class="comment-link">
-                                        <a href="#">Read review</a>
-                                    </div>
-                                    <div class="comment-raiting">
-                                        <i class="ico-star-full"></i>
-                                        <i class="ico-star-full"></i>
-                                        <i class="ico-star-full"></i>
-                                        <i class="ico-star-full"></i>
-                                        <i class="ico-star-full"></i>
-                                    </div>
-                                </div>
-                                <div class="comment-body">
-                                    <span class="quote-right">&#8220;</span> Very professional, very businesslike, nobody is trying to be your new "friend". They come in and get right to business. Not once did any of them slow down. Truly amazing!
-                                    <span class="quote-left">&#8221;</span>
-                                </div>
-                                <div class="comment-footer">
-                                    <div class="comment-avatar-name">
-                                        <b>Katty Cakes</b>
-                                        <br>
-                                        <div>Texas</div>
-                                    </div>
-                                    <div class="comment-social">
-                                        <a href="https://plus.google.com/u/1/b/103126837041410140059/103126837041410140059/about?pageId=103126837041410140059&hl=en" class="comment-social-link"><i class="ico-google-plus-icon-pioneer-roofing-of-texas"></i></a>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- </div> -->
                             <!-- <div class="comment-row"> -->
                             <div class="comment">
                                 <div class="comment-head flex flex-middle">
                                     <div class="comment-link">
-                                        <a href="#">Read review</a>
+                                        <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=pioneer%20roofing%20of%20texas%20reviews&lrd=0x864eaa72b60dcd7b:0xd758c00756f00a1e,1,,">Read review</a>
                                     </div>
                                     <div class="comment-raiting">
                                         <i class="ico-star-full"></i>
@@ -404,14 +425,14 @@
                                     </div>
                                 </div>
                                 <div class="comment-body">
-                                    <span class="quote-right">&#8220;</span> Very professional, very businesslike, nobody is trying to be your new "friend". They come in and get right to business. Not once did any of them slow down. Truly amazing!
+                                    <span class="quote-right">&#8220;</span> Great experience working with Sam! Can't go wrong with these guys! Thank you Sam!
                                     <span class="quote-left">&#8221;</span>
                                 </div>
                                 <div class="comment-footer">
                                     <div class="comment-avatar-name">
-                                        <b>Katty Cakes</b>
+                                        <b>Tom S</b>
                                         <br>
-                                        <div>Texas</div>
+                                        <div>Wylie, TX</div>
                                     </div>
                                     <div class="comment-social">
                                         <a href="https://plus.google.com/u/1/b/103126837041410140059/103126837041410140059/about?pageId=103126837041410140059&hl=en" class="comment-social-link"><i class="ico-google-plus-icon-pioneer-roofing-of-texas"></i></a>
@@ -421,7 +442,7 @@
                             <div class="comment">
                                 <div class="comment-head flex flex-middle">
                                     <div class="comment-link">
-                                        <a href="#">Read review</a>
+                                        <a href="https://www.thumbtack.com/-Plano-TX/service/2214596">Read review</a>
                                     </div>
                                     <div class="comment-raiting">
                                         <i class="ico-star-full"></i>
@@ -432,14 +453,15 @@
                                     </div>
                                 </div>
                                 <div class="comment-body">
-                                    <span class="quote-right">&#8220;</span> Very professional, very businesslike, nobody is trying to be your new "friend". They come in and get right to business. Not once did any of them slow down. Truly amazing!
+                                    <span class="quote-right">&#8220;</span> I really enjoyed working with Sam. Very upfront about pricing and I got an architectural shingle for no extra cost. All upgrades included for what my insurance paid for a basic
+                                    3tab shingle roof.
                                     <span class="quote-left">&#8221;</span>
                                 </div>
                                 <div class="comment-footer">
                                     <div class="comment-avatar-name">
-                                        <b>Katty Cakes</b>
+                                        <b>Christina W</b>
                                         <br>
-                                        <div>Texas</div>
+                                        <div>Plano, TX</div>
                                     </div>
                                     <div class="comment-social">
                                         <a href="https://www.thumbtack.com/profile/services/QMo9Q9wQ9sMtkQ/edit" class="comment-social-link">
@@ -451,7 +473,7 @@
                         </div>
                     </div>
                     <section class="thumbnail">
-                        <h2 class="thumbnail-header"><span class="text-primary">HIGHEST</span> STANDARDS</h2>
+                        <h2 class="thumbnail-header">WE MAKE <span class="text-primary">IT EASIER</span></h2>
                         <div class="bullets">
                             <div class="bullet">
                                 <div class="bullet-icon">
@@ -589,6 +611,12 @@
                                     <span>Twitter</span>
                                 </a>
                             </div>
+                            <div>
+                                <a href="https://twitter.com/myroofpro" class="button-social">
+                                    <i class="ico-thumbtackpin"></i> 
+                                    <span>Thumbtack</span>
+                                </a>
+                            </div>
                         </div>
 
 
@@ -613,17 +641,17 @@
                         <div class="container">
                             <div class="footer-middle-content">
                                 <h4 class="footer-middle-contact">Call us : <a href="tel:844-947-7663" class="footer-middle-contact-link">844-947-7663</a></h4>
-                                <p>Dallas : Ext - 11</p>
-                                <p>Austin : Ext - 12</p>
-                                <p>Houston : Ext - 13</p>
-                                <p>San Antonio : Ext - 14</p>
+                                <!-- <p>Dallas : Ext - 11</p> 
+								<p>Austin : Ext - 12</p> 
+								<p>Houston : Ext - 13</p> 
+								<p>San Antonio : Ext - 14</p> -->
                                 <p class="footer-middle-contact">
                                     Email Us : <a href="mailto:help@mypioneerroofing.com">help@mypioneerroofing.com</a>
                                 </p>
                             </div>
                             <div class="footer-middle-button">
                                 <a href="https://docs.google.com/a/mypioneerroofing.com/forms/d/1p_7ly1y4nEEyfs0wbMixzPONkLw3RcN5UQGXuDQyDRU/viewform" class="button-primary">CONTACT ME ASAP</a>
-                                <a href="pick.co/samk" class="button-primary">SCHEDULE ONLINE</a>
+                                <a href="pick.co/pioneerroofing" class="button-primary">SCHEDULE ONLINE</a>
                             </div>
                         </div>
                     </div>
