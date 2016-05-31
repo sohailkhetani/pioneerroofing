@@ -38,40 +38,51 @@
 		right: 0;
 		bottom: 0;
 		padding-bottom: 25px;
+		z-index: 101;
 		@include media(min-width $xs max-width $sm) {
 			padding-bottom: 15px;
 			right: -10px;
 		}
 	}
 }
+ @-moz-document url-prefix() {
+	svg .rect-3 {
+		transform-origin: 36px 50% 0 !important;
+	}
+ }
 
 //sticky
 .is-sticky{
-	.navbar{
-		@include padding(rem(10) null);
-		z-index: 1000;
-		background: $orange50;
-		&-menu {
-			&-icon{
-				width: 24px;
-				height: 100%;
-			}
-		}
-		&-brand{
-			max-width: 40%;
-			.logo{
-				width: 275px;
-			}
-		}
-		&-contact{
-			&-icon{
-				width: 24px;
-				height: 100%;
-			}
-		}
+	// .navbar{
+	// 	@include padding(rem(10) null);
+	// 	z-index: 1000;
+	// 	background: $orange50;
+	// 	&-menu {
+	// 		&-icon{
+	// 			width: 24px;
+	// 			height: 100%;
+	// 		}
+	// 	}
+	// 	&-brand{
+	// 		max-width: 40%;
+	// 		.logo{
+	// 			width: 275px;
+	// 		}
+	// 	}
+	// 	&-contact{
+	// 		&-icon{
+	// 			width: 24px;
+	// 			height: 100%;
+	// 		}
+	// 	}
+	// }
+	#sticker{
+		top: 100% !important;
 	}
 }
-
+#sticker{
+	z-index: 100;
+}
 
 /* Overlay style */
 .overlay {
@@ -83,40 +94,17 @@
 	background: $orange;
 	z-index: 100;
 }
-
 /* Overlay closing cross */
-.overlay .overlay-close {
-	//width: 80px;
-	//height: 80px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	//overflow: hidden;
-	//border: none;
-	//background: url(../img/cross.png) no-repeat center center;
-	//text-indent: 200%;
-	//color: transparent;
-	padding: 0;
-		background:transparent;
-		box-shadow: none;
-		border: none;
-		outline: none;
-		cursor: pointer;
-		&:hover, &:focus{
-			background:transparent;
-			box-shadow: none;
-			border: none;
-			outline: none;
-		}
-	z-index: 100;
+.overlay-close {
+	display: none;
 }
-
 /* Menu style */
 .overlay-title{
 	@include font-size($p-font-sizes);
 	text-transform: uppercase;
 	color: $orange900;
 	font-weight: bold;
+	@include margin(null null rem(20px));
 }
 .overlay-contact{
 	a, span{
@@ -133,74 +121,57 @@
 	text-align: center;
 	position: relative;
 	top: 5%;
-	//height: 60%;
-	//transform: translateY(-50%);
 }
 
-.overlay ul {
+.overlay-menu {
 	list-style: none;
 	padding: 0;
 	margin: 0 auto;
 	display: inline-block;
 	height: 100%;
 	position: relative;
-	@include clearfix;
 }
 
-.overlay ul li {
+.overlay-menu li {
 	display: block;
 	margin-bottom: 20px;
-	//height: 20%;
-	//height: calc(100% / 5);
-	//min-height: 54px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
-.overlay li span{
+.overlay-menu-img{
 	display: block;
 	@include span-columns(6);
 	@include shift(3);
 }
 
-.overlay ul li a {
-	//font-size: 54px;
+.overlay-menu li a {
+	@include clearfix;
 	@include font-size($p-font-sizes);
 	text-transform: uppercase;
 	display: block;
-	color: #fff;
+	color: $textgray;
+	font-family: $heading-font-family;
 	transition: color 0.2s;
+	span{
+		display: block;
+	}
 }
-
-.overlay ul li a:hover,
-.overlay ul li a:focus {
-	color: #e3fcb1;
+.overlay-menu li a:hover,
+.overlay-menu li a:focus {
+	color: $orange900;
 }
-
 /* Effects */
 .overlay-slidedown {
 	visibility: hidden;
-	-webkit-transform: translateY(-100%);
 	transform: translateY(-100%);
-	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
 	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
 }
 
 .overlay-slidedown.open {
 	visibility: visible;
-	-webkit-transform: translateY(0%);
 	transform: translateY(0%);
-	-webkit-transition: -webkit-transform 0.4s ease-in-out;
 	transition: transform 0.4s ease-in-out;
 }
 
-@media screen and (max-height: 30.5em) {
-	.overlay nav {
-		height: 70%;
-		font-size: 34px;
-	}
-	.overlay ul li {
-		min-height: 34px;
-	}
-}
 

@@ -1,10 +1,11 @@
 'use strict';
 
 $(document).ready(function() {
-	sticky_init();
+	sticky_init(); 
 	same_height();
 	counter();
 	overlay_menu();
+	toggle_menu();
 });
 
 
@@ -19,7 +20,8 @@ function counter(){
 			'<span class="dot <%= label %>"></span>';
 	//$('#counter-template').html(tmp)
 	var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
-		countDate = '2016/05/31',
+		dt = new Date(),
+		countDate = dt.setDate(dt.getDate() + 2),
 		template = _.template(tmp),
 		currDate = '00:00:00:00:00',
 		nextDate = '00:00:00:00:00',
@@ -102,7 +104,7 @@ function counter(){
 
 function sticky_init(){
 	$("#sticker").sticky({
-		topSpacing: 0
+		topSpacing: 100
 	});
 }
 
@@ -155,33 +157,33 @@ function overlay_menu(){
 	closeBttn.addEventListener( 'click', toggleOverlay );
 }
 
-// function overlay_menu(){
-// 	var animOptions = {
-//           duration: 250,
-//           easing: "ease-in-out"
-//       };
-//       var open = false;
-//       $(".js-toggle").on("click", function() {
-//           var $el = $(this);
-//           var $rects = $el.find("svg rect");
-//           if ($el.hasClass("active")) {
-//               $rects.eq(1).velocity("stop").velocity("reverse");
-//               $rects.eq(0).add($rects.eq(2)).velocity("stop").velocity("reverse");
-//           } else {
-//               $rects.eq(1).velocity({
-//                   opacity: 0
-//               }, animOptions);
-//               $rects.eq(0).velocity({
-//                   transformOrigin: [30, 25],
-//                   translateY: 17,
-//                   rotateZ: 45
-//               }, animOptions);
-//               $rects.eq(2).velocity({
-//                   transformOrigin: [30, 25],
-//                   translateY: -17,
-//                   rotateZ: -45
-//               }, animOptions);
-//           }
-//           $el.toggleClass("active");
-//       });
-// }
+function toggle_menu(){
+	var animOptions = {
+          duration: 250,
+          easing: "ease-in-out"
+      };
+      var open = false;
+      $(".js-toggle").on("click", function() {
+          var $el = $(this);
+          var $rects = $el.find("svg rect");
+          if ($el.hasClass("active")) {
+              $rects.eq(1).velocity("stop").velocity("reverse");
+              $rects.eq(0).add($rects.eq(2)).velocity("stop").velocity("reverse");
+          } else {
+              $rects.eq(1).velocity({
+                  opacity: 0
+              }, animOptions);
+              $rects.eq(0).velocity({
+                  transformOrigin: [30, 25],
+                  translateY: 18,
+                  rotateZ: 45
+              }, animOptions);
+              $rects.eq(2).velocity({
+                  transformOrigin: [30, 25],
+                  translateY: -19,
+                  rotateZ: -45
+              }, animOptions);
+          }
+          $el.toggleClass("active");
+      });
+}

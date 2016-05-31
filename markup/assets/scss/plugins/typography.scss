@@ -1,3 +1,6 @@
+$base-font-family: 'Source Sans Pro', 'Arial', sans-serif;
+$heading-font-family: 'a_love_of_thunderregular','Source Sans Pro', 'Arial', sans-serif;
+
 html{
 	font-size: 16px;
 	@include media(min-width $sm max-width $lg) {
@@ -15,37 +18,37 @@ body{
 h1, .h1{
 	color: $heading-color;
 	@include font-size($h1-font-sizes);
-	font-family: 'a_love_of_thunderregular';
+	font-family: $heading-font-family;
 }
 h2, .h2{
 	color: $heading-color;
 	@include font-size($h2-font-sizes);
-	font-family: 'a_love_of_thunderregular';
+	font-family: $heading-font-family;
 }
 h3, .h3{
 	color: $heading-color;
 	//font-size: modular-scale(1, $base-font-size, $golden);
 	@include font-size($h3-font-sizes);
-	font-family: 'a_love_of_thunderregular';
+	font-family: $heading-font-family;
 }
 h4, .h4{
 	color: $heading-color;
 	@include font-size($h4-font-sizes);
-	font-family: 'a_love_of_thunderregular';
+	font-family: $heading-font-family;
 }
 h5, .h5{
 	color: $heading-color;
 	@include font-size($h4-font-sizes);
-	font-family: 'a_love_of_thunderregular';
+	font-family: $heading-font-family;
 }
 p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: $base-font-family;
 	font-weight: 400;
 	color: rgba(#000, 0.87);
 	@include font-size($p-font-sizes);
 }
 a{
-	font-family: 'Open Sans', sans-serif;
+	font-family: $base-font-family;
 	font-weight: 700;
 	@include font-size($p-font-sizes);
 }
