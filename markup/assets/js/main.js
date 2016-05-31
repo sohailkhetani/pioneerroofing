@@ -6,6 +6,7 @@ $(document).ready(function() {
 	counter();
 	overlay_menu();
 	toggle_menu();
+	modal();
 });
 
 
@@ -158,32 +159,28 @@ function overlay_menu(){
 }
 
 function toggle_menu(){
-	var animOptions = {
-          duration: 250,
-          easing: "ease-in-out"
-      };
-      var open = false;
-      $(".js-toggle").on("click", function() {
-          var $el = $(this);
-          var $rects = $el.find("svg rect");
-          if ($el.hasClass("active")) {
-              $rects.eq(1).velocity("stop").velocity("reverse");
-              $rects.eq(0).add($rects.eq(2)).velocity("stop").velocity("reverse");
-          } else {
-              $rects.eq(1).velocity({
-                  opacity: 0
-              }, animOptions);
-              $rects.eq(0).velocity({
-                  transformOrigin: [30, 25],
-                  translateY: 18,
-                  rotateZ: 45
-              }, animOptions);
-              $rects.eq(2).velocity({
-                  transformOrigin: [30, 25],
-                  translateY: -19,
-                  rotateZ: -45
-              }, animOptions);
-          }
-          $el.toggleClass("active");
-      });
+	$('.hmbrgr').hmbrgr({
+		width     : 30,
+		height    : 26,
+		barHeight : 4,
+		barColor  : '#424242'
+	});
+}
+
+function modal(){
+	$(".modal-state").on("change", function() {
+		if ($(this).is(":checked")) {
+			$("body").addClass("modal-open");
+		} else {
+			$("body").removeClass("modal-open");
+		}
+	});
+
+	$(".modal-fade-screen, .modal-close").on("click", function() {
+		$(".modal-state:checked").prop("checked", false).change();
+	});
+
+	$(".modal-inner").on("click", function(e) {
+		e.stopPropagation();
+	});
 }

@@ -38,7 +38,7 @@
 			// @include media(min-width $xs max-width 860px){
 			// 	display: block;
 			// }
-			a{
+			.footer-button{
 				@include span-columns(6);
 				@include margin(null null rem(15px));
 				&:first-child{

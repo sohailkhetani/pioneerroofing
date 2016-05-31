@@ -1,7 +1,6 @@
 
 
 .navbar{
-	//padding: 0 20px;
 	position: relative;
 	&-brand{
 		display: block;
@@ -35,9 +34,8 @@
 		}
 		display: block;
 		position: absolute;
-		right: 0;
-		bottom: 0;
-		padding-bottom: 25px;
+		right: 20px;
+		bottom: 40px;
 		z-index: 101;
 		@include media(min-width $xs max-width $sm) {
 			padding-bottom: 15px;
@@ -45,37 +43,10 @@
 		}
 	}
 }
- @-moz-document url-prefix() {
-	svg .rect-3 {
-		transform-origin: 36px 50% 0 !important;
-	}
- }
+
 
 //sticky
 .is-sticky{
-	// .navbar{
-	// 	@include padding(rem(10) null);
-	// 	z-index: 1000;
-	// 	background: $orange50;
-	// 	&-menu {
-	// 		&-icon{
-	// 			width: 24px;
-	// 			height: 100%;
-	// 		}
-	// 	}
-	// 	&-brand{
-	// 		max-width: 40%;
-	// 		.logo{
-	// 			width: 275px;
-	// 		}
-	// 	}
-	// 	&-contact{
-	// 		&-icon{
-	// 			width: 24px;
-	// 			height: 100%;
-	// 		}
-	// 	}
-	// }
 	#sticker{
 		top: 100% !important;
 	}
@@ -141,8 +112,8 @@
 
 .overlay-menu-img{
 	display: block;
-	@include span-columns(6);
-	@include shift(3);
+	width: 50%;
+	@include margin(null auto);
 }
 
 .overlay-menu li a {
@@ -174,4 +145,21 @@
 	transition: transform 0.4s ease-in-out;
 }
 
-
+.hmbrgr span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: inline-block;
+}
+.hmbrgr.expand span:nth-child(1) {
+  transform: rotate(-45deg);
+}
+.hmbrgr.expand span:nth-child(2) {
+  zoom: 1;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.hmbrgr.expand span:nth-child(3) {
+  transform: rotate(45deg);
+}
