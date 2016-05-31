@@ -145,7 +145,7 @@
 	font-size: rem(12px);
 	font-weight: bold;
 	@include margin(rem(30px) rem(10px) null);
-	position: relative;
+	//position: relative;
 	@include padding(rem(2px) null rem(2px) rem(30px));
 	display: flex;
 	justify-content: flex-start;

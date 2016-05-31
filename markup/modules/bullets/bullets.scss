@@ -40,8 +40,8 @@
 	}
 	.bullet-icon {
 		&-inner{
-			@include span-columns(4);
-			@include shift(4);
+			//@include span-columns(8);
+			//@include shift(2);
 			&-lg{
 				@include span-columns(6);
 				@include shift(3);
@@ -59,16 +59,15 @@
 		}
 		@include clearfix;
 		display: inline-block;
-		//min-height: 90px;
 		&_img{
 			width: 100%;
-			height: 100%;
-			@-moz-document url-prefix() {
-				width: 150px;
-			}
-			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-				width: 250px;
-			}
+			height: 100px;
+			// @-moz-document url-prefix() {
+			// 	width: 150px;
+			// }
+			// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			// 	width: 250px;
+			// }
 		}
 	}
 	.bullet-content {

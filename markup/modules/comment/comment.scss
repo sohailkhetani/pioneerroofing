@@ -34,6 +34,7 @@
 	border-radius: 4px;
 	margin-bottom: 35px;
 	max-width: 410px;
+	width: 410px;
 	@include media(min-width $sm max-width $md) {
 		max-width: 350px;
 	}
