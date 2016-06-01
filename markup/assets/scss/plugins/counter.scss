@@ -34,6 +34,8 @@ $counter-week:              false !default;
 $counter-day:               false !default;
 $counter-seconds:           true !default;
 
+$counter-font-family: 'a_love_of_thunderregular','Source Sans Pro', 'Arial', sans-serif;
+
 #counter-template {
 	display: none;
 }
@@ -46,6 +48,9 @@ $counter-seconds:           true !default;
 		position: relative; 
 		overflow: hidden;
 		font-size: 0;
+		@include media(min-width $xs max-width $sm) {
+			@include margin(rem(5px) null rem(10px));
+		}
 	}
 	display: inline-block;
 	padding: $counter-padding-y $counter-padding-x;
@@ -130,6 +135,7 @@ $counter-seconds:           true !default;
 		color: $counter-color;
 		display: block;
 		font-size: $counter-fontsize;
+		font-family: $counter-font-family;
 		line-height: 42px;
 		overflow: hidden;
 		position: absolute;

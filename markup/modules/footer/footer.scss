@@ -4,12 +4,6 @@
 		display: block;
 		float: none;
 		text-align: center;
-		// max-width: 50%;
-		// margin-left: auto;
-		// margin-right: auto;
-		// .footer-logo{
-		// 	width: 100%;
-		// }
 	}
 	&-top{
 		background: $orange;
@@ -31,14 +25,8 @@
 		@include padding(rem(20px) null);
 		&-button{
 			@include margin(rem(20px) null rem(5px));
-			//@include display(flex);
 			@include clearfix;
-			//@include shift(1);
-			//@include justify-content(space-around);
-			// @include media(min-width $xs max-width 860px){
-			// 	display: block;
-			// }
-			a{
+			.footer-button{
 				@include span-columns(6);
 				@include margin(null null rem(15px));
 				&:first-child{
@@ -56,6 +44,13 @@
 					@include span-columns(10);
 					@include shift(1);
 					@include padding(0.625rem 1rem);
+				}
+			}
+			.modal.footer-button{
+				padding: 0;
+				.button-primary{
+					display: block;
+					width: 100%;
 				}
 			}
 		}

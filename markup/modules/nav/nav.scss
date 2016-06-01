@@ -1,7 +1,6 @@
-
-
+$menu-overlay:          #ffaf38; //#edb656;
+$menu-overlay-button:   $orange; //#e99f30;
 .navbar{
-	//padding: 0 20px;
 	position: relative;
 	&-brand{
 		display: block;
@@ -10,7 +9,7 @@
 		margin-right: auto;
 		@include padding(0 rem(35px));
 		.logo{
-			width: 275px;
+			width: 170px;
 			@include media(min-width $sm) {
 				width: 420px;
 			}
@@ -22,60 +21,35 @@
 	}
 	&-menu{
 		padding: 0;
-		background:transparent;
 		box-shadow: none;
-		border: none;
 		outline: none;
 		cursor: pointer;
+		outline: 10px solid $orange;
+		background: $orange;
 		&:hover, &:focus{
-			background:transparent;
 			box-shadow: none;
-			border: none;
-			outline: none;
+			outline: 10px solid $orange;
+			background: $orange;
 		}
 		display: block;
 		position: absolute;
-		right: 0;
-		bottom: 0;
-		padding-bottom: 25px;
+		right: 20px;
+		bottom: 40px;
 		z-index: 101;
 		@include media(min-width $xs max-width $sm) {
-			padding-bottom: 15px;
-			right: -10px;
+			right: 0;
+			bottom: 20px;
+		}
+		&.open-menu{
+			outline: 10px solid $menu-overlay-button;
+			background: $menu-overlay-button;
 		}
 	}
 }
- @-moz-document url-prefix() {
-	svg .rect-3 {
-		transform-origin: 36px 50% 0 !important;
-	}
- }
+
 
 //sticky
 .is-sticky{
-	// .navbar{
-	// 	@include padding(rem(10) null);
-	// 	z-index: 1000;
-	// 	background: $orange50;
-	// 	&-menu {
-	// 		&-icon{
-	// 			width: 24px;
-	// 			height: 100%;
-	// 		}
-	// 	}
-	// 	&-brand{
-	// 		max-width: 40%;
-	// 		.logo{
-	// 			width: 275px;
-	// 		}
-	// 	}
-	// 	&-contact{
-	// 		&-icon{
-	// 			width: 24px;
-	// 			height: 100%;
-	// 		}
-	// 	}
-	// }
 	#sticker{
 		top: 100% !important;
 	}
@@ -91,7 +65,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: $orange;
+	background: $menu-overlay;
 	z-index: 100;
 }
 /* Overlay closing cross */
@@ -141,8 +115,8 @@
 
 .overlay-menu-img{
 	display: block;
-	@include span-columns(6);
-	@include shift(3);
+	width: 50%;
+	@include margin(null auto);
 }
 
 .overlay-menu li a {
@@ -172,6 +146,24 @@
 	visibility: visible;
 	transform: translateY(0%);
 	transition: transform 0.4s ease-in-out;
+	overflow-y: auto; 
 }
 
-
+.hmbrgr span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: inline-block;
+}
+.hmbrgr.expand span:nth-child(1) {
+  transform: rotate(-45deg);
+}
+.hmbrgr.expand span:nth-child(2) {
+  zoom: 1;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.hmbrgr.expand span:nth-child(3) {
+  transform: rotate(45deg);
+}

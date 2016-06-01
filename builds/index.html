@@ -97,15 +97,19 @@
                             </a>
                             <!-- </div> -->
                             <div id="sticker">
-                                <button type="button" class="js-toggle navbar-menu" id="trigger-overlay">
-                                    <svg height="40" version="1.1" width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-                                        <g>
-                                            <rect height="4" width="30" y="8" x="0" stroke-width="0" fill="#424242" />
-                                            <rect height="4" width="30" y="16" x="0" stroke-width="0" fill="#424242" />
-                                            <rect class="rect-3" height="4" width="30" y="24" x="0" stroke-width="0" fill="#424242" />
-                                        </g>
-                                    </svg>
-                                </button>
+                                <a href="#" class="js-toggle navbar-menu" id="trigger-overlay">
+                                    <div class="hmbrgr"></div>
+                                </a>
+
+                                <!-- <button type="button" class="js-toggle navbar-menu" id="trigger-overlay">
+									<svg height="40" version="1.1" width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+										<g>
+											<rect class="rect-1" height="4" width="30" y="8" x="0" stroke-width="0" fill="#424242" />
+											<rect class="rect-2" height="4" width="30" y="16" x="0" stroke-width="0" fill="#424242" />
+											<rect class="rect-3" height="4" width="30" y="24" x="0" stroke-width="0" fill="#424242" />
+										</g>
+									</svg>
+								</button> -->
                                 <div class="overlay overlay-slidedown">
                                     <button type="button" class="overlay-close"></button>
                                     <nav>
@@ -149,13 +153,13 @@
                     <div class="container">
                         <div class="block-main-title h3">
                             48 HOUR ESTIMATE
-                            <div class="block-main-subtitle">469-909-1423</div>
                         </div>
                         <div class="counter-wrapper">
                             <div class="counter">
                                 <div class="countdown-container" id="counter"></div>
                             </div>
                         </div>
+                        <div class="block-main-title h4">469-909-1423</div>
                         <div class="block-main-description">
                             <ul class="block-main-list">
                                 <li><span class="number">1</span>Fill out quick form</li>
@@ -628,7 +632,19 @@
                                 98% of our customers say our estimate was the most competitive and offered the most value. Get an estimate deliverd to your inbox in 48 hours.
                             </div>
                             <div class="footer-top-button clearfix">
-                                <a href="https://docs.google.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform" class="button-primary button-primary-inverse">GET A FAST ESTIMATE</a>
+                                <!-- <a href="https://docs.google.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform" class="button-primary button-primary-inverse">GET A FAST ESTIMATE</a> -->
+                                <div class="modal">
+                                    <label for="modal-1">
+                                        <div class="modal-trigger button-primary button-primary-inverse">GET A FAST ESTIMATE</div>
+                                    </label>
+                                    <input class="modal-state" id="modal-1" type="checkbox" />
+                                    <div class="modal-fade-screen">
+                                        <div class="modal-inner">
+                                            <div class="modal-close" for="modal-1"></div>
+                                            <iframe src="https://docs.google.com/a/mypioneerroofing.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- <div>
 								<iframe src="https://docs.google.com/a/mypioneerroofing.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>  
@@ -648,8 +664,20 @@
                                 </p>
                             </div>
                             <div class="footer-middle-button">
-                                <a href="https://docs.google.com/a/mypioneerroofing.com/forms/d/1p_7ly1y4nEEyfs0wbMixzPONkLw3RcN5UQGXuDQyDRU/viewform" class="button-primary">CONTACT ME ASAP</a>
-                                <a href="pick.co/pioneerroofing" class="button-primary">SCHEDULE ONLINE</a>
+                                <div class="modal footer-button">
+                                    <label for="modal-2">
+                                        <div class="modal-trigger button-primary">CONTACT ME ASAP</div>
+                                    </label>
+                                    <input class="modal-state" id="modal-2" type="checkbox" />
+                                    <div class="modal-fade-screen">
+                                        <div class="modal-inner">
+                                            <div class="modal-close" for="modal-2"></div>
+                                            <iframe src="https://docs.google.com/a/mypioneerroofing.com/forms/d/1p_7ly1y4nEEyfs0wbMixzPONkLw3RcN5UQGXuDQyDRU/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a href="https://docs.google.com/a/mypioneerroofing.com/forms/d/1p_7ly1y4nEEyfs0wbMixzPONkLw3RcN5UQGXuDQyDRU/viewform" class="button-primary">CONTACT ME ASAP</a> -->
+                                <a href="//pick.co/pioneerroofing" class="button-primary footer-button">SCHEDULE ONLINE</a>
                             </div>
                         </div>
                     </div>
