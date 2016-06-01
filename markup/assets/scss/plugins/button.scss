@@ -10,9 +10,6 @@
 	font-size: rem($font-size-btn-sm);
 	font-style: italic;
 	@include padding(rem(10px) rem(20px));
-
-	//@include span-columns(8);
-	//@include shift(2);
 	&:hover:not(:disabled),
 	&:focus:not(:disabled),
 	&:active:not(:disabled){
@@ -34,14 +31,6 @@
 		@include padding(rem(10px) rem(40px));
 		font-size: rem($font-size-btn-md);
 	}
-	// @include media(min-width $lg){
-	// 	@include padding(rem(10px) rem(40px));
-	// 	font-size: rem($font-size-btn-lg);
-	// }
-	// @include media(min-width $xs max-width $sm){
-	// 	@include span-columns(12);
-	// 	@include shift(0);
-	// }
 	&-inverse{
 		color: $orange;
 		background: $orange50;
@@ -135,7 +124,6 @@
 }
 .button-social{
 	@include button(simple, $orange50);
-	//max-width: 200px;
 	text-shadow: none;
 	box-shadow: none;
 	border: none;
@@ -145,7 +133,6 @@
 	font-size: rem(12px);
 	font-weight: bold;
 	@include margin(rem(30px) rem(10px) null);
-	//position: relative;
 	@include padding(rem(2px) null rem(2px) rem(30px));
 	display: flex;
 	justify-content: flex-start;
@@ -175,6 +162,9 @@
 	}
 	@include media(min-width $xs max-width $sm) {
 		@include margin(rem(20px) 0 null);
+	}
+	@include media(min-width $lg) {
+		@include padding(rem(2px) null rem(2px) rem(10px));
 	}
 }
 

@@ -27,7 +27,6 @@ h2, .h2{
 }
 h3, .h3{
 	color: $heading-color;
-	//font-size: modular-scale(1, $base-font-size, $golden);
 	@include font-size($h3-font-sizes);
 	font-family: $heading-font-family;
 }

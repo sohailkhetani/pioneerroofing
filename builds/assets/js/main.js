@@ -1047,6 +1047,9 @@ function toggle_menu(){
 		barHeight : 4,
 		barColor  : '#424242'
 	});
+	$('.navbar-menu').on('click', function(){
+		$(this).toggleClass('open-menu');
+	})
 }
 
 function modal(){

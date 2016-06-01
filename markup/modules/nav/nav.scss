@@ -1,5 +1,5 @@
-
-
+$menu-overlay:          #ffaf38; //#edb656;
+$menu-overlay-button:   $orange; //#e99f30;
 .navbar{
 	position: relative;
 	&-brand{
@@ -9,7 +9,7 @@
 		margin-right: auto;
 		@include padding(0 rem(35px));
 		.logo{
-			width: 275px;
+			width: 170px;
 			@include media(min-width $sm) {
 				width: 420px;
 			}
@@ -21,16 +21,15 @@
 	}
 	&-menu{
 		padding: 0;
-		background:transparent;
 		box-shadow: none;
-		border: none;
 		outline: none;
 		cursor: pointer;
+		outline: 10px solid $orange;
+		background: $orange;
 		&:hover, &:focus{
-			background:transparent;
 			box-shadow: none;
-			border: none;
-			outline: none;
+			outline: 10px solid $orange;
+			background: $orange;
 		}
 		display: block;
 		position: absolute;
@@ -38,8 +37,12 @@
 		bottom: 40px;
 		z-index: 101;
 		@include media(min-width $xs max-width $sm) {
-			padding-bottom: 15px;
-			right: -10px;
+			right: 0;
+			bottom: 20px;
+		}
+		&.open-menu{
+			outline: 10px solid $menu-overlay-button;
+			background: $menu-overlay-button;
 		}
 	}
 }
@@ -62,7 +65,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: $orange;
+	background: $menu-overlay;
 	z-index: 100;
 }
 /* Overlay closing cross */
@@ -143,6 +146,7 @@
 	visibility: visible;
 	transform: translateY(0%);
 	transition: transform 0.4s ease-in-out;
+	overflow-y: auto; 
 }
 
 .hmbrgr span {

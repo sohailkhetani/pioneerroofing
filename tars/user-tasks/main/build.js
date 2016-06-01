@@ -15,7 +15,7 @@ module.exports = () => {
                 'html:modify-html', 'images:minify-images'
             ],
             'main:create-build',
-            //'css:uncss',
+            'css:uncss',
             'css:combineMq',
             [
                 'css:compress-css'
