@@ -87,7 +87,7 @@
    ========================================================================== *//**
  * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
- */button,input {
+ */button {
   font: inherit;
  /* 1 */
   margin: 0;
@@ -97,7 +97,7 @@
  *//**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
- */button,input {
+ */button {
  /* 1 */
   overflow: visible;
 }/**
@@ -134,12 +134,7 @@
  *//**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
- */[type="checkbox"] {
-  box-sizing: border-box;
- /* 1 */
-  padding: 0;
- /* 2 */;
-}/**
+ *//**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  *//**
  * 1. Correct the odd appearance in Chrome and Safari.
@@ -213,23 +208,6 @@ button:disabled {
 
 button:disabled:hover {
   background-color: #1565c0;
-}
-
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.25em;
-}
-
-input {
-  display: block;
-  font-family: "Source Sans Pro", "Arial", sans-serif;
-  font-size: 16px;
-}
-
-[type="checkbox"] {
-  display: inline;
-  margin-right: 0.25em;
 }
 
 html {
@@ -756,89 +734,6 @@ html,body {
   content: "";
 }
 
-.modal label {
-  cursor: pointer;
-  margin-bottom: 0;
-}
-
-.modal .modal-state {
-  display: none;
-}
-
-.modal .modal-fade-screen {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  opacity: 0;
-  padding-top: 0.6em;
-  text-align: left;
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-  visibility: hidden;
-  z-index: 99999999999;
-}
-
-.modal .modal-close {
-  position: absolute;
-  top: 0.5em;
-  right: 0.5em;
-  height: 1.5em;
-  width: 1.5em;
-  background: #fff;
-  cursor: pointer;
-}
-
-.modal .modal-close::after,.modal .modal-close::before {
-  position: absolute;
-  top: 3px;
-  right: 3px;
-  bottom: 0;
-  left: 50%;
-  height: 1.5em;
-  width: 0.15em;
-  background: #ff9800;
-  content: "";
-  display: block;
-  margin: -3px 0 0 -1px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.modal .modal-close:hover::after,.modal .modal-close:hover::before {
-  background: #cc7a00;
-}
-
-.modal .modal-close::before {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.modal .modal-inner {
-  background: #fff;
-  border-radius: 3px;
-  margin: auto;
-  margin-top: 0;
-  max-height: 95%;
-  overflow: auto;
-  padding: 1em;
-  position: relative;
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-  width: 95%;
-}
-
-.modal .modal-state:checked + .modal-fade-screen {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal .modal-state:checked + .modal-fade-screen .modal-inner {
-  top: 0.5em;
-}
-
 html {
   font-size: 16px;
 }
@@ -1092,71 +987,6 @@ a {
   margin-bottom: 1.875rem;
 }
 
-.section-service {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  margin-top: 3.75rem;
-  margin-bottom: 3.75rem;
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
-  text-align: center;
-  border-radius: 1px;
-  border-bottom: 8px solid rgba(0, 0, 0, 0.12);
-}
-
-.section-service-img {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
-.section-service-img::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.section-service-img-inner {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-left: 38.38412%;
-}
-
-.section-service-img-inner:last-child {
-  margin-right: 0;
-}
-
-.section-service-title {
-  font-size: 1.375rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  display: inline-block;
-  position: relative;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.section-service-title:before {
-  content: '';
-  width: 100%;
-  height: 3px;
-  border-radius: 1px;
-  background: rgba(0, 0, 0, 0.12);
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-}
-
-.section-service-title-subtitle {
-  font-weight: book;
-}
-
-.section-service-content > div {
-  margin-bottom: 1.25rem;
-}
-
 .bullets {
   margin-bottom: 1.5;
   margin: 1rem;
@@ -1269,6 +1099,71 @@ a {
 
 .bullets img {
   max-width: 100%;
+}
+
+.section-service {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  text-align: center;
+  border-radius: 1px;
+  border-bottom: 8px solid rgba(0, 0, 0, 0.12);
+}
+
+.section-service-img {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.section-service-img::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.section-service-img-inner {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-left: 38.38412%;
+}
+
+.section-service-img-inner:last-child {
+  margin-right: 0;
+}
+
+.section-service-title {
+  font-size: 1.375rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  display: inline-block;
+  position: relative;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-service-title:before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  border-radius: 1px;
+  background: rgba(0, 0, 0, 0.12);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.section-service-title-subtitle {
+  font-weight: book;
+}
+
+.section-service-content > div {
+  margin-bottom: 1.25rem;
 }
 
 .comments {
@@ -1533,7 +1428,7 @@ a {
   display: table;
 }
 
-.footer-middle-button .footer-button {
+.footer-middle-button a {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -1541,24 +1436,15 @@ a {
   margin-bottom: 0.9375rem;
 }
 
-.footer-middle-button .footer-button:last-child {
+.footer-middle-button a:last-child {
   margin-right: 0;
 }
 
-.footer-middle-button .footer-button:first-child {
+.footer-middle-button a:first-child {
   -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
-}
-
-.footer-middle-button .modal.footer-button {
-  padding: 0;
-}
-
-.footer-middle-button .modal.footer-button .button-primary {
-  display: block;
-  width: 100%;
 }
 
 .footer-middle-contact {
@@ -1864,7 +1750,7 @@ a {
     font-size: 1rem;
   }
 
-  .footer-middle-button .footer-button {
+  .footer-middle-button a {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -1873,7 +1759,7 @@ a {
     padding: 0.625rem 1rem;
   }
 
-  .footer-middle-button .footer-button:last-child {
+  .footer-middle-button a:last-child {
     margin-right: 0;
   }
 
@@ -1930,7 +1816,7 @@ a {
     margin-right: 0;
   }
 
-  .footer-middle-button .footer-button:first-child {
+  .footer-middle-button a:first-child {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -1966,12 +1852,6 @@ a {
   .button-primary {
     padding: 0.625rem 2.5rem;
     font-size: 1.75rem;
-  }
-
-  .modal .modal-inner {
-    max-height: 80%;
-    padding: 2em;
-    width: 60%;
   }
 
   h2 {
@@ -2033,7 +1913,7 @@ a {
     max-width: 350px;
   }
 
-  .footer-middle-button .footer-button {
+  .footer-middle-button a {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -2042,7 +1922,7 @@ a {
     padding: 0.625rem 1.5rem;
   }
 
-  .footer-middle-button .footer-button:last-child {
+  .footer-middle-button a:last-child {
     margin-right: 0;
   }
 
@@ -2069,12 +1949,6 @@ a {
 
   .bullets p {
     font-size: 1.125rem;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .modal .modal-inner {
-    width: 50%;
   }
 }
 
