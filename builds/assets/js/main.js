@@ -883,7 +883,7 @@ return typeof n.toString!="function"&&typeof(n+"")=="string"}}(),Jn=m();typeof d
 'use strict';
 
 $(document).ready(function() {
-	sticky_init(); 
+	sticky_init();
 	same_height();
 	counter();
 	overlay_menu();
@@ -951,7 +951,7 @@ function counter(){
 				'curr': strfobj(currDate),
 				'next': strfobj(nextDate)
 			};
-			
+
 			if (hoursOnly == true) {
 				var totalCurrHours = Number(data.curr.days) * 24 + Number(data.curr.hours),
 					totalNextHours = Number(data.next.days) * 24 + Number(data.next.hours);
@@ -1044,10 +1044,10 @@ function toggle_menu(){
 		width     : 30,
 		height    : 26,
 		barHeight : 4,
+		barRadius : 10,
 		barColor  : '#424242'
 	});
 	$('.navbar-menu').on('click', function(){
 		$(this).toggleClass('open-menu');
 	})
 }
-

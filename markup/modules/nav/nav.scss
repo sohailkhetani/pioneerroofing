@@ -2,18 +2,35 @@ $menu-overlay:          #ffaf38; //#edb656;
 $menu-overlay-button:   $orange; //#e99f30;
 .navbar{
 	position: relative;
-	&-brand{
-		display: block;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		@include padding(0 rem(35px));
-		.logo{
-			width: 170px;
-			@include media(min-width $sm) {
-				width: 420px;
-			}
+	background: $orange;
+	&-inner{
+		@include padding(rem(10px) rem(50px) rem(5px) 0);
+		@include media(min-width $md) {
+			@include padding(rem(10px) rem(60px) rem(5px) 0);
 		}
+	}
+	.container{
+		position: relative;
+		@include media(min-width $xs max-width $sm) {
+			padding: 0 10px;
+		}
+	}
+	&-brand{
+		display: inline-block;
+		// text-align: center;
+		// margin-left: auto;
+		// margin-right: auto;
+		//@include padding(0 rem(35px));
+		//.logo{
+			//width: 170px;
+			width: 100px;
+			@include media(min-width $sm max-width $md) {
+				width: 200px;
+			}
+			@include media(min-width $md) {
+				width: 300px;
+			}
+		//}
 	}
 	img{
 		width: 100%;
@@ -24,25 +41,68 @@ $menu-overlay-button:   $orange; //#e99f30;
 		box-shadow: none;
 		outline: none;
 		cursor: pointer;
-		outline: 10px solid $orange;
-		background: $orange;
+		//outline: 10px solid $orange;
+		//background: $orange;
 		&:hover, &:focus{
 			box-shadow: none;
-			outline: 10px solid $orange;
-			background: $orange;
+			//outline: 10px solid $orange;
+			//background: $orange;
 		}
 		display: block;
 		position: absolute;
 		right: 20px;
-		bottom: 40px;
+		bottom: 60px;
 		z-index: 101;
+		@include media(min-width $sm max-width $md) {
+			bottom: 40px;
+		}
 		@include media(min-width $xs max-width $sm) {
-			right: 0;
-			bottom: 20px;
+			right: 20px;
+			bottom: 18px;
 		}
 		&.open-menu{
-			outline: 10px solid $menu-overlay-button;
-			background: $menu-overlay-button;
+			outline: 10px solid #fff;
+			background: #fff;
+			.hmbrgr{
+				span{
+					background-color: $orange !important;
+				}
+			}
+		}
+	}
+	&-nav{
+		font-size: 0;
+		position: relative;
+		&:after{
+			content: '';
+			width: 1px;
+			height: 100%;
+			background: $textgray;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		li{
+			font-size: 14px;
+			@include margin(null rem(10px) null null);
+			display: inline-block;
+			a{
+				height: 20px;
+				display: block;
+				img{
+					max-width: 100%;
+					width: auto;
+				}
+				@include media(min-width $sm) {
+					height: 35px;
+				}
+			}
+			@include media(min-width $sm max-width $md) {
+				@include margin(null rem(20px) null null);
+			}
+			@include media(min-width $md) {
+				@include margin(null rem(40px) null null);
+			}
 		}
 	}
 }
@@ -51,11 +111,58 @@ $menu-overlay-button:   $orange; //#e99f30;
 //sticky
 .is-sticky{
 	#sticker{
-		top: 100% !important;
+		top: auto !important;
+		bottom: 0 !important;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 100% !important;
+	}
+	.block-main-button{
+		a{
+			@include span-columns(6, block-collapse);
+			@include margin(null null rem(15px));
+			margin-right: 0;
+			margin-bottom: 0;
+			border-radius: 0;
+			color: $textgray;
+			@include media(min-width $md max-width $lg) {
+				@include span-columns(6, block-collapse);
+				@include padding(0.625rem 1.5rem);
+				margin-right: 0;
+			}
+			@include media(min-width $sm max-width $md) {
+				@include span-columns(6, block-collapse);
+				@include padding(0.625rem 0.5rem);
+				font-size: 1.5rem;
+				margin-left: 0;
+				margin-right: 0;
+			}
+			@include media(min-width $xs max-width $sm) {
+				font-size: 1rem;
+				@include padding(0.625rem 0.2rem);
+			}
+		}
+		.yes-sticky{
+			display: block;
+			i{
+				margin-right: 10px;
+				@include media(min-width $xs max-width $sm) {
+					margin-right: 5px;
+				}
+			}
+		}
+		.no-sticky{
+			display: none;
+		}
+		.button-gray{
+			background: $orange;
+			border-right: 1px solid $textgray;
+		}
 	}
 }
 #sticker{
-	z-index: 100;
+	z-index: 99;
 }
 
 /* Overlay style */
@@ -94,29 +201,61 @@ $menu-overlay-button:   $orange; //#e99f30;
 .overlay nav {
 	text-align: center;
 	position: relative;
-	top: 5%;
+	//top: 5%;
 }
 
 .overlay-menu {
 	list-style: none;
 	padding: 0;
 	margin: 0 auto;
-	display: inline-block;
+	display: block;
 	height: 100%;
 	position: relative;
 }
 
 .overlay-menu li {
 	display: block;
-	margin-bottom: 20px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	@include padding(rem(20px) 0);
+	height: 200px;
+	/* autoprefixer: off */
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	@include media(min-width $xs max-width $sm) {
+		height: 130px;
+	}
+	&:first-child{
+		background: #ff9800;
+	}
+	&:nth-child(2){
+		background: #fb8c00;
+	}
+	&:nth-child(3){
+		background: #f57c00;
+	}
+	&:nth-child(4){
+		background: #ef6c00;
+	}
+	&:nth-child(5){
+		background: #e65100;
+	}
 }
 
 .overlay-menu-img{
 	display: block;
-	width: 50%;
+	width: 75px;
 	@include margin(null auto);
+	@include media(min-width $xs max-width $sm) {
+		width: 50px;
+	}
 }
 
 .overlay-menu li a {
@@ -133,7 +272,7 @@ $menu-overlay-button:   $orange; //#e99f30;
 }
 .overlay-menu li a:hover,
 .overlay-menu li a:focus {
-	color: $orange900;
+	//color: $orange900;
 }
 /* Effects */
 .overlay-slidedown {
@@ -146,7 +285,7 @@ $menu-overlay-button:   $orange; //#e99f30;
 	visibility: visible;
 	transform: translateY(0%);
 	transition: transform 0.4s ease-in-out;
-	overflow-y: auto; 
+	overflow-y: auto;
 }
 
 .hmbrgr span {

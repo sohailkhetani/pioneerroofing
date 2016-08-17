@@ -1,5 +1,6 @@
 $icomoon-font-path: "../fonts" !default;
 
+$ico-fastestimate: "\e91b";
 $ico-thumbtackpin: "\e91a";
 $ico-google-plus-sm: "\e919";
 $ico-thumbtack: "\e918";
@@ -45,202 +46,203 @@ $ico-facebook2: "\e907";
 }
 
 @font-face {
-    font-family: 'pioneerroofing';
-    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?xpcdjn');
-    src:    url('#{$icomoon-font-path}/pioneerroofing.eot?xpcdjn#iefix') format('embedded-opentype'),
-        url('#{$icomoon-font-path}/pioneerroofing.ttf?xpcdjn') format('truetype'),
-        url('#{$icomoon-font-path}/pioneerroofing.woff?xpcdjn') format('woff'),
-        url('#{$icomoon-font-path}/pioneerroofing.svg?xpcdjn#pioneerroofing') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'pioneerroofing';
+  src:  url('#{$icomoon-font-path}/pioneerroofing.eot?6bk4e9');
+  src:  url('#{$icomoon-font-path}/pioneerroofing.eot?6bk4e9#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/pioneerroofing.ttf?6bk4e9') format('truetype'),
+    url('#{$icomoon-font-path}/pioneerroofing.woff?6bk4e9') format('woff'),
+    url('#{$icomoon-font-path}/pioneerroofing.svg?6bk4e9#pioneerroofing') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="ico-"], [class*=" ico-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'pioneerroofing' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pioneerroofing' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+.ico-fastestimate {
+  &:before {
+    content: $ico-fastestimate;
+  }
+}
 .ico-thumbtackpin {
-    &:before {
-        content: $ico-thumbtackpin;
-    }
+  &:before {
+    content: $ico-thumbtackpin;
+  }
 }
 .ico-google-plus-sm {
-    &:before {
-        content: $ico-google-plus-sm;
-    }
+  &:before {
+    content: $ico-google-plus-sm;
+  }
 }
 .ico-thumbtack {
-    &:before {
-        content: $ico-thumbtack;
-    }
+  &:before {
+    content: $ico-thumbtack;
+  }
 }
 .ico-twitter {
-    &:before {
-        content: $ico-twitter;
-    }
+  &:before {
+    content: $ico-twitter;
+  }
 }
 .ico-bbb-pioneer-roofing-of-texas {
-    &:before {
-        content: $ico-bbb-pioneer-roofing-of-texas;
-    }
+  &:before {
+    content: $ico-bbb-pioneer-roofing-of-texas;
+  }
 }
 .ico-facebookicon {
-    &:before {
-        content: $ico-facebookicon;
-    }
+  &:before {
+    content: $ico-facebookicon;
+  }
 }
 .ico-google-plus-icon-pioneer-roofing-of-texas {
-    &:before {
-        content: $ico-google-plus-icon-pioneer-roofing-of-texas;
-    }
+  &:before {
+    content: $ico-google-plus-icon-pioneer-roofing-of-texas;
+  }
 }
 .ico-yelp-pioneer-texas {
-    &:before {
-        content: $ico-yelp-pioneer-texas;
-    }
+  &:before {
+    content: $ico-yelp-pioneer-texas;
+  }
 }
 .ico-ic_mail {
-    &:before {
-        content: $ico-ic_mail;
-    }
+  &:before {
+    content: $ico-ic_mail;
+  }
 }
 .ico-ic_person {
-    &:before {
-        content: $ico-ic_person;
-    }
+  &:before {
+    content: $ico-ic_person;
+  }
 }
 .ico-ic_phone {
-    &:before {
-        content: $ico-ic_phone;
-    }
+  &:before {
+    content: $ico-ic_phone;
+  }
 }
 .ico-about_us {
-    &:before {
-        content: $ico-about_us;
-    }
+  &:before {
+    content: $ico-about_us;
+  }
 }
 .ico-close_x {
-    &:before {
-        content: $ico-close_x;
-    }
+  &:before {
+    content: $ico-close_x;
+  }
 }
 .ico-hour_estimate {
-    &:before {
-        content: $ico-hour_estimate;
-    }
+  &:before {
+    content: $ico-hour_estimate;
+  }
 }
 .ico-blog {
-    &:before {
-        content: $ico-blog;
-    }
+  &:before {
+    content: $ico-blog;
+  }
 }
 .ico-career {
-    &:before {
-        content: $ico-career;
-    }
+  &:before {
+    content: $ico-career;
+  }
 }
 .ico-financing {
-    &:before {
-        content: $ico-financing;
-    }
+  &:before {
+    content: $ico-financing;
+  }
 }
 .ico-locations {
-    &:before {
-        content: $ico-locations;
-    }
+  &:before {
+    content: $ico-locations;
+  }
 }
 .ico-more {
-    &:before {
-        content: $ico-more;
-    }
+  &:before {
+    content: $ico-more;
+  }
 }
 .ico-network {
-    &:before {
-        content: $ico-network;
-    }
+  &:before {
+    content: $ico-network;
+  }
 }
 .ico-phone_icon {
-    &:before {
-        content: $ico-phone_icon;
-    }
+  &:before {
+    content: $ico-phone_icon;
+  }
 }
 .ico-pros {
-    &:before {
-        content: $ico-pros;
-    }
+  &:before {
+    content: $ico-pros;
+  }
 }
 .ico-refer_a_friend {
-    &:before {
-        content: $ico-refer_a_friend;
-    }
+  &:before {
+    content: $ico-refer_a_friend;
+  }
 }
 .ico-schedule {
-    &:before {
-        content: $ico-schedule;
-    }
+  &:before {
+    content: $ico-schedule;
+  }
 }
 .ico-services {
-    &:before {
-        content: $ico-services;
-    }
+  &:before {
+    content: $ico-services;
+  }
 }
 .ico-warranty {
-    &:before {
-        content: $ico-warranty;
-    }
+  &:before {
+    content: $ico-warranty;
+  }
 }
 .ico-phone {
-    &:before {
-        content: $ico-phone;
-    }
+  &:before {
+    content: $ico-phone;
+  }
 }
 .ico-envelop {
-    &:before {
-        content: $ico-envelop;
-    }
+  &:before {
+    content: $ico-envelop;
+  }
 }
 .ico-user {
-    &:before {
-        content: $ico-user;
-    }
+  &:before {
+    content: $ico-user;
+  }
 }
 .ico-star-empty {
-    &:before {
-        content: $ico-star-empty;
-    }
+  &:before {
+    content: $ico-star-empty;
+  }
 }
 .ico-star-full {
-    &:before {
-        content: $ico-star-full;
-    }
+  &:before {
+    content: $ico-star-full;
+  }
 }
 .ico-google-plus2 {
-    &:before {
-        content: $ico-google-plus2;
-    }
+  &:before {
+    content: $ico-google-plus2;
+  }
 }
 .ico-google-plus3 {
-    &:before {
-        content: $ico-google-plus3;
-    }
+  &:before {
+    content: $ico-google-plus3;
+  }
 }
 .ico-facebook2 {
-    &:before {
-        content: $ico-facebook2;
-    }
+  &:before {
+    content: $ico-facebook2;
+  }
 }
-
-
-
-

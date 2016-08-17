@@ -8,7 +8,7 @@
 	text-shadow: none;
 	box-shadow: none;
 	font-size: rem($font-size-btn-sm);
-	font-style: italic;
+	//font-style: italic;
 	@include padding(rem(10px) rem(20px));
 	&:hover:not(:disabled),
 	&:focus:not(:disabled),
@@ -132,7 +132,7 @@
 	border-radius: 4px;
 	font-size: rem(12px);
 	font-weight: bold;
-	@include margin(rem(30px) rem(10px) null);
+	@include margin(rem(30px) rem(5px) null);
 	@include padding(rem(2px) null rem(2px) rem(30px));
 	display: flex;
 	justify-content: flex-start;
@@ -155,10 +155,10 @@
 		}
 	}
 	i{
-		font-size: rem(32px);
+		font-size: rem(28px);
 		display: inline-block;
 		vertical-align: middle;
-		margin-right: 15px;
+		margin-right: 10px;
 	}
 	@include media(min-width $xs max-width $sm) {
 		@include margin(rem(20px) 0 null);
@@ -177,13 +177,17 @@
 	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 
 }
+
+.button-gray{
+	background: $textgray;
+}
 // .button-outline{
 // 	display: inline-block;
 // 	border-radius: 8px;
 // 	background-color: transparent;
 // 	padding: 7px 5px;
 // 	font-size: rem(24px);
-// 	border: rem(2px) solid $lightgray; 
+// 	border: rem(2px) solid $lightgray;
 // 	color: $lightgray;
 // 	text-align: center;
 // 	&:hover,

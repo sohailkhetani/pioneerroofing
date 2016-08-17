@@ -7,24 +7,36 @@
 }
 .comment{
 	@include margin(null 5px);
-	// @include media(min-width $xs max-width $sm) {
-	// 	@include margin(null 0);
-	// }
+	/* autoprefixer: off */
+	display: -webkit-flex;
+	display: -ms-flex;
 	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-justify-content:  space-around;
+	-ms-justify-content:  space-around;
 	justify-content: space-around;
+
+
+	// -webkit-flex: 1 0 410px;
+	// -ms-flex: 1 0 410px;
+	// flex: 1 0 410px;
+	// flex-basis: 410px;
 	&-row{
-		// @include span-columns(6);
-		// @include media(min-width $xs max-width $sm) {
-		// 	@include span-columns(12);
-		// }
-		display: flex;
-		flex-wrap: wrap;
+		/* autoprefixer: off */
+		-webkit-flex-flow: row wrap;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+		-webkit-justify-content:  space-around;
+		-ms-justify-content:  space-around;
 		justify-content: space-around;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
 
 	}
 	&-head{
-		//@include clearfix;
 		border-bottom: 1px solid $orange;
 	}
 	@include padding(5px 15px);
@@ -57,7 +69,6 @@
 	}
 	&-link{
 		@include padding(8px);
-		//@include span-columns(5);
 		position: relative;
 		text-transform: capitalize;
 		&:before{
@@ -81,8 +92,6 @@
 	}
 	&-body{
 		@include padding(rem(20px));
-		//border-top: 1px solid $orange;
-		//border-bottom: 1px solid $orange;
 		font-size: 16px;
 		text-align: center;
 		position: relative;
@@ -104,16 +113,13 @@
 	&-footer{
 		border-top: 1px solid $orange;
 		@include padding(10px null null null);
-		//@include clearfix;
 		@include display(flex);
 		@include justify-content(space-between);
 		@include align-items(center);
 	}
 	&-social{
-		//float: right;
 		&-link{
 			display: block;
-			//font-size: rem(32px);
 			color: $orange;
 			margin: 0 20px;
 			position: relative;
@@ -127,11 +133,6 @@
 			top: 0;
 			bottom: 0;
 		}
-		}
-	}
-	&-avatar{
-		&-name{
-			//float: left;
 		}
 	}
 }

@@ -29,6 +29,9 @@
 			a{
 				@include span-columns(6);
 				@include margin(null null rem(15px));
+				&:nth-child(2n){
+					margin-right: 0;
+				}
 				&:first-child{
 					@include media(min-width $xs max-width 860px){
 						order: 1;
