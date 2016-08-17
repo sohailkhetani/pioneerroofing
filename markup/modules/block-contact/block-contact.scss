@@ -11,10 +11,10 @@
 	}
 	&-img{
 		@include clearfix;
-		@include padding(rem(10px) null);
+		@include padding(rem(15px) null);
 		&-inner{
-			@include span-columns(2);
-			@include shift(5);
+			@include span-columns(3);
+			@include shift(4.5);
 		}
 	}
 	&-title{
@@ -66,8 +66,13 @@
 }
 
 .same-height-wrapper{
-	@include display(flex);
-	@include justify-content(space-around);
+	/* autoprefixer: off */
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-justify-content:  space-around;
+	-ms-justify-content:  space-around;
+	justify-content: space-around;
 	@include media(min-width $xs max-width $md) {
 		display: block;
 	}

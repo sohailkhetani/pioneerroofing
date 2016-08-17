@@ -2,20 +2,32 @@
 	background: $orange100;
 	@include padding(null null rem(20px));
 	.social-button-group-column{
-		@include display(flex);
-		@include justify-content(space-around);
-		//@include flex-wrap(wrap);
-		//@include padding(null rem(200px));
+		/* autoprefixer: off */
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-webkit-justify-content:  space-around;
+		-ms-justify-content:  space-around;
+		justify-content: space-around;
 		> div{
+			/* autoprefixer: off */
+			-webkit-flex-basis: 12em;
+			-ms-flex-basis: 12em;
 			flex-basis: 12em;
 		}
 		@include media(min-width $sm max-width $md) {
 			@include padding(null rem(150px));
-			@include flex-wrap(wrap);
+			/* autoprefixer: off */
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
 		}
 		@include media(min-width $xs max-width 1230px) {
 			@include padding(null rem(100px));
-			@include flex-wrap(wrap);
+			/* autoprefixer: off */
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
 		}
 		@include media(min-width $xs max-width 450px) {
 			@include padding(null rem(40px));

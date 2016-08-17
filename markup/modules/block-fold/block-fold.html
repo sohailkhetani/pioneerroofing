@@ -1,25 +1,43 @@
 <div class="block-main">
-	{{> nav/nav}}
+	{{> nav/nav-new}}
 	<div class="container">
+		<div class="block-main-image">
+			<img src="%=static=%images/general/coupon_orange.png" alt="">
+		</div>
 		<div class="block-main-title h3">
-			48 HOUR ESTIMATE
+			SUPER FAST <span class="text-primary">ESTIMATE</span>
+		</div>
+		<div class="block-main-desctitle h4">
+			DELIVERED TO YOUR INBOX
 		</div>
 		<div class="counter-wrapper">
 			<div class="counter">
 				<div class="countdown-container" id="counter"></div>
 			</div>
 		</div>
-		<div class="block-main-title h4">469-909-1423</div>
+		{{!<div class="block-main-title h4">469-909-1423</div>
 		<div class="block-main-description">
 			<ul class="block-main-list">
 				<li><span class="number">1</span>Fill out quick form</li>
 				<li><span class="number">2</span>We measure the roof</li>
 				<li><span class="number">3</span>Estimate in your <b>inbox!</b></li>
 			</ul>
-		</div>
-		<div class="block-main-button">
-			<a href="https://docs.google.com/a/mypioneerroofing.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform" class="button-primary">GET A FAST ESTIMATE</a>
+		</div>}}
+		<div class="block-main-button" id="sticker">
+			<a href="#" class="button-primary button-gray">
+				<span class="no-sticky">CONTACT ME NOW</span>
+				<span class="yes-sticky">
+					<i class="ico-phone_icon"></i>
+					<span>CONTACT US</span>
+				</span>
+			</a>
+			<a href="https://docs.google.com/a/mypioneerroofing.com/forms/d/1nOxdvIBEHCVG6mtzmYOPI-1za5jWU3xJ5EUUiPtMVlM/viewform" class="button-primary">
+				<span class="no-sticky">GET A FAST ESTIMATE</span>
+				<span class="yes-sticky">
+					<i class="ico-fastestimate"></i>
+					<span>FAST ESTIMATE</span>
+				</span>
+			</a>
 		</div>
 	</div>
 </div>
-

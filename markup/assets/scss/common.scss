@@ -9,7 +9,9 @@ body {
 .clearfix {
 	@include clearfix;
 }
-
+.wrapper{
+	overflow: hidden;
+}
 svg{
 	max-height: 100%;
 }
@@ -62,6 +64,3 @@ svg{
 		display: block;
 	}
 }
-
-
-

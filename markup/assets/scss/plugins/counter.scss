@@ -34,7 +34,7 @@ $counter-week:              false !default;
 $counter-day:               false !default;
 $counter-seconds:           true !default;
 
-$counter-font-family: 'a_love_of_thunderregular','Source Sans Pro', 'Arial', sans-serif;
+$counter-font-family: $heading-font-family;
 
 #counter-template {
 	display: none;
@@ -45,7 +45,7 @@ $counter-font-family: 'a_love_of_thunderregular','Source Sans Pro', 'Arial', san
 		text-align: center;
 		@include margin(rem(20px) null rem(20px));
 		will-change: transform;
-		position: relative; 
+		position: relative;
 		overflow: hidden;
 		font-size: 0;
 		@include media(min-width $xs max-width $sm) {

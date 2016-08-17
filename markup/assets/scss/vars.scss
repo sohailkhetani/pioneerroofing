@@ -9,8 +9,10 @@ $red:               #c9520e;
 $textgray:          #424242;
 
 
-$base-font-family: 'Source Sans Pro', 'Arial', sans-serif;
-$heading-font-family: 'a_love_of_thunderregular','Source Sans Pro', 'Arial', sans-serif;
+$base-font-family: 'proxima-nova-soft', 'Arial', sans-serif;
+$heading-font-family: 'proxima-nova-soft','Source Sans Pro', 'Arial', sans-serif;
+// $base-font-family: 'Source Sans Pro', 'Arial', sans-serif;
+// $heading-font-family: 'a_love_of_thunderregular','Source Sans Pro', 'Arial', sans-serif;
 $font-stack-system: $base-font-family;
 $body-bg:           $orange50;
 $body-color:        #424242;
@@ -22,6 +24,8 @@ $font-size-btn-sm:  20px;
 $font-size-btn-md:  28px;
 $font-size-btn-lg:  40px;
 
+$font-weight-norm:  400;
+$font-weight-bold:  700;
 
 //service section
 $light-gray-border: rgba(#000, 0.12);
@@ -32,7 +36,7 @@ $md: 980px;
 $lg: 1140px;
 
 $h1-font-sizes: (
-  null  : 24px,
+  null  : 36px,
   $sm : 48px,
   $lg: 58px
 );
@@ -44,13 +48,13 @@ $h2-font-sizes: (
 );
 
 $h3-font-sizes: (
-  null  : 22px,
+  null  : 18px,
   $sm : 36px,
   $lg: 52px
 );
 
 $h4-font-sizes: (
-  null  : 16px,
+  null  : 14px,
   $sm : 36px,
   $lg: 52px
 );
