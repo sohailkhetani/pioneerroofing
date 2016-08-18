@@ -17,20 +17,13 @@ $menu-overlay-button:   $orange; //#e99f30;
 	}
 	&-brand{
 		display: inline-block;
-		// text-align: center;
-		// margin-left: auto;
-		// margin-right: auto;
-		//@include padding(0 rem(35px));
-		//.logo{
-			//width: 170px;
-			width: 100px;
-			@include media(min-width $sm max-width $md) {
-				width: 200px;
-			}
-			@include media(min-width $md) {
-				width: 300px;
-			}
-		//}
+		width: 100px;
+		@include media(min-width $sm max-width $md) {
+			width: 200px;
+		}
+		@include media(min-width $md) {
+			width: 300px;
+		}
 	}
 	img{
 		width: 100%;
