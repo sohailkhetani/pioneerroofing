@@ -605,6 +605,7 @@ html,body {
   display: block;
   font-size: 22px;
   font-family: "proxima-nova-soft", "Arial", sans-serif;
+  font-weight: 700;
   line-height: 42px;
   overflow: hidden;
   position: absolute;
@@ -1159,11 +1160,6 @@ a {
   display: table;
 }
 
-.bullets h2 {
-  display: inline-block;
-  font-size: 1.4rem;
-}
-
 .bullets p {
   color: #333;
   line-height: 1.5;
@@ -1455,6 +1451,7 @@ a {
 
 .footer-bottom {
   padding-top: 0.625rem;
+  padding-bottom: 3.75rem;
   background: #f6dfb3;
 }
 
@@ -1498,8 +1495,8 @@ a {
 }
 
 .navbar-menu.open-menu {
-  outline: 10px solid #fff;
-  background: #fff;
+  outline: 10px solid transparent;
+  background: transparent;
 }
 
 .navbar-nav {
@@ -1574,6 +1571,10 @@ a {
   border-right: 1px solid #424242;
 }
 
+#sticker-nav {
+  z-index: 1000;
+}
+
 #sticker {
   z-index: 99;
 }/* Overlay style */.overlay {
@@ -1621,7 +1622,7 @@ a {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   padding: 1.25rem 0;
-  height: 200px;
+  height: 20vh;
  /* autoprefixer: off */
   display: -webkit-flex;
   display: -ms-flex;
@@ -1804,10 +1805,6 @@ a {
     margin-right: 0;
   }
 
-  .block-main-image img {
-    width: 50%;
-  }
-
   .bullets .bullet {
     padding-right: 0;
     padding-bottom: 20px;
@@ -1855,6 +1852,11 @@ a {
     margin-right: 0;
   }
 
+  .footer-bottom {
+    padding-top: 0.625rem;
+    padding-bottom: 2.5rem;
+  }
+
   .navbar .container {
     padding: 0 10px;
   }
@@ -1877,12 +1879,8 @@ a {
     font-size: 10px;
   }
 
-  .overlay-menu li {
-    height: 130px;
-  }
-
   .overlay-menu-img {
-    width: 50px;
+    width: 40px;
   }
 }
 
@@ -2032,6 +2030,11 @@ a {
 
   .footer-middle-button a:last-child {
     margin-right: 0;
+  }
+
+  .footer-bottom {
+    padding-top: 0.625rem;
+    padding-bottom: 3.125rem;
   }
 
   .navbar-brand {
