@@ -34,6 +34,7 @@ module.exports = function () {
                     '.is-sticky .block-main-button .yes-sticky i',
                     '.is-sticky .block-main-button .no-sticky',
                     '.is-sticky .block-main-button .button-gray',
+                    '#sticker-nav',
                     '.overlay',
                     '.overlay-close',
                     '.overlay-title',

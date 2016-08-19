@@ -33,17 +33,17 @@
 					margin-right: 0;
 				}
 				&:first-child{
-					@include media(min-width $xs max-width 860px){
+					@include media(min-width $xs max-width 860px) {
 						order: 1;
 					}
 					order: 2;
 				}
-				@include media(min-width $sm max-width $md){
+				@include media(min-width $sm max-width $md) {
 					@include span-columns(8);
 					@include shift(2);
 					@include padding(0.625rem 1.5rem);
 				}
-				@include media(min-width $xs max-width $sm){
+				@include media(min-width $xs max-width $sm) {
 					@include span-columns(10);
 					@include shift(1);
 					@include padding(0.625rem 1rem);
@@ -63,7 +63,13 @@
 		}
 	}
 	&-bottom{
-		@include padding(rem(10px) null null);
+		@include padding(rem(10px) null rem(60px));
 		background: $footer-bg;
+		@include media(min-width $sm max-width $md) {
+			@include padding(rem(10px) null rem(50px));
+		}
+		@include media(min-width $xs max-width $sm) {
+			@include padding(rem(10px) null rem(40px));
+		}
 	}
 }

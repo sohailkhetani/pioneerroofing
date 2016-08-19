@@ -60,31 +60,5 @@
 	&-image{
 		@include margin(rem(30px) null null);
 		text-align: center;
-		img{
-			@include media(min-width $xs max-width $sm) {
-				width: 50%;
-			}
-		}
 	}
 }
-
-// .counter{
-// 	&-wrapper{
-// 		text-align: center;
-// 		@include margin(rem(40px) null rem(20px));
-// 	}
-// 	@include padding(rem(10px) rem(30px));
-// 	background: $orange;
-// 	display: inline-block;
-// 	@include font-size($h3-font-sizes);
-// 	font-style: italic;
-// 	font-weight: bold;
-// 	color: $orange50;
-// 	border-radius: 4px;
-// 	@include media(min-width $sm) {
-// 		@include padding(0 rem(30px));
-// 	}
-// 	@include media(min-width $lg) {
-// 		font-size: 52px;
-// 	}
-// }

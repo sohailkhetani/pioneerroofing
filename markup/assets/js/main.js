@@ -106,6 +106,9 @@ function sticky_init(){
 	$("#sticker").sticky({
 		topSpacing: 100
 	});
+	$("#sticker-nav").sticky({
+		topSpacing: 0
+	});
 }
 
 function same_height(){
