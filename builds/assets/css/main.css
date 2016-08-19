@@ -115,12 +115,12 @@
  /* 2 */;
 }/**
  * Remove the inner border and padding in Firefox.
- */button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+ */button::-moz-focus-inner,[type="button"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }/**
  * Restore the focus styles unset by the previous rule.
- */button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {
+ */button:-moz-focusring,[type="button"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }/**
  * Change the border, margin, and padding in all browsers (opinionated).
@@ -143,10 +143,18 @@
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  *//**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
- *//**
+ */::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}/**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
- *//* Your custom fonts here *//* Example
+ */::-webkit-file-upload-button {
+  -webkit-appearance: button;
+ /* 1 */
+  font: inherit;
+ /* 2 */;
+}/* Your custom fonts here *//* Example
 
 @font-face {
     font-family: 'CustomFont';
@@ -1534,6 +1542,38 @@ a {
   width: 100% !important;
 }
 
+.is-sticky .block-main-button a {
+  float: left;
+  display: block;
+  width: 51.17883%;
+  margin-bottom: 0.9375rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  color: #424242;
+}
+
+.is-sticky .block-main-button a:last-child {
+  width: 48.82117%;
+}
+
+.is-sticky .block-main-button .yes-sticky {
+  display: block;
+}
+
+.is-sticky .block-main-button .yes-sticky i {
+  margin-right: 10px;
+}
+
+.is-sticky .block-main-button .no-sticky {
+  display: none;
+}
+
+.is-sticky .block-main-button .button-gray {
+  background: #ff9800;
+  border-right: 1px solid #424242;
+}
+
 #sticker {
   z-index: 99;
 }/* Overlay style */.overlay {
@@ -1824,6 +1864,15 @@ a {
     bottom: 18px;
   }
 
+  .is-sticky .block-main-button a {
+    font-size: 1rem;
+    padding: 0.625rem 0.2rem;
+  }
+
+  .is-sticky .block-main-button .yes-sticky i {
+    margin-right: 5px;
+  }
+
   .overlay-contact span {
     font-size: 10px;
   }
@@ -1997,6 +2046,20 @@ a {
     margin-right: 1.25rem;
   }
 
+  .is-sticky .block-main-button a {
+    float: left;
+    display: block;
+    width: 51.17883%;
+    padding: 0.625rem 0.5rem;
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .is-sticky .block-main-button a:last-child {
+    width: 48.82117%;
+  }
+
   .social-button-group .social-button-group-column {
     padding-right: 9.375rem;
     padding-left: 9.375rem;
@@ -2061,6 +2124,20 @@ a {
 
   .navbar-nav li {
     margin-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1140px) {
+  .is-sticky .block-main-button a {
+    float: left;
+    display: block;
+    width: 51.17883%;
+    padding: 0.625rem 1.5rem;
+    margin-right: 0;
+  }
+
+  .is-sticky .block-main-button a:last-child {
+    width: 48.82117%;
   }
 }
 

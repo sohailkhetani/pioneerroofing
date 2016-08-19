@@ -17,6 +17,7 @@ module.exports = () => {
             'main:create-build',
             'css:uncss',
             'css:combineMq',
+            'html:compile-templates-optimizely',
             [
                 'css:compress-css'
             ],
