@@ -18,6 +18,21 @@
 		}
 		&-button{
 			@include margin(rem(30px) null rem(10px));
+			a{
+				@include span-columns(6);
+				@include shift(3);
+				@include media(max-width $sm) {
+					@include span-columns(12);
+					@include shift(0);
+				}
+				@include media(min-width $sm max-width $md) {
+					@include span-columns(8);
+					@include shift(2);
+				}
+			}
+			+ .footer-top-button{
+				@include margin(rem(10px) null rem(10px));
+			}
 		}
 	}
 	&-middle{
@@ -64,7 +79,7 @@
 	}
 	&-bottom{
 		@include padding(rem(10px) null rem(60px));
-		background: $footer-bg;
+		background: $textgray;
 		@include media(min-width $sm max-width $md) {
 			@include padding(rem(10px) null rem(50px));
 		}

@@ -839,6 +839,8 @@ return typeof n.toString!="function"&&typeof(n+"")=="string"}}(),Jn=m();typeof d
 
 
 
+
+
 // $('.modal-button').on('click', function () {
 // 	var $this =  $(this);
 // 	var $parent = $this.closest('.modal-wrapper');
@@ -872,8 +874,6 @@ return typeof n.toString!="function"&&typeof(n+"")=="string"}}(),Jn=m();typeof d
 // 	$('.form-button').css('opacity', 0);
 // 	return false;
 // })
-
-
 
 
 
