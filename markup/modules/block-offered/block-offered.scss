@@ -20,5 +20,10 @@
 			@include shift(3);
 		}
 	}
+	h4{
+		@include media(min-width $md) {
+			font-size: rem(36px);
+		}
+	}
 
 }

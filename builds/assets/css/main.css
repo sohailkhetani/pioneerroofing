@@ -1176,64 +1176,6 @@ a {
   max-width: 100%;
 }
 
-.coupon-wrapper {
-  background: #ff9800;
-  padding: 1.25rem;
-}
-
-.coupon-inner {
-  padding: 1.25rem;
-  border: 5px dashed transparent;
-  text-align: center;
-  box-sizing: content-box;
-  position: relative;
-  z-index: 10;
-}
-
-.coupon-inner:before,.coupon-inner:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: inherit;
-}
-
-.coupon-inner:before {
-  left: -5px;
-  top: 0;
-  border-color: rgba(0, 0, 0, 0.2);
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-  z-index: -2;
-}
-
-.coupon-inner:after {
-  left: -5px;
-  top: -5px;
-  border-color: #fff3e0;
-  z-index: -1;
-}
-
-.coupon-title {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 1.25rem;
-}
-
-.coupon-title .coupon-text-color {
-  margin-bottom: 0;
-  color: #fff;
-}
-
-.coupon-content-text {
-  color: #fff3e0;
-  margin-top: 0.625rem;
-}
-
-.coupon-text-color {
-  color: #c9520e;
-}
-
 .comments {
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
@@ -1375,6 +1317,64 @@ a {
   left: -25px;
   top: 0;
   bottom: 0;
+}
+
+.coupon-wrapper {
+  background: #ff9800;
+  padding: 1.25rem;
+}
+
+.coupon-inner {
+  padding: 1.25rem;
+  border: 5px dashed transparent;
+  text-align: center;
+  box-sizing: content-box;
+  position: relative;
+  z-index: 10;
+}
+
+.coupon-inner:before,.coupon-inner:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: inherit;
+}
+
+.coupon-inner:before {
+  left: -5px;
+  top: 0;
+  border-color: rgba(0, 0, 0, 0.2);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  z-index: -2;
+}
+
+.coupon-inner:after {
+  left: -5px;
+  top: -5px;
+  border-color: #fff3e0;
+  z-index: -1;
+}
+
+.coupon-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.coupon-title .coupon-text-color {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.coupon-content-text {
+  color: #fff3e0;
+  margin-top: 0.625rem;
+}
+
+.coupon-text-color {
+  color: #c9520e;
 }
 
 .footer {
@@ -1806,10 +1806,6 @@ a {
     padding-left: 0;
   }
 
-  .coupon-wrapper {
-    padding: 1.25rem 0;
-  }
-
   .comments {
     margin-top: 0;
     margin-bottom: 0;
@@ -1826,6 +1822,10 @@ a {
 
   .comment-link {
     padding: 5px;
+  }
+
+  .coupon-wrapper {
+    padding: 1.25rem 0;
   }
 
   .footer-bottom {
@@ -2102,6 +2102,14 @@ a {
 
   .media-list:last-child:last-child {
     margin-right: 0;
+  }
+
+  .media-list h4 {
+    font-size: 2.25rem;
+  }
+
+  .bullets .bullet-content h3 {
+    font-size: 2.25rem;
   }
 
   .navbar-inner {
