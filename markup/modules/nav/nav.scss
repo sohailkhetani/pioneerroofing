@@ -2,7 +2,6 @@ $menu-overlay:          #ffaf38; //#edb656;
 $menu-overlay-button:   $orange; //#e99f30;
 .navbar{
 	position: relative;
-	background: $orange;
 	&-inner{
 		@include padding(rem(10px) rem(50px) rem(5px) 0);
 		@include media(min-width $md) {
@@ -46,6 +45,9 @@ $menu-overlay-button:   $orange; //#e99f30;
 		&.open-menu{
 			outline: 10px solid transparent;
 			background: transparent;
+			// position: fixed;
+			// top: 57px;
+			// bottom: auto;
 		}
 	}
 	&-nav{
@@ -83,83 +85,6 @@ $menu-overlay-button:   $orange; //#e99f30;
 			}
 		}
 	}
-}
-
-
-//sticky
-.is-sticky{
-	#sticker{
-		top: auto !important;
-		bottom: 0 !important;
-		left: 0;
-		right: 0;
-		margin: auto;
-		width: 100% !important;
-	}
-	.block-main-button{
-		a{
-			@include span-columns(6, block-collapse);
-			@include margin(null null rem(15px));
-			margin-right: 0;
-			margin-bottom: 0;
-			border-radius: 0;
-			color: $textgray;
-			@include media(min-width $md max-width $lg) {
-				@include span-columns(6, block-collapse);
-				@include padding(0.625rem 1.5rem);
-				margin-right: 0;
-			}
-			@include media(min-width $sm max-width $md) {
-				@include span-columns(6, block-collapse);
-				@include padding(0.625rem 0.5rem);
-				font-size: 1.5rem;
-				margin-left: 0;
-				margin-right: 0;
-			}
-			@include media(min-width $xs max-width $sm) {
-				font-size: 1rem;
-				@include padding(0.625rem 0.2rem);
-			}
-		}
-		.yes-sticky{
-			display: block;
-			i{
-				margin-right: 10px;
-				@include media(min-width $xs max-width $sm) {
-					margin-right: 5px;
-				}
-			}
-		}
-		.no-sticky{
-			display: none;
-		}
-		.button-gray{
-			background: $orange;
-			border-right: 1px solid $textgray;
-			&:hover:not(:disabled),
-			&:focus:not(:disabled),
-			&:active:not(:disabled){
-				box-shadow: none;
-				background-image: none;
-				background-color: $orange900;
-				color: $orange50;
-			}
-			&:disabled {
-				cursor: not-allowed;
-				opacity: 0.5;
-
-				&:hover {
-					background-color: $orange900;
-				}
-			}
-		}
-	}
-}
-#sticker-nav{
-	z-index: 1000;
-}
-#sticker{
-	z-index: 99;
 }
 
 /* Overlay style */
@@ -227,19 +152,16 @@ $menu-overlay-button:   $orange; //#e99f30;
 	-ms-align-items: center;
 	align-items: center;
 	&:first-child{
-		background: #ff9800;
+		background: #ffb74d;
 	}
 	&:nth-child(2){
-		background: #fb8c00;
+		background: #ffa726;
 	}
 	&:nth-child(3){
-		background: #f57c00;
+		background: #fb8c00;
 	}
 	&:nth-child(4){
 		background: #ef6c00;
-	}
-	&:nth-child(5){
-		background: #e65100;
 	}
 }
 
@@ -257,7 +179,7 @@ $menu-overlay-button:   $orange; //#e99f30;
 	@include font-size($p-font-sizes);
 	text-transform: uppercase;
 	display: block;
-	color: $textgray;
+	color: #fff;
 	font-family: $heading-font-family;
 	transition: color 0.2s;
 	span{
@@ -299,4 +221,7 @@ $menu-overlay-button:   $orange; //#e99f30;
 }
 .hmbrgr.expand span:nth-child(3) {
   transform: rotate(45deg);
+}
+.open{
+	overflow: hidden;
 }

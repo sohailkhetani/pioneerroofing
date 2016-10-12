@@ -1,7 +1,6 @@
 'use strict';
 
 $(document).ready(function() {
-	sticky_init();
 	same_height();
 	counter();
 	overlay_menu();
@@ -102,15 +101,6 @@ function counter(){
 	});
 }
 
-function sticky_init(){
-	$("#sticker").sticky({
-		topSpacing: 100
-	});
-	$("#sticker-nav").sticky({
-		topSpacing: 0
-	});
-}
-
 function same_height(){
 	if (!$().matchHeight) {
 		console.error('plugin matchHeight notfound');
@@ -165,10 +155,11 @@ function toggle_menu(){
 		width     : 30,
 		height    : 26,
 		barHeight : 4,
-		barRadius : 10,
-		barColor  : '#424242'
+		barRadius : 0,
+		barColor  : '#ffffff'
 	});
 	$('.navbar-menu').on('click', function(){
 		$(this).toggleClass('open-menu');
+		$('body').toggleClass('open');
 	})
 }

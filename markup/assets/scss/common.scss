@@ -35,12 +35,21 @@ svg{
 		}
 	}
 }
-
-
-
-
-
-
+.title-underline{
+	position: relative;
+	&:after{
+		content: '';
+		width: 100%;
+		height: 15px;
+		background: $orange;
+		position: absolute;
+		left: 0;
+		bottom: -10px;
+		@include media(min-width $xs max-width $sm){
+			height: 7px;
+		}
+	}
+}
 .float-right {
 	float: right;
 }

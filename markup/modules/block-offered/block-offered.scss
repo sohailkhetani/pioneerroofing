@@ -3,6 +3,9 @@
 	&-title{
 		text-align: center;
 		text-transform: uppercase;
+		span{
+			@extend .title-underline;
+		}
 	}
 }
 .media-list{
@@ -11,6 +14,7 @@
 	&-title{
 		text-transform: uppercase;
 		@include margin(null null rem(30px));
+		font-weight: $font-weight-norm;
 	}
 	@include media(min-width $md) {
 		@include span-columns(6);

@@ -4,6 +4,14 @@
 	@include media(min-width $xs max-width $sm) {
 		@include margin(0 null);
 	}
+	&-head{
+		text-transform: uppercase;
+		text-align: center;
+		@include margin(null null rem(40px));
+		span{
+			@extend .title-underline;
+		}
+	}
 }
 .comment{
 	@include margin(null 5px);

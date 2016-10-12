@@ -85,8 +85,9 @@
 		margin-left: 0;
 		margin-bottom: 0;
 		h3{
-			@include media(min-width $md) {
-				font-size: rem(36px);
+			font-weight: $font-weight-norm;
+			@include media(min-width $sm) {
+				font-size: rem(24px);
 			}
 		}
 	}

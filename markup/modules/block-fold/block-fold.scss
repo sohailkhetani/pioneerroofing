@@ -1,8 +1,13 @@
 .block-main {
-	background: $orange100;
-	@include padding(0 0 rem(30px));
+	background: $orange-new;
+	border-top: 15px solid $orange;
+	@include padding(0 0 rem(10px));
+	@include media(min-width $xs max-width $sm){
+		border-top: 7px solid $orange;
+	}
 	&-title{
 		text-align: center;
+		color: #fff;
 	}
 	&-desctitle{
 		text-align: center;
@@ -46,7 +51,7 @@
 			@include media(min-width $sm max-width $md){
 				@include span-columns(8);
 				@include shift(2);
-				@include padding(0.625rem 1.5rem);
+				@include padding(0.625rem 0.9rem);
 			}
 			@include media(min-width $xs max-width $sm){
 				@include span-columns(12);
@@ -58,7 +63,15 @@
 		}
 	}
 	&-image{
-		@include margin(rem(30px) null null);
 		text-align: center;
+		position: relative;
+		.image-absolute{
+			position: absolute;
+			width: 50%;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
 	}
 }

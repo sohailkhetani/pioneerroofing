@@ -10,5 +10,10 @@
 			@include padding(null 0);
 		}
 	}
+	&-title{
+		text-transform: uppercase;
+		span{
+			@extend .title-underline;
+		}
+	}
 }
-

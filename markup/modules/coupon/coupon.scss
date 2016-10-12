@@ -55,7 +55,7 @@
 
 	&-content{
 		&-text{
-			color: $orange50;
+			color: $textgray;
 			@include margin(rem(10px) null null);
 			span{
 				font-weight: bold;

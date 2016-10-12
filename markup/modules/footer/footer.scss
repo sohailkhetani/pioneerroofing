@@ -8,7 +8,7 @@
 	&-top{
 		background: $orange;
 		color: #fff;
-		@include padding(rem(20px) null);
+		@include padding(rem(20px) null null);
 		&-title{
 			color: #fff;
 			font-weight: bold;
@@ -17,8 +17,9 @@
 			@include padding(null rem(20px));
 		}
 		&-button{
-			@include margin(rem(30px) null rem(10px));
+			@include margin(rem(30px) null null);
 			a{
+				color: $orange;
 				@include span-columns(6);
 				@include shift(3);
 				@include media(max-width $sm) {
@@ -28,10 +29,11 @@
 				@include media(min-width $sm max-width $md) {
 					@include span-columns(8);
 					@include shift(2);
+					@include padding(0.625rem 0.9rem);
 				}
 			}
 			+ .footer-top-button{
-				@include margin(rem(10px) null rem(10px));
+				@include margin(rem(10px) null null);
 			}
 		}
 	}
@@ -85,6 +87,11 @@
 		}
 		@include media(min-width $xs max-width $sm) {
 			@include padding(rem(10px) null rem(40px));
+		}
+	}
+	&-image{
+		img{
+			display: block;
 		}
 	}
 }

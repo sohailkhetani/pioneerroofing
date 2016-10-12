@@ -4,5 +4,8 @@
 	&-header{
 		margin-bottom: 0;
 		text-transform: uppercase;
+		span{
+			@extend .title-underline;
+		}
 	}
 }
