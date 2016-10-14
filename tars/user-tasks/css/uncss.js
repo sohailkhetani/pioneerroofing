@@ -75,11 +75,24 @@ module.exports = function () {
                     '.counter .flip .count.curr.top',
                     '.counter .flip .count.next.bottom',
                     '.counter-wrapper',
-                    '.counter'
-                    // '.sticky-wrapper',
-                    // '.is-sticky',
-                    // '.is-sticky .navbar',
-                    // '.is-sticky .navbar-brand'
+                    '.counter',
+                    '.start-brand-animate',
+                    '.start-brand-animate .navbar-brand-wrapper',
+                    '.start-brand-animate .navbar-brand',
+                    '.start-brand-animate .navbar-brand img',
+                    '.block-main-overlay',
+                    '.start-brand-animate .block-main-overlay',
+                    '.start-brand-animate .block-main-overlay:before',
+                    '.start-brand-animate .brand-overlay',
+                    '.start-brand-animate .brand-overlay-animate',
+                    '.start-animate .button-animate',
+                    '.start-animate .block-main-title',
+                    '.start-animate .block-main-image',
+                    '.start-animate .navbar-menu',
+                    '.start-animate .block-main-button',
+                    '.start-animate .counter-wrapper',
+                    '.start-animate .image-absolute',
+                    '.start-animate .button-animate'
                 ]
             })
         )

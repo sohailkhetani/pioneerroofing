@@ -89,3 +89,82 @@
 		}
 	}
 }
+.start-animate {
+	.block-main-title, .block-main-image, .navbar-menu{
+		@extend .animated;
+		@extend .slideInLeft;
+		animation-delay: 3s;
+	}
+	.block-main-button, .counter-wrapper{
+		@extend .animated;
+		@extend .slideInUp;
+		animation-delay: 4s;
+	}
+	.image-absolute{
+		@extend .animated;
+		@extend .slideInRight;
+		animation-delay: 5s;
+	}
+	.button-animate{
+		animation-duration: 0.5s;
+	    animation-fill-mode: both;
+		animation-delay: 6s;
+		@extend .shake;
+	}
+}
+.start-brand-animate{
+	.navbar-brand-wrapper{
+		width: 200px;
+		height: 95px;
+	}
+	.navbar-brand{
+		position: fixed;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    top: 0;
+	    z-index: 1001;
+	    display: block;
+	    max-width: none;
+	    width: auto;
+	    text-align: center;
+	    transition: left 0.3s, top 0.3s, right 0.3s, bottom 0.3s, width 0.3s;
+		img{
+	    	max-width: 400px;
+			@include media(min-width $xs max-width $sm){
+				max-width: 250px;
+			}
+		}
+
+	}
+	.block-main-overlay{
+		position: relative;
+		border-top: none;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #424242;
+			z-index: 100;
+		}
+	}
+	.brand-overlay{
+		background: #424242;
+		position: fixed;
+		left: 0;
+	    right: 0;
+	    bottom: 0;
+	    top: 0;
+		z-index: 1000;
+		&-animate{
+			background: $orange-new;
+			animation-duration: 1s;
+		    animation-fill-mode: both;
+			//animation-delay: 3s;
+			@extend .slideInUp;
+		}
+	}
+}

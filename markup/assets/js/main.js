@@ -5,6 +5,7 @@ $(document).ready(function() {
 	counter();
 	overlay_menu();
 	toggle_menu();
+	fold_animate();
 });
 
 
@@ -161,5 +162,44 @@ function toggle_menu(){
 	$('.navbar-menu').on('click', function(){
 		$(this).toggleClass('open-menu');
 		$('body').toggleClass('open');
+	})
+}
+
+function fold_animate(){
+	var $body = $('body'),
+		$block = $('.block-main'),
+		$brand = $('.navbar-brand'),
+		$brandWrap = $('.navbar-brand-wrapper'),
+		$brandOverlay = $('.brand-overlay');
+
+	$body.addClass('start-animate');
+	$body.addClass('start-brand-animate');  //.start-brand-animate
+
+
+	setTimeout(function() {
+		$brandOverlay.addClass('brand-overlay-animate');
+		$block.addClass('block-main-overlay')
+	}, 1000);
+
+
+	$brand.one($.support.transition.end, function() {
+		$body.removeClass('start-brand-animate');
+		$brand.removeClass('brand-animate').removeAttr('style')
+	})
+
+	$brandOverlay.one($.support.animation.end, function() {
+		$block.removeClass('block-main-overlay')
+		$brand.addClass('brand-animate');
+		$brandOverlay.removeClass('brand-overlay-animate brand-overlay');
+		$brand.css({
+			left: $brandWrap.offset().left,
+			right: $(window).width() - ($brandWrap.width() + $brandWrap.offset().left),
+			top: $brandWrap.offset().top,
+			bottom: $(window).height() - ($brandWrap.height() + $brandWrap.offset().top)
+		})
+	})
+	
+	$('.button-animate').one($.support.animation.end, function() {
+		$body.removeClass('start-animate');
 	})
 }
