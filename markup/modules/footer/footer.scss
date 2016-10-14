@@ -15,6 +15,12 @@
 		}
 		&-content{
 			@include padding(null rem(20px));
+			max-width: 70%;
+			margin: auto;
+			@include media(min-width $xs max-width $sm) {
+				max-width: 100%;
+				margin: auto;
+			}
 		}
 		&-button{
 			@include margin(rem(30px) null null);

@@ -402,7 +402,7 @@ html,body {
 .button-primary:hover:not(:disabled),.button-primary:focus:not(:disabled),.button-primary:active:not(:disabled) {
   box-shadow: none;
   background-image: none;
-  background-color: #e65100;
+  background-color: #f57c00;
   color: #fff3e0;
   border: none;
 }
@@ -413,7 +413,7 @@ html,body {
 }
 
 .button-primary:disabled:hover {
-  background-color: #e65100;
+  background-color: #f57c00;
 }
 
 .button-primary-inverse {
@@ -424,7 +424,7 @@ html,body {
 .button-primary-inverse:hover:not(:disabled),.button-primary-inverse:focus:not(:disabled),.button-primary-inverse:active:not(:disabled) {
   box-shadow: none;
   background-image: none;
-  background-color: #e65100;
+  background-color: #f57c00;
   color: #fff3e0;
 }
 
@@ -434,7 +434,7 @@ html,body {
 }
 
 .button-primary-inverse:disabled:hover {
-  background-color: #e65100;
+  background-color: #f57c00;
 }
 
 .button-primary-icon:hover:not(:disabled):before,.button-primary-icon:focus:not(:disabled):before,.button-primary-icon:active:not(:disabled):before {
@@ -565,7 +565,7 @@ html,body {
 .button-social:hover:not(:disabled),.button-social:focus:not(:disabled),.button-social:active:not(:disabled) {
   box-shadow: none;
   background-image: none;
-  background-color: #e65100;
+  background-color: #f57c00;
   color: #fff3e0;
   border: none;
 }
@@ -576,7 +576,7 @@ html,body {
 }
 
 .button-social:disabled:hover {
-  background-color: #e65100;
+  background-color: #f57c00;
 }
 
 .button-social i {
@@ -1111,28 +1111,6 @@ a {
   animation-fill-mode: both;
 }
 
-.section-offered::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.section-offered-title {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.media-list {
-  text-align: center;
-  margin-bottom: 1.875rem;
-}
-
-.media-list-title {
-  text-transform: uppercase;
-  margin-bottom: 1.875rem;
-  font-weight: 400;
-}
-
 .section-service {
   border: 1px solid rgba(0, 0, 0, 0.12);
   margin-top: 3.75rem;
@@ -1189,6 +1167,28 @@ a {
 
 .section-service-content > div {
   margin-bottom: 1.25rem;
+}
+
+.section-offered::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.section-offered-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.media-list {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.media-list-title {
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
+  font-weight: 400;
 }
 
 .bullets {
@@ -1522,6 +1522,8 @@ a {
 .footer-top-content {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
+  max-width: 70%;
+  margin: auto;
 }
 
 .footer-top-button {
@@ -1603,7 +1605,7 @@ a {
 }/* Menu style */.overlay-title {
   font-size: 1rem;
   text-transform: uppercase;
-  color: #e65100;
+  color: #f57c00;
   font-weight: bold;
   margin-bottom: 1.25rem;
 }
@@ -1866,6 +1868,11 @@ a {
 
   .coupon-inner {
     max-width: 100%;
+  }
+
+  .footer-top-content {
+    max-width: 100%;
+    margin: auto;
   }
 
   .navbar .container {

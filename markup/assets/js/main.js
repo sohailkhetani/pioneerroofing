@@ -198,7 +198,7 @@ function fold_animate(){
 			bottom: $(window).height() - ($brandWrap.height() + $brandWrap.offset().top)
 		})
 	})
-	
+
 	$('.button-animate').one($.support.animation.end, function() {
 		$body.removeClass('start-animate');
 	})
