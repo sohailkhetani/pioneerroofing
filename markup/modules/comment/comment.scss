@@ -7,7 +7,6 @@
 	&-head{
 		text-transform: uppercase;
 		text-align: center;
-		@include margin(null null rem(40px));
 		span{
 			@extend .title-underline;
 		}

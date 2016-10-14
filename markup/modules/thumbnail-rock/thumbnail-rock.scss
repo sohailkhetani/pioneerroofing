@@ -2,7 +2,6 @@
 	text-align: center;
 	@include margin(rem(25px) null);
 	&-header{
-		margin-bottom: 0;
 		text-transform: uppercase;
 		span{
 			@extend .title-underline;

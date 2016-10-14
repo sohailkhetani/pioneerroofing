@@ -31,7 +31,6 @@
 		-ms-flex-grow: 1;
 		flex-grow: 1;
 		text-align: center;
-		@include margin(20px null null null);
 		@include padding(null 30px 20px 30px);
 		@include media(min-width $xs max-width $sm) {
 			@include padding(null 0 20px 0);

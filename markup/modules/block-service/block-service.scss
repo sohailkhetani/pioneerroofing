@@ -22,7 +22,6 @@
 		margin-bottom: 0;
 		display: inline-block;
 		position: relative;
-		@include padding(null rem(20px));
 		@include margin(null null rem(20px) null);
 		&:before{
 			content:'';

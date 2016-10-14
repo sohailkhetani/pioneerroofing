@@ -1,7 +1,5 @@
 .coupon{
 	&-wrapper{
-		// position: relative;
-		// z-index: 1;
 		background: $orange;
 		@include padding(rem(20px));
 		@include media(min-width $xs max-width $sm) {
@@ -15,6 +13,14 @@
 		box-sizing: content-box;
 		position: relative;
 		z-index: 10;
+		max-width: 50%;
+    	margin: auto;
+		@include media(min-width $sm max-width $md) {
+			max-width: 70%;
+		}
+		@include media(min-width $xs max-width $sm) {
+			max-width: 100%;
+		}
 		&:before,
 		&:after{
 			content:'';

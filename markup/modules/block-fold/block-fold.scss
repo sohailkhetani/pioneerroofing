@@ -8,6 +8,12 @@
 	&-title{
 		text-align: center;
 		color: #fff;
+		@include media(min-width $md){
+			font-size: rem(36px);
+		}
+		@include media(min-width $xs max-width $sm){
+			font-size: 1.4rem;
+		}
 	}
 	&-desctitle{
 		text-align: center;
@@ -71,6 +77,14 @@
 			top: 0;
 			left: 0;
 			right: 0;
+			margin: auto;
+		}
+		@include media(min-width $sm max-width $lg){
+			max-width: 85%;
+			margin: auto;
+		}
+		@include media(min-width $lg){
+			max-width: 75%;
 			margin: auto;
 		}
 	}
