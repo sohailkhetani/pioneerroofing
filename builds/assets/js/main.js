@@ -1149,7 +1149,7 @@ function fold_animate(){
 		$brandOverlay.removeClass('brand-overlay-animate brand-overlay');
 
 		var brandAnimation = function (){
-			$brand.addClass('brand-animate animated flip');
+			$brand.addClass('brand-animate');
 			$brand.velocity({
 				left: $brandWrap.offset().left,
 				right: $(window).width() - ($brandWrap.width() + $brandWrap.offset().left),
@@ -1160,7 +1160,7 @@ function fold_animate(){
 				complete: function(){
 					topPartAnimation();
 					$body.removeClass('start-brand-animate');
-					$brand.removeClass('brand-animate animated flip').removeAttr('style');
+					$brand.removeClass('brand-animate').removeAttr('style');
 				}
 			});
 		}
