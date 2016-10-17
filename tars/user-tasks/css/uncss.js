@@ -92,7 +92,12 @@ module.exports = function () {
                     '.start-animate .block-main-button',
                     '.start-animate .counter-wrapper',
                     '.start-animate .image-absolute',
-                    '.start-animate .button-animate'
+                    '.start-animate .button-animate',
+                    '.brand-animate',
+                    '.animated',
+                    '.flip',
+                    '.tada',
+                    '.zoomInDown'
                 ]
             })
         )

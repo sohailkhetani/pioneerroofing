@@ -1,11 +1,11 @@
 $icomoon-font-path: "../fonts" !default;
 
+$ico-bbb-pioneer-roofing-of-texas: "\e917";
 $ico-fastestimate: "\e91b";
 $ico-thumbtackpin: "\e91a";
 $ico-google-plus-sm: "\e919";
 $ico-thumbtack: "\e918";
 $ico-twitter: "\e92a";
-$ico-bbb-pioneer-roofing-of-texas: "\e917";
 $ico-facebookicon: "\e91c";
 $ico-google-plus-icon-pioneer-roofing-of-texas: "\e91d";
 $ico-yelp-pioneer-texas: "\e91e";
@@ -47,11 +47,11 @@ $ico-facebook2: "\e907";
 
 @font-face {
   font-family: 'pioneerroofing';
-  src:  url('#{$icomoon-font-path}/pioneerroofing.eot?6bk4e9');
-  src:  url('#{$icomoon-font-path}/pioneerroofing.eot?6bk4e9#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/pioneerroofing.ttf?6bk4e9') format('truetype'),
-    url('#{$icomoon-font-path}/pioneerroofing.woff?6bk4e9') format('woff'),
-    url('#{$icomoon-font-path}/pioneerroofing.svg?6bk4e9#pioneerroofing') format('svg');
+  src:  url('#{$icomoon-font-path}/pioneerroofing.eot?6sh8kp');
+  src:  url('#{$icomoon-font-path}/pioneerroofing.eot?6sh8kp#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/pioneerroofing.ttf?6sh8kp') format('truetype'),
+    url('#{$icomoon-font-path}/pioneerroofing.woff?6sh8kp') format('woff'),
+    url('#{$icomoon-font-path}/pioneerroofing.svg?6sh8kp#pioneerroofing') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -71,6 +71,11 @@ $ico-facebook2: "\e907";
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ico-bbb-pioneer-roofing-of-texas {
+  &:before {
+    content: $ico-bbb-pioneer-roofing-of-texas;
+  }
+}
 .ico-fastestimate {
   &:before {
     content: $ico-fastestimate;
@@ -94,11 +99,6 @@ $ico-facebook2: "\e907";
 .ico-twitter {
   &:before {
     content: $ico-twitter;
-  }
-}
-.ico-bbb-pioneer-roofing-of-texas {
-  &:before {
-    content: $ico-bbb-pioneer-roofing-of-texas;
   }
 }
 .ico-facebookicon {

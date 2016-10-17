@@ -170,36 +170,62 @@ function fold_animate(){
 		$block = $('.block-main'),
 		$brand = $('.navbar-brand'),
 		$brandWrap = $('.navbar-brand-wrapper'),
-		$brandOverlay = $('.brand-overlay');
+		$brandOverlay = $('.brand-overlay'),
+		$content = $('.block-main-title, .block-main-image, .navbar-menu, .counter-wrapper'),
+		$mainButton = $('.block-main-button'),
+		$topImage = $('.image-absolute');
+
 
 	$body.addClass('start-animate');
 	$body.addClass('start-brand-animate');  //.start-brand-animate
-
-
-	setTimeout(function() {
-		$brandOverlay.addClass('brand-overlay-animate');
-		$block.addClass('block-main-overlay')
-	}, 1000);
-
-
-	$brand.one($.support.transition.end, function() {
-		$body.removeClass('start-brand-animate');
-		$brand.removeClass('brand-animate').removeAttr('style')
-	})
+	$brandOverlay.addClass('brand-overlay-animate');
+	$block.addClass('block-main-overlay')
 
 	$brandOverlay.one($.support.animation.end, function() {
 		$block.removeClass('block-main-overlay')
 		$brand.addClass('brand-animate');
 		$brandOverlay.removeClass('brand-overlay-animate brand-overlay');
-		$brand.css({
-			left: $brandWrap.offset().left,
-			right: $(window).width() - ($brandWrap.width() + $brandWrap.offset().left),
-			top: $brandWrap.offset().top,
-			bottom: $(window).height() - ($brandWrap.height() + $brandWrap.offset().top)
-		})
-	})
 
+		var brandAnimation = function (){
+			$brand.addClass('brand-animate animated flip');
+			$brand.velocity({
+				left: $brandWrap.offset().left,
+				right: $(window).width() - ($brandWrap.width() + $brandWrap.offset().left),
+				top: $brandWrap.offset().top,
+				bottom: $(window).height() - ($brandWrap.height() + $brandWrap.offset().top)
+			},
+			{
+				complete: function(){
+					topPartAnimation();
+					$body.removeClass('start-brand-animate');
+					$brand.removeClass('brand-animate animated flip').removeAttr('style');
+				}
+			});
+		}
+
+		brandAnimation();
+
+		var topPartAnimation = function(){
+			$content.addClass('animated zoomInDown');
+			$mainButton.addClass('animated zoomInDown');
+			$mainButton.one($.support.animation.end, function() {
+				ImagePercent();
+			});
+		}
+
+		var ImagePercent = function(){
+			$topImage.velocity('transition.bounceRightIn', {
+				complete: function(){
+					$('.button-animate').addClass('animated tada');
+					$body.removeClass('start-animate');
+				}
+			})
+		}
+
+	})
 	$('.button-animate').one($.support.animation.end, function() {
-		$body.removeClass('start-animate');
+		$content.removeClass('animated zoomInDown');
+		$mainButton.removeClass('animated zoomInDown');
+		$('.button-animate').removeClass('animated tada');
 	})
 }

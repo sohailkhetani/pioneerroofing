@@ -90,26 +90,8 @@
 	}
 }
 .start-animate {
-	.block-main-title, .block-main-image, .navbar-menu{
-		@extend .animated;
-		@extend .slideInLeft;
-		animation-delay: 3s;
-	}
-	.block-main-button, .counter-wrapper{
-		@extend .animated;
-		@extend .slideInUp;
-		animation-delay: 4s;
-	}
-	.image-absolute{
-		@extend .animated;
-		@extend .slideInRight;
-		animation-delay: 5s;
-	}
-	.button-animate{
-		animation-duration: 0.5s;
-	    animation-fill-mode: both;
-		animation-delay: 6s;
-		@extend .shake;
+	.block-main-title, .block-main-image, .navbar-menu, .counter-wrapper, .image-absolute, .block-main-button{
+		opacity: 0;
 	}
 }
 .start-brand-animate{
@@ -128,7 +110,6 @@
 	    max-width: none;
 	    width: auto;
 	    text-align: center;
-	    transition: left 0.3s, top 0.3s, right 0.3s, bottom 0.3s, width 0.3s;
 		img{
 	    	max-width: 400px;
 			@include media(min-width $xs max-width $sm){
@@ -161,9 +142,8 @@
 		z-index: 1000;
 		&-animate{
 			background: $orange-new;
-			animation-duration: 1s;
+			animation-duration: 0.8s;
 		    animation-fill-mode: both;
-			//animation-delay: 3s;
 			@extend .slideInUp;
 		}
 	}
