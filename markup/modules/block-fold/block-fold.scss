@@ -99,7 +99,11 @@
 .start-brand-animate{
 	.navbar-brand-wrapper{
 		width: 200px;
-		height: 95px;
+		height: 99px;
+		@include media(min-width $xs max-width $sm){
+			width: 100px;
+			height: 50px;
+		}
 	}
 	.navbar-brand{
 		position: fixed;
@@ -112,10 +116,12 @@
 	    max-width: none;
 	    width: auto;
 	    text-align: center;
+		// transform: scale3d(2, 2, 2);
+		// margin: auto;
 		img{
 	    	max-width: 400px;
 			@include media(min-width $xs max-width $sm){
-				max-width: 250px;
+				max-width: 200px;
 			}
 		}
 

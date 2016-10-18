@@ -1096,6 +1096,7 @@ function overlay_menu(){
 					this.removeEventListener( transEndEventName, onEndTransitionFn );
 				}
 				classie.remove( overlay, 'close' );
+				$('.overlay-menu li a').removeClass('animated fadeInRight');
 			};
 			if( support.transitions ) {
 				overlay.addEventListener( transEndEventName, onEndTransitionFn );
@@ -1106,6 +1107,9 @@ function overlay_menu(){
 		}
 		else if( !classie.has( overlay, 'close' ) ) {
 			classie.add( overlay, 'open' );
+			$('.McButton').on('click', function(){
+				$('.overlay-menu li a').addClass('animated fadeInRight');
+			})
 		}
 	}
 
@@ -1114,13 +1118,28 @@ function overlay_menu(){
 }
 
 function toggle_menu(){
-	$('.hmbrgr').hmbrgr({
-		width     : 30,
-		height    : 26,
-		barHeight : 4,
-		barRadius : 0,
-		barColor  : '#ffffff'
+	var McButton = $("[data=hamburger-menu]");
+	var McBar1 = McButton.find("b:nth-child(1)");
+	var McBar2 = McButton.find("b:nth-child(2)");
+	var McBar3 = McButton.find("b:nth-child(3)");
+
+	McButton.click( function() {
+	  $(this).toggleClass("active");
+
+	  if (McButton.hasClass("active")) {
+	    McBar1.velocity({ top: "50%" }, {duration: 200, easing: "swing"});
+	    McBar3.velocity({ top: "50%" }, {duration: 200, easing: "swing"})
+	    			.velocity({rotateZ:"90deg"}, {duration: 800, delay: 200, easing: [500,20] });
+	    McButton.velocity({rotateZ:"135deg"}, {duration: 800, delay: 200, easing: [500,20] });
+	  } else {
+	    McButton.velocity("reverse");
+			McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] })
+	    			.velocity({ top: "100%" }, {duration: 200, easing: "swing"});
+	  	McBar1.velocity("reverse", {delay: 800});
+	  }
 	});
+
+
 	$('.navbar-menu').on('click', function(){
 		$(this).toggleClass('open-menu');
 		$('body').toggleClass('open');
@@ -1151,6 +1170,7 @@ function fold_animate(){
 		var brandAnimation = function (){
 			$brand.addClass('brand-animate');
 			$brand.velocity({
+				//scale: 1,
 				left: $brandWrap.offset().left,
 				right: $(window).width() - ($brandWrap.width() + $brandWrap.offset().left),
 				top: $brandWrap.offset().top,
@@ -1162,9 +1182,9 @@ function fold_animate(){
 					$body.removeClass('start-brand-animate');
 					$brand.removeClass('brand-animate').removeAttr('style');
 				}
-			});
+			}, "easeInSine");
 		}
-
+console.log($brandWrap.offset().left, $(window).width() - ($brandWrap.width() + $brandWrap.offset().left), $brandWrap.offset().top, $(window).height() - ($brandWrap.height() + $brandWrap.offset().top))
 		brandAnimation();
 
 		var topPartAnimation = function(){
@@ -1176,18 +1196,19 @@ function fold_animate(){
 		}
 
 		var ImagePercent = function(){
-			$topImage.velocity('transition.bounceRightIn', {
+			$topImage.addClass('animated lightSpeedIn');
+			$topImage.velocity({
 				complete: function(){
-					$('.button-animate').addClass('animated tada');
 					$body.removeClass('start-animate');
+
 				}
 			})
 		}
 
 	})
-	$('.button-animate').one($.support.animation.end, function() {
+	$topImage.one($.support.animation.end, function() {
 		$content.removeClass('animated zoomInDown');
 		$mainButton.removeClass('animated zoomInDown');
-		$('.button-animate').removeClass('animated tada');
+		$topImage.removeClass('animated lightSpeedIn');
 	})
 }

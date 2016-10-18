@@ -95,8 +95,8 @@ module.exports = function () {
                     '.start-animate .button-animate',
                     '.brand-animate',
                     '.animated',
-                    '.flip',
-                    '.tada',
+                    '.lightSpeedIn',
+                    '.fadeInRight',
                     '.zoomInDown'
                 ]
             })

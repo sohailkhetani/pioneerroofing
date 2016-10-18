@@ -25,31 +25,6 @@ $menu-overlay-button:   $orange; //#e99f30;
 		width: 100%;
 		height: 100%;
 	}
-	&-menu{
-		padding: 0;
-		box-shadow: none;
-		outline: none;
-		cursor: pointer;
-		&:hover, &:focus{
-			box-shadow: none;
-		}
-		display: block;
-		position: absolute;
-		right: 20px;
-		bottom: 42px;
-		z-index: 101;
-		@include media(min-width $xs max-width $sm) {
-			right: 20px;
-			bottom: 18px;
-		}
-		&.open-menu{
-			outline: 10px solid transparent;
-			background: transparent;
-			// position: fixed;
-			// top: 57px;
-			// bottom: auto;
-		}
-	}
 	&-nav{
 		font-size: 0;
 		position: relative;
@@ -153,17 +128,33 @@ $menu-overlay-button:   $orange; //#e99f30;
 	align-items: center;
 	&:first-child{
 		background: #ffb74d;
+		a{
+			animation-delay: 0.25s;
+		}
 	}
 	&:nth-child(2){
 		background: #ffa726;
+
+		a{
+			animation-delay: 0.3s;
+		}
 	}
 	&:nth-child(3){
 		background: #fb8c00;
+		a{
+			animation-delay: 0.35s;
+		}
+
 	}
 	&:nth-child(4){
 		background: #ef6c00;
+		a{
+			animation-delay: 0.4s;
+		}
+
 	}
 }
+
 
 .overlay-menu-img{
 	display: block;
@@ -186,42 +177,55 @@ $menu-overlay-button:   $orange; //#e99f30;
 		display: block;
 	}
 }
-.overlay-menu li a:hover,
-.overlay-menu li a:focus {
-	//color: $orange900;
-}
+
 /* Effects */
 .overlay-slidedown {
 	visibility: hidden;
-	transform: translateY(-100%);
-	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+	opacity: 0;
+	transition: opacity 0.6s, visibility 0s 0.6s;
 }
 
 .overlay-slidedown.open {
 	visibility: visible;
-	transform: translateY(0%);
-	transition: transform 0.4s ease-in-out;
+	opacity: 1;
+	transition: opacity 0.6s ease-in-out;
 	overflow-y: auto;
 }
 
-.hmbrgr span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  display: inline-block;
-}
-.hmbrgr.expand span:nth-child(1) {
-  transform: rotate(-45deg);
-}
-.hmbrgr.expand span:nth-child(2) {
-  zoom: 1;
-  filter: alpha(opacity=0);
-  opacity: 0;
-}
-.hmbrgr.expand span:nth-child(3) {
-  transform: rotate(45deg);
-}
 .open{
 	overflow: hidden;
 }
+
+/* Hamburger Menu */
+.McButton {
+	$bar-w: 44px;
+	$bar-h: 3px;
+	$bar-color: white;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -($bar-w /2);
+	width: $bar-w;
+	height: ($bar-w *3) /4;
+	cursor: pointer;
+	z-index: 101;
+	@include media(min-width $xs max-width $sm) {
+		margin-right: 10px;
+	}
+	b {
+		position: absolute;
+		left: 0;
+		width: $bar-w;
+		height: $bar-h;
+		background-color: $bar-color;
+		&:nth-child(1) {
+		  top: 0;
+		}
+		&:nth-child(2) {
+		  top: 50%;
+		}
+		&:nth-child(3) {
+		  top: 100%;
+		}
+	}
+}/* McButton */
