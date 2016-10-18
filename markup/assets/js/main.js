@@ -134,6 +134,7 @@ function overlay_menu(){
 					this.removeEventListener( transEndEventName, onEndTransitionFn );
 				}
 				classie.remove( overlay, 'close' );
+				$('.overlay-menu li').removeClass('animated fadeInRight');
 				$('.overlay-menu li a').removeClass('animated fadeInRight');
 			};
 			if( support.transitions ) {
@@ -146,6 +147,7 @@ function overlay_menu(){
 		else if( !classie.has( overlay, 'close' ) ) {
 			classie.add( overlay, 'open' );
 			$('.McButton').on('click', function(){
+				$('.overlay-menu li').addClass('animated fadeInRight');
 				$('.overlay-menu li a').addClass('animated fadeInRight');
 			})
 		}
@@ -222,7 +224,6 @@ function fold_animate(){
 				}
 			}, "easeInSine");
 		}
-console.log($brandWrap.offset().left, $(window).width() - ($brandWrap.width() + $brandWrap.offset().left), $brandWrap.offset().top, $(window).height() - ($brandWrap.height() + $brandWrap.offset().top))
 		brandAnimation();
 
 		var topPartAnimation = function(){

@@ -127,29 +127,32 @@ $menu-overlay-button:   $orange; //#e99f30;
 	-ms-align-items: center;
 	align-items: center;
 	&:first-child{
+		//animation-delay: 0.25s;
 		background: #ffb74d;
 		a{
-			animation-delay: 0.25s;
+			animation-delay: 0.6s;
 		}
 	}
 	&:nth-child(2){
 		background: #ffa726;
-
+		//animation-delay: 0.3s;
 		a{
-			animation-delay: 0.3s;
+			animation-delay: 0.8s;
 		}
 	}
 	&:nth-child(3){
 		background: #fb8c00;
+		//animation-delay: 0.35s;
 		a{
-			animation-delay: 0.35s;
+			animation-delay: 1s;
 		}
 
 	}
 	&:nth-child(4){
 		background: #ef6c00;
+		//animation-delay: 0.4s;
 		a{
-			animation-delay: 0.4s;
+			animation-delay: 1.2s;
 		}
 
 	}
@@ -199,7 +202,7 @@ $menu-overlay-button:   $orange; //#e99f30;
 /* Hamburger Menu */
 .McButton {
 	$bar-w: 44px;
-	$bar-h: 3px;
+	$bar-h: 5px;
 	$bar-color: white;
 	position: absolute;
 	top: 50%;
@@ -209,8 +212,13 @@ $menu-overlay-button:   $orange; //#e99f30;
 	height: ($bar-w *3) /4;
 	cursor: pointer;
 	z-index: 101;
+	margin-right: 10px;
 	@include media(min-width $xs max-width $sm) {
-		margin-right: 10px;
+
+		width: 34px;
+		margin-top: -15px;
+		height: 20px;
+
 	}
 	b {
 		position: absolute;
@@ -226,6 +234,10 @@ $menu-overlay-button:   $orange; //#e99f30;
 		}
 		&:nth-child(3) {
 		  top: 100%;
+		}
+		@include media(min-width $xs max-width $sm) {
+			width: 34px;
+
 		}
 	}
 }/* McButton */
