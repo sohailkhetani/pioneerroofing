@@ -126,39 +126,35 @@ $menu-overlay-button:   $orange; //#e99f30;
 	-webkit-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
+	animation-duration: 0.3s;
+	animation-fill-mode: both;
 	&:first-child{
-		//animation-delay: 0.25s;
 		background: #ffb74d;
 		a{
-			animation-delay: 0.6s;
+			animation-delay: 0.3s;
 		}
 	}
 	&:nth-child(2){
 		background: #ffa726;
-		//animation-delay: 0.3s;
 		a{
-			animation-delay: 0.8s;
+			animation-delay: 0.4s;
 		}
 	}
 	&:nth-child(3){
 		background: #fb8c00;
-		//animation-delay: 0.35s;
 		a{
-			animation-delay: 1s;
+			animation-delay: 0.5s;
 		}
 
 	}
 	&:nth-child(4){
 		background: #ef6c00;
-		//animation-delay: 0.4s;
 		a{
-			animation-delay: 1.2s;
+			animation-delay: 0.6s;
 		}
 
 	}
 }
-
-
 .overlay-menu-img{
 	display: block;
 	width: 75px;
@@ -176,6 +172,8 @@ $menu-overlay-button:   $orange; //#e99f30;
 	color: #fff;
 	font-family: $heading-font-family;
 	transition: color 0.2s;
+	animation-duration: 0.3s;
+	animation-fill-mode: both;
 	span{
 		display: block;
 	}

@@ -919,6 +919,8 @@ return typeof n.toString!="function"&&typeof(n+"")=="string"}}(),Jn=m();typeof d
 
 
 
+
+
 // $('.modal-button').on('click', function () {
 // 	var $this =  $(this);
 // 	var $parent = $this.closest('.modal-wrapper');
@@ -952,8 +954,6 @@ return typeof n.toString!="function"&&typeof(n+"")=="string"}}(),Jn=m();typeof d
 // 	$('.form-button').css('opacity', 0);
 // 	return false;
 // })
-
-
 
 
 
@@ -1096,8 +1096,8 @@ function overlay_menu(){
 					this.removeEventListener( transEndEventName, onEndTransitionFn );
 				}
 				classie.remove( overlay, 'close' );
-				$('.overlay-menu li').removeClass('animated fadeInRight');
-				$('.overlay-menu li a').removeClass('animated fadeInRight');
+				$('.overlay-menu li').removeClass('fadeInRight');
+				$('.overlay-menu li a').removeClass('fadeInRight');
 			};
 			if( support.transitions ) {
 				overlay.addEventListener( transEndEventName, onEndTransitionFn );
@@ -1109,8 +1109,8 @@ function overlay_menu(){
 		else if( !classie.has( overlay, 'close' ) ) {
 			classie.add( overlay, 'open' );
 			$('.McButton').on('click', function(){
-				$('.overlay-menu li').addClass('animated fadeInRight');
-				$('.overlay-menu li a').addClass('animated fadeInRight');
+				$('.overlay-menu li').addClass('fadeInRight');
+				$('.overlay-menu li a').addClass('fadeInRight');
 			})
 		}
 	}

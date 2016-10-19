@@ -984,28 +984,6 @@ a {
   margin-right: 0;
 }
 
-.section-offered::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.section-offered-title {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.media-list {
-  text-align: center;
-  margin-bottom: 1.875rem;
-}
-
-.media-list-title {
-  text-transform: uppercase;
-  margin-bottom: 1.875rem;
-  font-weight: 400;
-}
-
 .block-main {
   background: #ffb74d;
   border-top: 15px solid #ff9800;
@@ -1111,6 +1089,28 @@ a {
   animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+.section-offered::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.section-offered-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.media-list {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.media-list-title {
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
+  font-weight: 400;
 }
 
 .section-service {
@@ -1607,6 +1607,8 @@ a {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
 }
 
 .overlay-menu li:first-child {
@@ -1614,8 +1616,8 @@ a {
 }
 
 .overlay-menu li:first-child a {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .overlay-menu li:nth-child(2) {
@@ -1623,8 +1625,8 @@ a {
 }
 
 .overlay-menu li:nth-child(2) a {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .overlay-menu li:nth-child(3) {
@@ -1632,8 +1634,8 @@ a {
 }
 
 .overlay-menu li:nth-child(3) a {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .overlay-menu li:nth-child(4) {
@@ -1641,8 +1643,8 @@ a {
 }
 
 .overlay-menu li:nth-child(4) a {
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .overlay-menu-img {
@@ -1660,6 +1662,10 @@ a {
   font-family: "proxima-nova-soft", "Source Sans Pro", "Arial", sans-serif;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .overlay-menu li a::after {
@@ -2087,6 +2093,10 @@ a {
     margin-right: 0;
   }
 
+  .block-main-title.h3 {
+    font-size: 2.5rem;
+  }
+
   .media-list {
     float: left;
     display: block;
@@ -2113,10 +2123,6 @@ a {
 
   .media-list h4 {
     font-size: 2.25rem;
-  }
-
-  .block-main-title.h3 {
-    font-size: 2.5rem;
   }
 
   .navbar-inner {
