@@ -73,6 +73,7 @@
 	&-image{
 		text-align: center;
 		position: relative;
+
 		.image-absolute{
 			position: absolute;
 			width: 50%;
@@ -80,6 +81,10 @@
 			left: 0;
 			right: 0;
 			margin: auto;
+			animation-duration: 0.8s;
+			animation-delay: 0.5s;
+		    animation-fill-mode: both;
+			@extend .slideInUp;
 		}
 		@include media(min-width $sm max-width $lg){
 			max-width: 85%;
@@ -92,67 +97,76 @@
 	}
 }
 .start-animate {
-	.block-main-title, .block-main-image, .navbar-menu, .counter-wrapper, .image-absolute, .block-main-button{
+	.counter-wrapper, .image-absolute{
 		opacity: 0;
 	}
+	// .block-main-title, .block-main-image, .navbar-menu, .counter-wrapper, .image-absolute, .block-main-button{
+	// 	opacity: 0;
+	// }
 }
-.start-brand-animate{
-	.navbar-brand-wrapper{
-		width: 200px;
-		height: 99px;
-		@include media(min-width $xs max-width $sm){
-			width: 100px;
-			height: 50px;
-		}
-	}
-	.navbar-brand{
-		position: fixed;
-	    left: 0;
-	    right: 0;
-	    bottom: 0;
-	    top: 0;
-	    z-index: 1001;
-	    display: block;
-	    max-width: none;
-	    width: auto;
-	    text-align: center;
-		// transform: scale3d(2, 2, 2);
-		// margin: auto;
-		img{
-	    	max-width: 400px;
-			@include media(min-width $xs max-width $sm){
-				max-width: 200px;
-			}
-		}
-
-	}
-	.block-main-overlay{
-		position: relative;
-		border-top: none;
-		&:before{
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background: #424242;
-			z-index: 100;
-		}
-	}
-	.brand-overlay{
-		background: #424242;
-		position: fixed;
-		left: 0;
-	    right: 0;
-	    bottom: 0;
-	    top: 0;
-		z-index: 1000;
-		&-animate{
-			background: $orange-new;
-			animation-duration: 0.8s;
-		    animation-fill-mode: both;
-			@extend .slideInUp;
-		}
-	}
+// .start-brand-animate{
+// 	.navbar-brand-wrapper{
+// 		width: 200px;
+// 		height: 99px;
+// 		@include media(min-width $xs max-width $sm){
+// 			width: 100px;
+// 			height: 50px;
+// 		}
+// 	}
+// 	.navbar-brand{
+// 		position: fixed;
+// 	    left: 0;
+// 	    right: 0;
+// 	    bottom: 0;
+// 	    top: 0;
+// 	    z-index: 1001;
+// 	    display: block;
+// 	    max-width: none;
+// 	    width: auto;
+// 	    text-align: center;
+// 		// transform: scale3d(2, 2, 2);
+// 		// margin: auto;
+// 		img{
+// 	    	max-width: 400px;
+// 			@include media(min-width $xs max-width $sm){
+// 				max-width: 200px;
+// 			}
+// 		}
+//
+// 	}
+// 	.block-main-overlay{
+// 		position: relative;
+// 		border-top: none;
+// 		&:before{
+// 			content: '';
+// 			position: absolute;
+// 			top: 0;
+// 			left: 0;
+// 			right: 0;
+// 			bottom: 0;
+// 			background: #424242;
+// 			z-index: 100;
+// 		}
+// 	}
+// 	.brand-overlay{
+// 		background: #424242;
+// 		position: fixed;
+// 		left: 0;
+// 	    right: 0;
+// 	    bottom: 0;
+// 	    top: 0;
+// 		z-index: 1000;
+// 		&-animate{
+// 			background: $orange-new;
+// 			animation-duration: 0.8s;
+// 		    animation-fill-mode: both;
+// 			@extend .slideInUp;
+// 		}
+// 	}
+// }
+.counter-wrapper {
+	animation-duration: 0.8s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	@extend .fadeInLeft;
 }

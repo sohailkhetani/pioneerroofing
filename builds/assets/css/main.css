@@ -335,7 +335,7 @@ html,body {
   animation-fill-mode: both;
 }
 
-.start-brand-animate .brand-overlay-animate {
+.block-main-image .image-absolute {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
@@ -355,6 +355,11 @@ html,body {
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+}
+
+.counter-wrapper {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
 
 .button-primary {
@@ -722,7 +727,6 @@ html,body {
 .flex-middle {
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -ms-grid-row-align: center;
   align-items: center;
 }
 
@@ -1029,64 +1033,23 @@ a {
   left: 0;
   right: 0;
   margin: auto;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-.start-animate .block-main-title,.start-animate .block-main-image,.start-animate .navbar-menu,.start-animate .counter-wrapper,.start-animate .image-absolute,.start-animate .block-main-button {
+.start-animate .counter-wrapper,.start-animate .image-absolute {
   opacity: 0;
 }
 
-.start-brand-animate .navbar-brand-wrapper {
-  width: 200px;
-  height: 99px;
-}
-
-.start-brand-animate .navbar-brand {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 1001;
-  display: block;
-  max-width: none;
-  width: auto;
-  text-align: center;
-}
-
-.start-brand-animate .navbar-brand img {
-  max-width: 400px;
-}
-
-.start-brand-animate .block-main-overlay {
-  position: relative;
-  border-top: none;
-}
-
-.start-brand-animate .block-main-overlay:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #424242;
-  z-index: 100;
-}
-
-.start-brand-animate .brand-overlay {
-  background: #424242;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 1000;
-}
-
-.start-brand-animate .brand-overlay-animate {
-  background: #ffb74d;
+.counter-wrapper {
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -1475,6 +1438,12 @@ a {
   color: #fff;
 }
 
+.coupon-image {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .coupon-content-text {
   color: #424242;
   margin-top: 0.625rem;
@@ -1804,15 +1773,6 @@ a {
 
   .block-main-button a:last-child {
     margin-right: 0;
-  }
-
-  .start-brand-animate .navbar-brand-wrapper {
-    width: 100px;
-    height: 50px;
-  }
-
-  .start-brand-animate .navbar-brand img {
-    max-width: 200px;
   }
 
   .section-service {
@@ -2342,6 +2302,34 @@ a {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {
